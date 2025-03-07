@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
+    "@types/jquery": "^3.5.32",
     "element-plus": "^2.3.8",
+    "jquery": "^3.7.1",
     "pinia": "^2.1.4",
+    "three": "^0.174.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },

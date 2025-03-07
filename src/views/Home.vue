@@ -22,12 +22,19 @@
               <h2 class="slide-title">{{ slide.title }}</h2>
               <p class="slide-description">{{ slide.description }}</p>
             </div>
+            <div
+              class="slide-detail"
+              :class="{ 'show-detail': selectedSlide === index }"
+            >
+              <h3>{{ slide.title }}</h3>
+              <p>{{ slide.detail }}</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-controls">
+        <!-- <div class="carousel-controls">
           <button @click.stop="prevSlide" class="control-btn prev">&lt;</button>
           <button @click.stop="nextSlide" class="control-btn next">&gt;</button>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -75,28 +82,36 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-import slide1 from "../assets/images/1.png";
+import slide1 from "../assets/images/12.png";
 
 const slides = [
   {
     image: slide1,
     title: "探索生命奥秘",
     description: "沉浸式体验生物世界",
+    detail:
+      "通过先进的3D建模技术，我们为您呈现最真实的生物世界。从微观的细胞结构到宏观的生态系统，让您身临其境地了解生命的奥秘。",
   },
   {
     image: slide1,
     title: "基因科技",
     description: "解密生命密码",
+    detail:
+      "深入浅出地讲解基因科技，从DNA双螺旋结构到基因编辑技术，帮助您理解现代生物科技的前沿发展。",
   },
   {
     image: slide1,
     title: "生态保护",
     description: "守护地球家园",
+    detail:
+      "探索地球生态系统的奥秘，了解生物多样性的重要性，以及我们如何能够为保护地球生态系统贡献力量。",
   },
   {
     image: slide1,
     title: "进化历程",
     description: "追溯生命起源",
+    detail:
+      "带您穿越时空，回顾生命演化的漫长历程，了解从单细胞生物到复杂生命体的进化过程。",
   },
 ];
 
@@ -110,11 +125,12 @@ const nextSlide = () => {
   }
 };
 
-const prevSlide = () => {
-  currentSlide.value = (currentSlide.value - 1 + slides.length) % slides.length;
-};
+// const prevSlide = () => {
+//   currentSlide.value = (currentSlide.value - 1 + slides.length) % slides.length;
+// };
 
 const handleSlideClick = (index: number) => {
+  currentSlide.value = index;
   selectedSlide.value = index;
   stopAutoPlay(); // 点击时停止自动轮播
 };
@@ -221,6 +237,7 @@ onUnmounted(() => {
   transition: all 0.8s ease;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
 }
 
 /* 修改轮播和选中状态的样式 */
@@ -256,25 +273,25 @@ onUnmounted(() => {
 .carousel-track:has(.carousel-slide.selected):has(
     .carousel-slide:nth-child(1).selected
   ) {
-  grid-template-columns: 64% 12% 12% 12%;
+  grid-template-columns: 70% 10% 10% 10%;
 }
 
 .carousel-track:has(.carousel-slide.selected):has(
     .carousel-slide:nth-child(2).selected
   ) {
-  grid-template-columns: 12% 64% 12% 12%;
+  grid-template-columns: 10% 70% 10% 10%;
 }
 
 .carousel-track:has(.carousel-slide.selected):has(
     .carousel-slide:nth-child(3).selected
   ) {
-  grid-template-columns: 12% 12% 64% 12%;
+  grid-template-columns: 10% 10% 70% 10%;
 }
 
 .carousel-track:has(.carousel-slide.selected):has(
     .carousel-slide:nth-child(4).selected
   ) {
-  grid-template-columns: 12% 12% 12% 64%;
+  grid-template-columns: 10% 10% 10% 70%;
 }
 
 /* 淡出效果 */
@@ -291,6 +308,13 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* 微调 */
+  object-position: 30% center;
+  transition: all 0.8s ease;
+}
+
+.carousel-slide.selected img {
+  object-position: center;
 }
 
 .slide-overlay {
@@ -305,6 +329,53 @@ onUnmounted(() => {
 
 .carousel-slide.active .slide-overlay {
   opacity: 0;
+}
+
+.slide-detail {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  position: absolute;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: white;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, calc(-50% + 30px));
+  width: 50%;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.slide-detail.show-detail {
+  max-height: 200px;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.slide-detail h3 {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s;
+}
+
+.slide-detail p {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease 0.4s;
+}
+
+.slide-detail.show-detail h3,
+.slide-detail.show-detail p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.carousel-slide.selected .slide-content {
+  transform: scale(1);
+  opacity: 1;
+  width: 90%;
 }
 
 .slide-content {
