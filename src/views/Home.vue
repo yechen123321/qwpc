@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <NavBar />
     <!-- 主横幅区域 -->
     <section class="hero-section">
       <div class="carousel-container">
@@ -83,7 +84,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 import slide1 from "../assets/images/12.png";
-
+import NavBar from '../components/NavBar.vue';
 const slides = [
   {
     image: slide1,
