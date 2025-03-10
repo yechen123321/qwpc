@@ -28,6 +28,11 @@ const router = createRouter({
       name: 'TimeList',
       component: () => import('@/views/TimeList.vue')
     },
+    {
+      path: '/animal',
+      name: 'Animal',
+      component: () => import('@/views/Animal.vue')
+    },
     // {
     //   path: '/models',
     //   name: 'Models',
