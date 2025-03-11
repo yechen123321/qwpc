@@ -33,6 +33,21 @@ const router = createRouter({
       name: 'Animal',
       component: () => import('@/views/Animal.vue')
     },
+    {
+      path: '/list',
+      name: 'List',
+      component: () => import('@/views/D.vue')
+    },
+    {
+      path: '/game',
+      name: 'Game',
+      component: () => import('@/views/Game.vue')
+    },
+    {
+      path: '/card',
+      name: 'Card',
+      component: () => import('@/views/Card.vue')
+    },
     // {
     //   path: '/models',
     //   name: 'Models',
