@@ -5,8 +5,8 @@
         <h1>BioVerse</h1>
       </div>
       <div class="navbar-links">
-        <router-link to="/" class="nav-link">首页</router-link>
-        <router-link to="/models" class="nav-link">3D模型</router-link>
+        <router-link to="/" class="nav-link">时间简史</router-link>
+        <router-link to="/models" class="nav-link">生物百科</router-link>
         <router-link to="/qa" class="nav-link">知识问答</router-link>
         <router-link to="/about" class="nav-link">关于我们</router-link>
       </div>

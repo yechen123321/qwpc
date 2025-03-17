@@ -36,7 +36,7 @@ const router = createRouter({
     {
       path: '/list',
       name: 'List',
-      component: () => import('@/views/D.vue')
+      component: () => import('@/views/List.vue')
     },
     {
       path: '/game',
@@ -48,21 +48,31 @@ const router = createRouter({
       name: 'Card',
       component: () => import('@/views/Card.vue')
     },
-    // {
-    //   path: '/models',
-    //   name: 'Models',
-    //   component: () => import('@/views/Models.vue')
-    // },
-    // {
-    //   path: '/qa',
-    //   name: 'QA',
-    //   component: () => import('@/views/QA.vue')
-    // },
-    // {
-    //   path: '/about',
-    //   name: 'About',
-    //   component: () => import('@/views/About.vue')
-    // }
+    {
+      path: '/hh',
+      name: 'HH',
+      component: () => import('@/views/HH.vue')
+    },
+    {
+      path: '/cc',
+      name: 'cc',
+      component: () => import('@/views/cc.vue')
+    },
+    {
+      path: '/dd',
+      name: 'dd',
+      component: () => import('@/views/dd.vue')
+    },
+    {
+      path: '/ee',
+      name: 'ee',
+      component: () => import('@/views/ee.vue')
+    },
+    {
+      path: '/gg',
+      name: 'gg',
+      component: () => import('@/views/gg.vue')
+    },
   ]
 })
 

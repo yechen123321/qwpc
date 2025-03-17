@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .main-content {
   background-color: #ffffff;
   border-radius: 8px;
