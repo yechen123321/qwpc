@@ -4,12 +4,13 @@ import "element-plus/dist/index.css";
 import * as ElementPlusIconsVue from "@element-plus/icons-vue";
 import router from "./router";
 import App from "./App.vue";
-
+import Antd from "ant-design-vue";
+import "ant-design-vue/dist/reset.css";
 // 确保 lucide-vue-next 已正确安装
 import * as LucideIcons from "lucide-vue-next";
 
 const app = createApp(App);
-
+app.use(Antd);
 // 注册 ElementPlus 图标
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component as Component);

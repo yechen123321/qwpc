@@ -4,6 +4,6 @@
 </template>
   
   <script setup>
-import ModelViewer from "../components/ModelViewer.vue";
+import ModelViewer from "./ModelViewer.vue";
 </script>
   

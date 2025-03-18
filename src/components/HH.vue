@@ -112,7 +112,7 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue';
 import { ChevronLeft, ChevronRight } from 'lucide-vue-next';
-import EraDisplay from '../components/EraDisplay.vue';
+import EraDisplay from './EraDisplay.vue';
 import { geologicalData } from '../data/data.js';
 
 const currentEraIndex = ref(0);

@@ -9,9 +9,9 @@ const router = createRouter({
       component: () => import('@/views/Home.vue')
     },
     {
-      path: '/community',
-      name: 'Community',
-      component: () => import('@/views/Community.vue')
+      path: '/manager',
+      name: 'manager',
+      component: () => import('@/views/manager.vue')
     },
     {
       path: '/show',
@@ -21,12 +21,12 @@ const router = createRouter({
     {
       path: '/login',
       name: 'Login',
-      component: () => import('@/views/Login.vue')
+      component: () => import('@/components/Login.vue')
     },
     {
       path: '/time',
       name: 'TimeList',
-      component: () => import('@/views/TimeList.vue')
+      component: () => import('@/components/TimeList.vue')
     },
     {
       path: '/animal',
@@ -36,42 +36,72 @@ const router = createRouter({
     {
       path: '/list',
       name: 'List',
-      component: () => import('@/views/List.vue')
+      component: () => import('@/components/List.vue')
     },
     {
       path: '/game',
       name: 'Game',
-      component: () => import('@/views/Game.vue')
+      component: () => import('@/components/Game.vue')
     },
     {
       path: '/card',
       name: 'Card',
-      component: () => import('@/views/Card.vue')
+      component: () => import('@/components/Card.vue')
     },
     {
       path: '/hh',
       name: 'HH',
-      component: () => import('@/views/HH.vue')
+      component: () => import('@/components/HH.vue')
     },
     {
       path: '/cc',
       name: 'cc',
-      component: () => import('@/views/cc.vue')
+      component: () => import('@/components/cc.vue')
     },
     {
       path: '/dd',
       name: 'dd',
-      component: () => import('@/views/dd.vue')
+      component: () => import('@/components/dd.vue')
     },
     {
       path: '/ee',
       name: 'ee',
-      component: () => import('@/views/ee.vue')
+      component: () => import('@/components/ee.vue')
     },
     {
       path: '/gg',
       name: 'gg',
-      component: () => import('@/views/gg.vue')
+      component: () => import('@/components/gg.vue')
+    },
+    {
+      path: '/tt',
+      name: 'tt',
+      component: () => import('@/components/tok.vue')
+    },
+    {
+      path: '/library',
+      name: 'library',
+      component: () => import('@/views/library.vue')
+    },
+    {
+      path: '/species/:id',
+      name: 'SpeciesDetail',
+      component: () => import('@/components/SpeciesDetail.vue')
+    },
+    {
+      path: '/categories',
+      name: 'categories',
+      component: () => import('@/views/CategoriesPage.vue')
+    },
+    {
+      path: '/recent/:id',
+      name: 'RecentDiscoveries',
+      component: () => import('@/components/RecentDiscoveries.vue')
+    },
+    {
+      path: '/community',
+      name: 'community',
+      component: () => import('@/views/community.vue')
     },
   ]
 })

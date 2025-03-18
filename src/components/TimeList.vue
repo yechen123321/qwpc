@@ -107,7 +107,7 @@
   </div>
 </template>
 <script setup>
-import NavBar from '../components/NavBar.vue';
+import NavBar from './NavBar.vue';
 import { useRouter } from 'vue-router';
 import { onMounted, ref } from "vue";
 import image23 from '../assets/images/23.png';  // 导入图片
