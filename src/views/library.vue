@@ -8,10 +8,10 @@
         </a>
       </div>
       <nav class="main-nav">
-        <a href="/library" class="nav-link active">主页</a>
-        <a href="/categories" class="nav-link">类别</a>
-        <a href="#" class="nav-link">发现</a>
-        <a href="#" class="nav-link"></a>
+        <a href="/" class="nav-link ">首页</a>
+          <a href="/library" class="nav-link active">百科</a>
+          <a href="#" class="nav-link">发现</a>
+          <a href="#" class="nav-link">助手</a>
       </nav>
     </header>
 

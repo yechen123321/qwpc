@@ -1,4454 +1,1598 @@
 <template>
-  <div class="header" data-ix="show-nav">
-    <div
-      class="w-nav nav"
-      data-collapse="medium"
-      data-animation="over-right"
-      data-duration="400"
-      data-contain="1"
-      data-doc-height="1"
-      data-ix="nav-bar-load"
-      data-easing="ease-out-quart"
-      data-easing2="ease-out-quart"
-    >
-      <div class="w-container">
-        <a class="w-nav-brand w-clearfix brand" href="/#" target="_blank">
-          <img class="webflow-logo" src="../assets/headlogo.png" />
-          <div class="brand-subtitle"></div>
-        </a>
-        <nav class="w-nav-menu nav-menu" role="navigation">
-          <a class="w-hidden-main w-inline-block close-link" href="#">
-            <div>✕</div>
-          </a>
+  <div class="home-page">
+    <!-- Navigation Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h2>EarthChronicle</h2>
+        </div>
+        <nav class="main-nav">
+          <a href="/" class="nav-link active">首页</a>
+          <a href="/library" class="nav-link">百科</a>
+          <a href="#" class="nav-link">发现</a>
+          <a href="#" class="nav-link">助手</a>
         </nav>
-        <div class="w-nav-button menu-button">
-          <div class="w-icon-nav-menu"></div>
-        </div>
       </div>
-    </div>
-    <div class="w-container contents">
-      <div class="main-heading-wrapper">
-        <h1 data-ix="fade-in-heading">生息云纪&nbsp;</h1>
-        <h1 data-ix="fade-in-heading-2">Life Clouds</h1>
-        <h1 class="without-code" data-ix="fade-in-heading-3">Based on</h1>
-        <h1 class="without-code" data-ix="fade-in-heading-4">Generative AI</h1>
-        <div
-          class="w-hidden-small w-hidden-tiny header-1"
-          data-ix="heading-text-load"
-        >
-          Save life code and write ecological era in<a
-            style="text-decoration: none; color: black"
-            target="_blank"
-            href="/#"
-            >Life Clouds</a
-          >.
-        </div>
-      </div>
-      <h2 class="main-subtitle" data-ix="subtitle-load">
-        "生物科普+环保实践"双驱动，打造"认知-行动-传播"的完整生态保护闭环&nbsp;<a
-          class="link black"
-          href="#more"
-          >了解更多</a
-        >&nbsp;or <a class="link black" href="/time">时间简史</a>.
-      </h2>
-      <a class="w-inline-block down-arrow" href="#more" data-ix="down-arrow">
-        <div class="down-inner" data-ix="down-arrow-on-load">
-          <img src="../assets/1.svg" />
-        </div>
-      </a>
-      <div
-        class="w-hidden-medium w-hidden-small w-hidden-tiny header-2"
-        data-ix="heading-text-load"
-      >
-        了解更多
-      </div>
-    </div>
-    <div class="object _2"></div>
-    <div class="object"></div>
-  </div>
-  <div
-    class="w-nav nav-scroll"
-    data-collapse="small"
-    data-animation="over-right"
-    data-duration="600"
-    data-contain="1"
-    data-ix="display-none-on-load"
-    data-easing="ease-out-quart"
-    data-doc-height="1"
-  >
-    <div class="w-container nav-scroll-content">
-      <a class="w-nav-brand w-clearfix brand" href="/#" target="_blank">
-        <img class="webflow-logo scroll" src="../assets/headlogo.png" />
-        <div class="brand-subtitle"></div>
-        <div
-          class="w-hidden-medium w-hidden-small w-hidden-tiny scroll-1"
-          data-ix="0-opacity-on-load"
-        >
-          (This is an interaction too)
-        </div>
-      </a>
-      <nav
-        class="w-nav-menu w-clearfix nav-menu-scroll"
-        role="navigation"
-      ></nav>
-      <div class="w-nav-button scroll-nav">
-        <div class="w-icon-nav-menu"></div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="section"
-    id="more"
-    data-scroll="mid"
-    data-ix="scroll-text-fade-away"
-  >
-    <div class="w-container">
-      <h2>特点 &amp; 有意思的 部分</h2>
-      <div class="w-row">
-        <div class="w-col w-col-4 feature-pill" data-ix="scale-on-scroll">
-          <img
-            class="feature-icon"
-            src="../assets/images/feature-1.png"
-            width="144"
-            alt="feature-1.png"
-          />
-          <h3>丰富交感</h3>
-          <p>具有丰富的交互动画和AI功能供用户体验</p>
-        </div>
-        <div
-          class="w-col w-col-4 feature-pill"
-          data-ix="scale-on-scroll-delay-100"
-        >
-          <img
-            class="feature-icon"
-            src="../assets/images/feature-2.png"
-            width="144"
-            alt="feature-2.png"
-          />
-          <h3>多端互通</h3>
-          <p>适用于PC端，鸿蒙端，小程序</p>
-        </div>
-        <div
-          class="w-col w-col-4 feature-pill"
-          data-ix="scale-on-scroll-delay-200"
-        >
-          <img
-            class="feature-icon"
-            src="../assets/images/feature-3.png"
-            width="144"
-            alt="feature-3.png"
-          />
-          <h3>跨浏览器</h3>
-          <p>适用于所有现代浏览器</p>
-        </div>
-      </div>
-      <div class="center">
-        <div
-          class="w-hidden-medium w-hidden-small w-hidden-tiny note-text features"
-        >
-          Some features of this project
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section black">
-    <div class="w-container">
-      <h2 class="white-heading">四大 &nbsp;模块</h2>
-      <div class="w-clearfix works-row">
-        <div class="works-column">
-          <div class="setup-pill dark _1" data-ix="scale-on-scroll">
-            <div class="top-bar blue"></div>
-            <h3 class="number">1</h3>
-            <h3 class="white-heading">生物科普教育模块</h3>
-            <p>传递生态知识，提升公众对生物环境的认知&nbsp;</p>
-            <div class="carrot"></div>
-          </div>
-          <div class="screenshot-wrapper" data-ix="scale-on-scroll">
-            <div class="caption-text works">Biological Science Module</div>
-            <img
-              class="screenshot"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd280801a8e236400003e_initial.png"
-              width="240"
-              alt="534dd280801a8e236400003e_initial.png"
-            />
-          </div>
-        </div>
-        <div class="works-column">
-          <div class="setup-pill dark _2" data-ix="scale-on-scroll-delay-100">
-            <div class="top-bar blue _2"></div>
-            <h3 class="number _2">2</h3>
-            <h3 class="white-heading">环保行动互动模块</h3>
-            <p>将科普知识转化为可操作的环保行为</p>
-          </div>
-          <div class="screenshot-wrapper" data-ix="scale-on-scroll-delay-100">
-            <div class="caption-text works">Environmental Action Module</div>
-            <img
-              class="screenshot"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd28bebf08c3e3000001c_trigger-full.png"
-              width="240"
-              alt="534dd28bebf08c3e3000001c_trigger-full.png"
-            />
-          </div>
-        </div>
-        <div class="works-column">
-          <div class="setup-pill dark _3" data-ix="scale-on-scroll-delay-200">
-            <div class="top-bar blue _3"></div>
-            <h3 class="number _3">3</h3>
-            <h3 class="white-heading">数据监测与反馈模块</h3>
-            <p>量化环保行动效果，增强用户成就感</p>
-          </div>
-          <div class="screenshot-wrapper" data-ix="scale-on-scroll-delay-200">
-            <div class="caption-text works">Data Feedback Module</div>
-            <img
-              class="screenshot"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd294ebf08c3e3000001e_effects.png"
-              width="240"
-              alt="534dd294ebf08c3e3000001e_effects.png"
-            />
-          </div>
-        </div>
-        <div class="works-column">
-          <div class="setup-pill dark _4" data-ix="scale-on-scroll-delay-300">
-            <div class="top-bar blue _4"></div>
-            <h3 class="number _4">4</h3>
-            <h3 class="white-heading">社区协作与传播模块</h3>
-            <p>扩大项目影响力，形成可持续社群&nbsp;</p>
-          </div>
-          <div class="screenshot-wrapper" data-ix="scale-on-scroll-delay-300">
-            <div class="caption-text works" data-ix="scale-on-scroll">
-              Community Communication Module
-            </div>
-            <img
-              class="screenshot"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd2a1ebf08c3e30000020_all-interactions.png"
-              width="240"
-              alt="534dd2a1ebf08c3e30000020_all-interactions.png"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="center">
-        <div class="note-text btw">
-          BTW, these are the actual settings for the scroll animation&nbsp;<span
-            class="w-hidden-main desktop-only"
-            >(desktop)</span
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section" id="examples">
-    <div class="w-container">
-      <h2 class="left-heading small-padding">
-        example 1 &nbsp;<span class="thin-text">scroll in &amp; Out</span>
-      </h2>
-      <div class="w-row example">
-        <div class="w-col w-col-8 example-left-col">
-          <div class="w-hidden-main w-clearfix mobile-error">
-            <img
-              class="mobile-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534776d99095a10409000137_no-mobile.png"
-              width="44"
-              alt="534776d99095a10409000137_no-mobile.png"
-            />
-            <h4>Scroll trigger not supported on&nbsp;touch devices</h4>
-            <p class="small-paragraph">
-              Touch devices have limited resources to allow animations while
-              scrolling.&nbsp;
-            </p>
-          </div>
-          <div class="note-text ex pink">
-            Scroll Up &amp; Down to Preview Animation
-          </div>
-          <div class="ix-playground">
-            <div class="w-clearfix ix-wrapper inlineblock" data-ix="example-1b">
-              <img
-                class="example-1-img"
-                src="http://uploads.webflow.com/5317d67d660658b254000454/534c8b2a2492bb33580006f0_cactus.png"
-                width="61"
-                alt="534c8b2a2492bb33580006f0_cactus.png"
-              />
-              <h3 class="example-1-title">This is a Cactus</h3>
-              <p class="no-padding">
-                According to Wikipedia, a cactus is a member of the plant family
-                Cactaceae within the order Caryophyllales.
-              </p>
-            </div>
-          </div>
-          <div class="caption-text on-white">description</div>
-          <p>
-            When a user scrolls down the page and this element comes into view,
-            an animation is triggered.&nbsp;Then&nbsp;a&nbsp;different set of
-            effects are triggered when the element is scrolled out of view.
-          </p>
-          <div class="example-specs">
-            <span class="property">Initial Appearance:</span>&nbsp;0%
-            Opacity&nbsp;&nbsp;<span class="property">Trigger:</span>
-            Scroll&nbsp;&nbsp;<span class="property">Total Interactions:</span
-            >&nbsp;1&nbsp;&nbsp;
-          </div>
-        </div>
-        <div class="w-col w-col-4 example-right-col">
-          <div>
-            <img
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd2adec53462064000048_Example1.png"
-              width="240"
-              alt="534dd2adec53462064000048_Example1.png"
-            />
-            <div class="note-text screen">Screenshot</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section lightgrey" data-ix="example-2-footer-flyout">
-    <div class="w-container">
-      <h2 class="left-heading small-padding">
-        example 2&nbsp;&nbsp;<span class="thin-text"
-          >scroll affecting a different element</span
-        >
-      </h2>
-      <div class="w-row example">
-        <div class="w-col w-col-8 example-left-col">
-          <div class="w-hidden-main w-clearfix mobile-error">
-            <img
-              class="mobile-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534776d99095a10409000137_no-mobile.png"
-              width="44"
-              alt="534776d99095a10409000137_no-mobile.png"
-            />
-            <h4>Scroll trigger not supported on&nbsp;touch devices</h4>
-            <p class="small-paragraph">
-              Touch devices have limited resources to allow animations while
-              scrolling.&nbsp;
-            </p>
-          </div>
-          <div class="note-text ex purple">
-            Scroll In and Out of this Section to Preview
-          </div>
-          <div class="ix-playground ex2">
-            <h3 class="example-2-text">
-              See the monkey that appears at the bottom?
-            </h3>
-          </div>
-          <div class="caption-text on-white">description</div>
-          <p>
-            When an element is scrolled into view, an interaction can be applied
-            to another element, or elements, by choosing a class. In this
-            example the interaction is set on this section, so when it is
-            scrolled into view the effects are applied to the&nbsp;<span
-              class="class"
-              >Footer Flyout</span
-            >
-            class . The initial appearance is set on the affected element via a
-            different interaction, not on this section’s interaction.&nbsp;
-          </p>
-          <div class="example-specs">
-            <span class="property">Initial Appearance:</span>&nbsp;Display:
-            none, Move down 120px&nbsp;&nbsp;<span class="property"
-              >Trigger:</span
-            >
-            Scroll&nbsp;&nbsp;<span class="property">Total Interactions:</span
-            >&nbsp;2
-          </div>
-        </div>
-        <div class="w-col w-col-4 example-right-col">
-          <div>
-            <img
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd2b5ec53462064000049_Example2.png"
-              width="240"
-              alt="534dd2b5ec53462064000049_Example2.png"
-            />
-            <div class="note-text screen">Screenshot</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="w-container">
-      <h2 class="left-heading small-padding">
-        example 3&nbsp;&nbsp;<span class="thin-text"
-          >Click to show &amp; hide content</span
-        >
-      </h2>
-      <div class="w-row example">
-        <div class="w-col w-col-8 example-left-col">
-          <div class="w-hidden-main w-hidden-medium note-text ex blue">
-            Tap the button
-          </div>
-          <div class="w-clearfix button-wrapper">
-            <a
-              class="cta-button ex three"
-              href="#"
-              data-ix="example-click-to-show"
-              >Show &amp; Hide text</a
-            >
-            <div
-              class="w-hidden-medium w-hidden-small w-hidden-tiny note-text ex blue"
-            >
-              Click this button already
-            </div>
-            <div
-              class="w-hidden-main w-hidden-small w-hidden-tiny note-text ex blue"
-            >
-              Tap the button
-            </div>
-          </div>
-          <div class="hidden-text" data-ix="display-none-on-load">
-            <div class="hidden-wrapper">
-              <h3>Here is some hidden text.</h3>
-              <p>
-                Here is some more hidden text! More and more of it. I love
-                hidden text. It’s so awesome. I wish there was a tree with
-                hidden text growing on it. I’m not exactly sure how that would
-                be possible, but I can dream!
-              </p>
-            </div>
-          </div>
-          <div class="caption-text on-white example-click">description</div>
-          <p>
-            Clicking on an element can affect another element on the page. In
-            this example a click interaction is set on the blue button. Once it
-            is clicked the effects are applied on the&nbsp;<span class="class"
-              >Hidden Text</span
-            >&nbsp;class.&nbsp;A different set of effects can be applied to
-            Hidden Text class when the button is clicked a second time (toggle).
-            In this case the height of the element goes back to 0.&nbsp;
-          </p>
-          <div class="example-specs">
-            <span class="property">Initial Appearance:</span>&nbsp;Display:
-            None&nbsp;&nbsp;<span class="property">Trigger:</span
-            >&nbsp;Click&nbsp;&nbsp;<span class="property"
-              >Total Interactions:</span
-            >&nbsp;1
-          </div>
-        </div>
-        <div class="w-col w-col-4 example-right-col">
-          <div>
-            <img
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd2bdebf08c3e30000023_Example3.png"
-              width="240"
-              alt="534dd2bdebf08c3e30000023_Example3.png"
-            />
-            <div class="note-text screen">Screenshot</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section lightgrey">
-    <div class="w-container">
-      <h2 class="left-heading small-padding">
-        example 4&nbsp;&nbsp;<span class="thin-text"
-          >Click to show sidebar</span
-        >
-      </h2>
-      <div class="w-row example">
-        <div class="w-col w-col-8 example-left-col">
-          <div class="w-hidden-main w-hidden-medium note-text ex blue turq">
-            You know what to do
-          </div>
-          <div class="w-clearfix button-wrapper">
-            <a
-              class="cta-button ex four"
-              href="#"
-              data-ix="example-show-sidebar"
-              >show sidebar</a
-            >
-            <div
-              class="w-hidden-medium w-hidden-small w-hidden-tiny note-text ex blue turq"
-            >
-              You know what to do
-            </div>
-            <div
-              class="w-hidden-main w-hidden-small w-hidden-tiny note-text ex blue turq"
-            >
-              You know what to do
-            </div>
-          </div>
-          <div class="caption-text on-white example-click">description</div>
-          <p>
-            The click trigger can affect any element on your site. Here is an
-            example of a click trigger on a button that affects the
-            <span class="class">Sidebar</span>&nbsp;class, which is a fixed on
-            the right side of the page. A different interaction is set on a
-            button inside the sidebar. Clicking on this button will transition
-            the <span class="class">Sidebar</span> element.&nbsp;The sidebar
-            element has its own interaction with just an initial appearance.
-          </p>
-          <div class="example-specs">
-            <span class="property">Initial Appearance:</span>&nbsp;Display:
-            none,&nbsp;Move Right 305px&nbsp;&nbsp;<span class="property"
-              >Trigger:</span
-            >&nbsp;Click&nbsp;&nbsp;<span class="property"
-              >Total interactions:</span
-            >
-            3&nbsp;&nbsp;
-          </div>
-        </div>
-        <div class="w-col w-col-4 example-right-col">
-          <div>
-            <img
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd2c8ebf08c3e30000025_Example4.png"
-              width="240"
-              alt="534dd2c8ebf08c3e30000025_Example4.png"
-            />
-            <div class="note-text screen">Screenshot</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="w-container">
-      <h2 class="left-heading small-padding">
-        example 5&nbsp;&nbsp;<span class="thin-text"
-          >hover reveal interaction</span
-        >
-      </h2>
-      <div class="w-row example">
-        <div class="w-col w-col-8 example-left-col">
-          <div class="w-hidden-main w-clearfix mobile-error">
-            <img
-              class="mobile-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534776d99095a10409000137_no-mobile.png"
-              width="44"
-              alt="534776d99095a10409000137_no-mobile.png"
-            />
-            <h4>Hover trigger not supported on&nbsp;touch devices</h4>
-            <p class="small-paragraph">
-              Touch devices don't have a concept of mouse hover.&nbsp;
-            </p>
-          </div>
-          <div class="w-clearfix ix-playground">
-            <div class="note-text ex green">Hover over this pretty thing</div>
-            <div class="album-art" data-ix="example-hover-album">
-              <div class="album-gradient" data-ix="0-opacity-on-load"></div>
-              <div class="icons-wrapper">
-                <a
-                  class="w-inline-block social-btn"
-                  href="#"
-                  data-ix="album-icons"
-                  ><img
-                    src="http://uploads.webflow.com/5317d67d660658b254000454/5349cb7baee2189219000044_album-icons_play.svg"
-                    alt="5349cb7baee2189219000044_album-icons_play.svg"
-                  />
-                </a>
-                <a
-                  class="w-inline-block social-btn"
-                  href="#"
-                  data-ix="album-icons"
-                  ><img
-                    src="http://uploads.webflow.com/5317d67d660658b254000454/5349cb8c277ea7c14e00003a_album-icons_like.svg"
-                    alt="5349cb8c277ea7c14e00003a_album-icons_like.svg"
-                  />
-                </a>
-                <a
-                  class="w-inline-block social-btn"
-                  href="#"
-                  data-ix="album-icons"
-                  ><img
-                    src="http://uploads.webflow.com/5317d67d660658b254000454/5349cb97277ea7c14e00003b_album-icons_more.svg"
-                    alt="5349cb97277ea7c14e00003b_album-icons_more.svg"
-                  />
-                </a>
-              </div>
-              <div class="album-info" data-ix="0-opacity-on-load">
-                <h1 class="album-title">Slave Ambient</h1>
-                <h2 class="album-artist">The War on Drugs</h2>
-              </div>
-            </div>
-          </div>
-          <div class="caption-text on-white example-click">description</div>
-          <p>
-            Hovering over an element can trigger an interaction that can affect
-            any element on the page. Also, more than one trigger can be added to
-            the same interaction. In this example hovering over the
-            <span class="class">Album Art</span> element above&nbsp;will trigger
-            an interaction that has 3 different hover triggers. Each hover
-            trigger affects a different class. One trigger fades in the
-            <span class="class">Action Icons</span>, another fades in the
-            pink&nbsp;<span class="class">Album Gradient</span>, and another
-            fades in the <span class="class">Album Info</span>.&nbsp;Each has
-            unique effects and transitions.
-          </p>
-          <div class="example-specs">
-            <span class="property">Initial Appearance:</span> Opacity 0%
-            &nbsp;<span class="property">Trigger:</span
-            >&nbsp;Hover&nbsp;&nbsp;<span class="property"
-              >TOTAL INTERACTIONS:</span
-            >&nbsp;2&nbsp;&nbsp;
-          </div>
-        </div>
-        <div class="w-col w-col-4 example-right-col">
-          <div>
-            <img
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534dd2d01274d43f3000003c_Example5.png"
-              width="240"
-              alt="534dd2d01274d43f3000003c_Example5.png"
-            />
-            <div class="note-text screen">Screenshot</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section lightgrey">
-    <div class="w-container">
-      <div class="padding-mobile">
-        <h3 class="example-text">
-          ...and those are just some examples we thought of.
-        </h3>
-        <p class="no-padding">
-          Let’s see what unique interactions you build inside of Webflow.
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Journey Through Earth's History</h1>
+        <p class="hero-description">
+          Explore the fascinating story of life on our planet, from the earliest microorganisms to today's complex ecosystems.
+          Discover how Earth's biodiversity evolved and the environmental changes that shaped our world.
         </p>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-6 left-column">
-          <h2 class="left-heading left-border">
-            <span class="thin-text">Available</span><br />triggers
-          </h2>
-          <div class="trig-wrapper" data-ix="fade-from-left">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534c63002492bb33580005c5_trig-load.png"
-              width="30"
-              alt="534c63002492bb33580005c5_trig-load.png"
-            />
-            <h3 class="trigger-heading">Page Load</h3>
-            <p class="no-padding">
-              Interaction starts as soon as the page begins to load.
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-left">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534c630a86107c7e22000488_trig-scroll.png"
-              width="30"
-              alt="534c630a86107c7e22000488_trig-scroll.png"
-            />
-            <h3 class="trigger-heading">Scroll</h3>
-            <p class="no-padding">
-              Triggered when your element scrolls into view.
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-left">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534c63137f7ce17d22000504_trig-click.png"
-              width="20"
-              alt="534c63137f7ce17d22000504_trig-click.png"
-            />
-            <h3 class="trigger-heading">Click</h3>
-            <p class="no-padding">
-              Activates an interaction with a single or toggle click.
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-left">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/5345de7ac40d2d4b280005ec_trig-hover.png"
-              width="22"
-              alt="5345de7ac40d2d4b280005ec_trig-hover.png"
-            />
-            <h3 class="trigger-heading">Hover</h3>
-            <p class="no-padding">
-              Mouse hover over an element. Degrades on touch devices.&nbsp;
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-left">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534c632986107c7e22000489_trig-slider.png"
-              width="30"
-              alt="534c632986107c7e22000489_trig-slider.png"
-            />
-            <h3 class="trigger-heading">
-              <span>Slide Load</span>
-              <span class="light-grey-text">Coming Later</span>
-            </h3>
-            <p class="no-padding">
-              Initiates when new slide (from slider) comes into view.&nbsp;
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-left">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534c63322492bb33580005c6_trig-active-scroll.png"
-              width="34"
-              alt="534c63322492bb33580005c6_trig-active-scroll.png"
-            />
-            <h3 class="trigger-heading">
-              <span>Active Scroll</span>
-              <span class="light-grey-text">Coming Later</span>
-            </h3>
-            <p class="no-padding">
-              Increments an effect as a user scrolls (like parallax).
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-left">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534c633c2492bb33580005c7_trig-custom.png"
-              width="30"
-              alt="534c633c2492bb33580005c7_trig-custom.png"
-            />
-            <h3 class="trigger-heading">
-              <span>Custom Trigger</span>&nbsp;<span class="light-grey-text"
-                >Coming Later</span
-              >
-            </h3>
-            <p class="no-padding">
-              Specify any type of event as a trigger for your interactions.
-            </p>
-          </div>
+        <div class="hero-buttons">
+          <button class="primary-button" @click="scrollToTimeline">Explore Timeline</button>
+          <button class="secondary-button">Learn About Conservation</button>
         </div>
-        <div class="w-col w-col-6 right-column">
-          <h2 class="left-heading left-border">
-            <span class="thin-text">available</span><br />effects
-          </h2>
-          <div class="trig-wrapper" data-ix="fade-from-right">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/5346089554dd13f977000040_eff-transform.png"
-              width="92"
-              alt="5346089554dd13f977000040_eff-transform.png"
-            />
-            <h3 class="trigger-heading">Transform</h3>
-            <p class="no-padding">
-              Move, rotate, and scale your element or selector.
-            </p>
+      </div>
+    </section>
+
+    <!-- Timeline Introduction -->
+    <section class="timeline-intro">
+      <div class="container">
+        <div class="section-header">
+          <h2>The History of Life on Earth</h2>
+          <p>Our interactive timeline spans 4.6 billion years of Earth's history, highlighting key evolutionary milestones and environmental events that shaped our planet's biodiversity.</p>
+        </div>
+        <div class="timeline-stats">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="stat-number">4.6 Billion</div>
+            <div class="stat-description">Years of Earth's History</div>
           </div>
-          <div class="trig-wrapper" data-ix="fade-from-right">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/5345df62ab99f04d280004d5_eff-opacity.png"
-              width="24"
-              alt="5345df62ab99f04d280004d5_eff-opacity.png"
-            />
-            <h3 class="trigger-heading">Opacity</h3>
-            <p class="no-padding">
-              Make an element or selector more transparent or opaque.&nbsp;
-            </p>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.4 5.4 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.4 5.4 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.4 5.4 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <div class="stat-number">8.7 Million</div>
+            <div class="stat-description">Species on Earth Today</div>
           </div>
-          <div class="trig-wrapper" data-ix="fade-from-right">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/5345df89f346cf51750004ab_eff-width-height.png"
-              width="58"
-              alt="5345df89f346cf51750004ab_eff-width-height.png"
-            />
-            <h3 class="trigger-heading">Width &amp; Height</h3>
-            <p class="no-padding">
-              Change the dimensions of the current or target element.
-            </p>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22c6.23-.05 11.25-7.27 9.61-13"></path>
+                <path d="M8.5 17c1.5 1 3.5 1 5-1"></path>
+                <path d="M15 8.5c1.5-1 3-1 4.5.5"></path>
+                <path d="M13 2c-2.25-.5-5.25.5-9 5"></path>
+                <path d="M13 2c1.38 2.5 2 5 1 8"></path>
+                <path d="M13 10c-1.66.5-3.5.5-5.5-1"></path>
+                <path d="M4 10c-.5 1.5-.5 3 .5 4.5"></path>
+              </svg>
+            </div>
+            <div class="stat-number">5</div>
+            <div class="stat-description">Mass Extinction Events</div>
           </div>
-          <div class="trig-wrapper" data-ix="fade-from-right">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/5345df6cf346cf51750004a8_eff-display.png"
-              width="129"
-              alt="5345df6cf346cf51750004a8_eff-display.png"
-            />
-            <h3 class="trigger-heading">Display Property</h3>
-            <p class="no-padding">
-              Switch your element's display to block, inline-block or inline.
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-right">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/5345df96ab99f04d280004d8_eff-delay.png"
-              width="22"
-              alt="5345df96ab99f04d280004d8_eff-delay.png"
-            />
-            <h3 class="trigger-heading">Duration</h3>
-            <p class="no-padding">
-              Add delays and alter durations of individual animation steps.
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-right">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534c621d4814c6345800064d_eff-transition.png"
-              width="58"
-              alt="534c621d4814c6345800064d_eff-transition.png"
-            />
-            <h3 class="trigger-heading">Transitions</h3>
-            <p class="no-padding">
-              Add unique transitions at any step of your interaction.
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-right">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/534c637c4814c63458000659_eff-loop.png"
-              width="37"
-              alt="534c637c4814c63458000659_eff-loop.png"
-            />
-            <h3 class="trigger-heading">Loop</h3>
-            <p class="no-padding">
-              Make your animation steps repeat until the end of time.
-            </p>
-          </div>
-          <div class="trig-wrapper" data-ix="fade-from-right">
-            <img
-              class="trigg-icon"
-              src="http://uploads.webflow.com/5317d67d660658b254000454/5345dfb4ab99f04d280004da_eff-classes.png"
-              width="98"
-              alt="5345dfb4ab99f04d280004da_eff-classes.png"
-            />
-            <h3 class="trigger-heading">
-              <span>Add/Remove Classes</span>
-              <span class="light-grey-text">Coming Later</span>
-            </h3>
-            <p class="no-padding">
-              Change the whole look and feel with any trigger.
-            </p>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18"></path>
+                <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+                <path d="M19 7V5a2 2 0 0 0-2-2h-2"></path>
+                <path d="M13 3h-2"></path>
+                <path d="M13 21v-9a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v9"></path>
+                <path d="M21 21v-14a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v14"></path>
+              </svg>
+            </div>
+            <div class="stat-number">4</div>
+            <div class="stat-description">Major Geological Eras</div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="section lightgrey videos" id="videos">
-    <div class="w-container">
-      <h2>how-to Videos</h2>
-      <div class="w-row">
-        <div class="w-col w-col-6 video-wrapper">
-          <a
-            class="w-inline-block video-link _0"
-            href="/fade-in-navbar-video"
-            data-ix="circle-play-animation"
+    </section>
+
+    <!-- Interactive Timeline -->
+    <section id="timeline-section" class="timeline-section">
+      <div class="container">
+        <div class="timeline-controls">
+          <button 
+            v-for="era in eras" 
+            :key="era.id" 
+            @click="selectEra(era.id)"
+            :class="['era-button', selectedEra === era.id ? 'active' : '']"
           >
-            <div class="w-clearfix circle-play _0" data-ix="play-buttons">
-              <div class="play-arrow _0"></div>
-            </div>
-            <h3 class="video-title">Fade in nav by scrolling</h3>
-            <p class="video-title time">3 Minutes</p>
-          </a>
+            {{ era.name }}
+          </button>
         </div>
-        <div class="w-col w-col-6 video-wrapper">
-          <a
-            class="w-inline-block video-link _1"
-            href="/staggered-scroll-trigger-video"
-            data-ix="circle-play-animation"
-          >
-            <div class="w-clearfix circle-play _1" data-ix="play-buttons">
-              <div class="play-arrow _1"></div>
+        
+        <div class="timeline-container">
+          <div class="timeline-scale">
+            <div class="scale-marker" v-for="marker in timelineMarkers" :key="marker.year">
+              <div class="marker-line"></div>
+              <div class="marker-label">{{ marker.label }}</div>
             </div>
-            <h3 class="video-title">Staggered scroll interaction</h3>
-            <p class="video-title time">3 Minutes</p>
-          </a>
-        </div>
-      </div>
-      <div class="w-row">
-        <div class="w-col w-col-6 video-wrapper">
-          <a
-            class="w-inline-block video-link _2"
-            href="/staggered-load-trigger-video"
-            data-ix="circle-play-animation"
-          >
-            <div class="w-clearfix circle-play _2" data-ix="play-buttons">
-              <div class="play-arrow _2"></div>
+          </div>
+          
+          <div class="timeline-visual">
+            <div 
+              v-for="era in eras" 
+              :key="era.id"
+              :class="['era-block', selectedEra === era.id ? 'active' : '']"
+              :style="{ width: calculateEraWidth(era), backgroundColor: era.color }"
+              @click="selectEra(era.id)"
+            >
+              <div class="era-name">{{ era.name }}</div>
             </div>
-            <h3 class="video-title">Staggered load animation</h3>
-            <p class="video-title time">3 Minutes</p>
-          </a>
-        </div>
-        <div class="w-col w-col-6 video-wrapper">
-          <a
-            class="w-inline-block video-link _3"
-            href="/click-to-show-content-video"
-            data-ix="circle-play-animation"
-          >
-            <div class="w-clearfix circle-play _3" data-ix="play-buttons">
-              <div class="play-arrow _3"></div>
-            </div>
-            <h3 class="video-title">Click trigger to show/hide object</h3>
-            <p class="video-title time">3 Minutes</p>
-          </a>
-        </div>
-      </div>
-      <div class="w-row">
-        <div class="w-col w-col-6 video-wrapper">
-          <a
-            class="w-inline-block video-link _4"
-            href="/basic-hover-interaction-video"
-            data-ix="circle-play-animation"
-          >
-            <div class="w-clearfix circle-play _4" data-ix="play-buttons">
-              <div class="play-arrow _4"></div>
-            </div>
-            <h3 class="video-title">Basic hover interaction</h3>
-            <p class="video-title time">2 Minutes</p>
-          </a>
-        </div>
-        <div class="w-col w-col-6">
-          <a
-            class="w-inline-block video-link"
-            href="http://tutorials.webflow.com"
-            target="_blank"
-            data-ix="circle-play-animation"
-          >
-            <div class="w-clearfix circle-play" data-ix="play-buttons">
-              <div class="bars-group">
-                <div class="bar-icon"></div>
-                <div class="bar-icon"></div>
-                <div class="bar-icon"></div>
+          </div>
+          
+          <!-- Era Details with Transition -->
+          <Transition name="scale" mode="out-in">
+            <div class="era-details" v-if="currentEra" key="era-details">
+              <div class="era-header">
+                <h3>{{ currentEra.name }} <span class="era-period">{{ currentEra.period }}</span></h3>
+                <p class="era-description">{{ currentEra.description }}</p>
+              </div>
+              
+              <div class="era-content">
+                <div class="era-species">
+                  <h4>Notable Species</h4>
+                  <TransitionGroup name="scale" tag="div" class="species-grid">
+                    <div class="species-card" v-for="species in currentEra.species" :key="species.id">
+                      <div class="species-image">
+                        <img :src="species.image" :alt="species.name">
+                      </div>
+                      <div class="species-info">
+                        <h5>{{ species.name }}</h5>
+                        <p class="species-scientific-name">{{ species.scientificName }}</p>
+                        <p class="species-description">{{ species.description }}</p>
+                      </div>
+                    </div>
+                  </TransitionGroup>
+                </div>
+                
+                <div class="era-events">
+                  <h4>Key Environmental Events</h4>
+                  <TransitionGroup name="scale" tag="div" class="events-timeline">
+                    <div class="event-item" v-for="event in currentEra.events" :key="event.id">
+                      <div class="event-time">{{ event.time }}</div>
+                      <div class="event-content">
+                        <h5>{{ event.title }}</h5>
+                        <p>{{ event.description }}</p>
+                      </div>
+                    </div>
+                  </TransitionGroup>
+                </div>
               </div>
             </div>
-            <h3 class="video-title">All Webflow Video Tutorials</h3>
-            <p class="video-title time">
-              Tutorials videos to help you with Webflow
-            </p>
-          </a>
+          </Transition>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="section accent light">
-    <div class="w-container share-wrapper">
-      <div class="w-row">
-        <!-- <div class="w-col w-col-6 right-border">
-                    <h2 class="footer-heading">Spread the Word</h2>
-                    <p class="footer-paragraph">Share it with some friends.</p>
-                    <div class="social-wrapper">
-                        <div class="w-widget w-widget-facebook social-big">
-                            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Finteractions.webflow.com%2F&amp;layout=box_count&amp;locale=en_US&amp;action=like&amp;show_faces=false&amp;share=false" scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 55px; height: 65px;"></iframe>
-                        </div>
-                        <div class="w-widget w-widget-twitter social-big twitter">
-                            <iframe src="//platform.twitter.com/widgets/tweet_button.html#url=http%3A%2F%2Finteractions.webflow.com%2F&amp;counturl=interactions.webflow.com%2F&amp;text=Woah%2C%20you%20can%20now%20create%20website%20interactions%20without%20JavaScript%20or%20jQuery%20in%20%40webflowapp%20-%20You%20should%20check%20out%20&amp;count=vertical&amp;size=m&amp;dnt=true" scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 55px; height: 62px;"></iframe>
-                        </div>
-                        <div class="w-widget w-widget-gplus social-big">
-                            <div class="g-plusone" data-href="http://interactions.webflow.com/" data-size="tall" data-annotation="bubble" data-width="120" data-recommendations="false" id="___plusone_0" style="width: 50px; height: 60px;"></div>
-                        </div>
-                    </div>
-                </div> -->
-        <div class="w-col">
-          <h2 class="footer-heading">Start Learn</h2>
-          <p class="footer-paragraph">
-            To understand the things on this planet.
-          </p>
-          <a class="cta-button sign-up" href="/time">Get started</a>
+    <!-- Biodiversity Importance -->
+    <section class="biodiversity-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Biodiversity Matters</h2>
+          <p>Understanding Earth's biological history helps us appreciate the importance of preserving biodiversity today.</p>
+        </div>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3>Ecosystem Stability</h3>
+            <p>Diverse ecosystems are more resilient to environmental changes and can better recover from disturbances.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
+              </svg>
+            </div>
+            <h3>Human Health</h3>
+            <p>Biodiversity provides essential resources for medicine, nutrition, and clean air and water.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Climate Regulation</h3>
+            <p>Diverse ecosystems help regulate climate by storing carbon and mitigating extreme weather events.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3>Scientific Knowledge</h3>
+            <p>Studying biodiversity provides insights into evolution, adaptation, and the development of new technologies.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="w-clearfix sidebar" data-ix="sidebar-initial-appearance">
-    <h3 class="white-heading">This is a Sidebar</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae
-      erat.&nbsp;
-    </p>
-    <a class="cta-button ex four close" href="#" data-ix="hide-sidebar"
-      >✕ &nbsp;Hide Sidebar</a
-    >
-    <div
-      class="w-hidden-medium w-hidden-small w-hidden-tiny note-text ex close"
-    >
-      Click to Close
-    </div>
-    <div class="w-hidden-main note-text ex close">Tap to Close</div>
-  </div>
-  <img
-    class="facebook-img"
-    src="http://uploads.webflow.com/5317d67d660658b254000454/534e682e6360a96139000147_social-image.jpg"
-    alt="534e682e6360a96139000147_social-image.jpg"
-    rel="image_src"
-  />
-  <div class="w-embed facebook-img">
-    <link
-      href="https://daks2k3a4ib2z.cloudfront.net/5317d67d660658b254000454/534e682e6360a96139000147_social-image.jpg"
-      rel="image_src"
-    />
+    <!-- Conservation Call to Action -->
+    <section class="conservation-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Join Our Conservation Efforts</h2>
+          <p>Help protect Earth's biodiversity for future generations. Learn about conservation initiatives and how you can contribute.</p>
+          <button class="primary-button">Get Involved</button>
+        </div>
+        <div class="cta-image">
+          <img src="../assets/2.svg" alt="Conservation efforts">
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Resources -->
+    <section class="resources-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Educational Resources</h2>
+          <p>Explore our collection of articles, videos, and interactive materials about Earth's biological history and conservation.</p>
+        </div>
+        
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-image">
+              <img src="../assets/2.svg" alt="Article">
+              <div class="resource-type">Article</div>
+            </div>
+            <div class="resource-content">
+              <h3>The Big Five Mass Extinctions</h3>
+              <p>Learn about the five major extinction events that dramatically altered life on Earth.</p>
+              <a href="#" class="resource-link">Read More →</a>
+            </div>
+          </div>
+          <div class="resource-card">
+            <div class="resource-image">
+              <img src="../assets/2.svg" alt="Video">
+              <div class="resource-type">Video</div>
+            </div>
+            <div class="resource-content">
+              <h3>Evolution of Mammals</h3>
+              <p>Watch how mammals evolved from small nocturnal creatures to diverse species across the globe.</p>
+              <a href="#" class="resource-link">Watch Now →</a>
+            </div>
+          </div>
+          <div class="resource-card">
+            <div class="resource-image">
+              <img src="../assets/2.svg" alt="Interactive">
+              <div class="resource-type">Interactive</div>
+            </div>
+            <div class="resource-content">
+              <h3>Climate Change Simulator</h3>
+              <p>Explore how different factors affect Earth's climate and biodiversity over time.</p>
+              <a href="#" class="resource-link">Try It →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest research, conservation news, and educational resources.</p>
+          </div>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" v-model="emailInput">
+            <button @click="subscribeNewsletter" class="subscribe-button">Subscribe</button>
+          </div>
+          <p class="privacy-note">We respect your privacy and will never share your information.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>EarthChronicle</h3>
+            <p>Exploring Earth's biological history and promoting conservation</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">Timeline</a></li>
+              <li><a href="#">Species Database</a></li>
+              <li><a href="#">Geological Eras</a></li>
+              <li><a href="#">Conservation</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Interactive Tools</a></li>
+              <li><a href="#">Educational Materials</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© {{ new Date().getFullYear() }} EarthChronicle. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
+
 <script setup>
-import { onMounted } from "vue";
+import { ref, computed, onMounted } from 'vue'
 
-onMounted(() => {
-  // 先加载 jQuery
-  const jqueryScript = document.createElement("script");
-  jqueryScript.src =
-    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js";
-  jqueryScript.type = "text/javascript";
-  document.body.appendChild(jqueryScript);
+// State
+const emailInput = ref('')
+const selectedEra = ref('cenozoic')
+const timelineMarkers = ref([
+  { year: 4600, label: '4.6 Billion Years Ago' },
+  { year: 3500, label: '3.5 Billion Years Ago' },
+  { year: 2500, label: '2.5 Billion Years Ago' },
+  { year: 541, label: '541 Million Years Ago' },
+  { year: 252, label: '252 Million Years Ago' },
+  { year: 66, label: '66 Million Years Ago' },
+  { year: 0, label: 'Present' }
+])
 
-  // jQuery 加载完成后再加载 webflow
-  jqueryScript.onload = () => {
-    const webflowScript = document.createElement("script");
-    webflowScript.src =
-      "https://daks2k3a4ib2z.cloudfront.net/5317d67d660658b254000454/js/webflow.js";
-    webflowScript.type = "text/javascript";
-    document.body.appendChild(webflowScript);
-  };
-});
+// Eras data
+const eras = ref([
+  {
+    id: 'precambrian',
+    name: 'Precambrian',
+    period: '4.6 billion - 541 million years ago',
+    color: '#8C6BB1',
+    startYear: 4600,
+    endYear: 541,
+    description: 'The Precambrian covers approximately 88% of Earth\'s history. It saw the formation of Earth, the emergence of continents, oceans, atmosphere, and the first life forms - simple, single-celled organisms that later evolved into more complex forms.',
+    species: [
+      {
+        id: 'stromatolites',
+        name: 'Stromatolites',
+        scientificName: 'Various cyanobacteria',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'Layered structures formed by colonies of photosynthetic cyanobacteria. They are among the oldest evidence of life on Earth, dating back over 3.5 billion years.'
+      },
+      {
+        id: 'ediacaran',
+        name: 'Ediacaran Biota',
+        scientificName: 'Various soft-bodied organisms',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'Mysterious soft-bodied organisms that appeared about 575 million years ago. They represent the first complex multicellular organisms in Earth\'s history.'
+      },
+      {
+        id: 'cloudina',
+        name: 'Cloudina',
+        scientificName: 'Cloudina hartmannae',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'One of the first animals to produce a mineralized skeleton, appearing around 550 million years ago. These small, tube-shaped fossils mark an important evolutionary milestone.'
+      }
+    ],
+    events: [
+      {
+        id: 'earth-formation',
+        time: '4.6 billion years ago',
+        title: 'Formation of Earth',
+        description: 'Earth formed from the solar nebula, a disk of gas and dust left over from the formation of the Sun.'
+      },
+      {
+        id: 'first-oceans',
+        time: '4.4 billion years ago',
+        title: 'First Oceans Form',
+        description: 'As Earth cooled, water vapor condensed to form the first oceans, creating environments where life could eventually emerge.'
+      },
+      {
+        id: 'first-life',
+        time: '~3.5 billion years ago',
+        title: 'First Life Appears',
+        description: 'Simple, single-celled prokaryotic organisms emerged, likely near hydrothermal vents in the ocean.'
+      },
+      {
+        id: 'oxygen-revolution',
+        time: '2.4-2.0 billion years ago',
+        title: 'Great Oxygenation Event',
+        description: 'Photosynthetic cyanobacteria produced oxygen as a waste product, gradually changing Earth\'s atmosphere and making it possible for aerobic life to evolve.'
+      },
+      {
+        id: 'multicellular',
+        time: '~1.5 billion years ago',
+        title: 'First Multicellular Organisms',
+        description: 'Cells began to cooperate and specialize, leading to the first simple multicellular organisms.'
+      }
+    ]
+  },
+  {
+    id: 'paleozoic',
+    name: 'Paleozoic',
+    period: '541-252 million years ago',
+    color: '#41AB5D',
+    startYear: 541,
+    endYear: 252,
+    description: 'The Paleozoic Era saw an explosion of life forms, including the first fish, land plants, insects, and reptiles. It began with the Cambrian Explosion, a rapid diversification of complex life, and ended with the largest mass extinction in Earth\'s history.',
+    species: [
+      {
+        id: 'trilobite',
+        name: 'Trilobite',
+        scientificName: 'Phylum Trilobita',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'Marine arthropods that dominated the early Paleozoic seas. They were among the most successful and diverse groups of their time, with over 20,000 known species.'
+      },
+      {
+        id: 'dunkleosteus',
+        name: 'Dunkleosteus',
+        scientificName: 'Dunkleosteus terrelli',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'A massive armored fish from the late Devonian period, growing up to 6 meters long. It was one of the first vertebrate apex predators.'
+      },
+      {
+        id: 'meganeura',
+        name: 'Meganeura',
+        scientificName: 'Meganeura monyi',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'A giant dragonfly-like insect with a wingspan of up to 65 cm. It lived during the Carboniferous period when oxygen levels were much higher than today.'
+      },
+      {
+        id: 'dimetrodon',
+        name: 'Dimetrodon',
+        scientificName: 'Dimetrodon limbatus',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'Often mistaken for a dinosaur, this sail-backed reptile-like animal was actually more closely related to mammals. It lived during the Permian period.'
+      }
+    ],
+    events: [
+      {
+        id: 'cambrian-explosion',
+        time: '541-530 million years ago',
+        title: 'Cambrian Explosion',
+        description: 'A relatively short period when most major animal phyla appeared in the fossil record. Complex life diversified rapidly during this time.'
+      },
+      {
+        id: 'land-plants',
+        time: '~470 million years ago',
+        title: 'First Land Plants',
+        description: 'Simple plants like mosses and liverworts began to colonize the land, eventually leading to the development of forests.'
+      },
+      {
+        id: 'vertebrates-land',
+        time: '~375 million years ago',
+        title: 'Vertebrates Move to Land',
+        description: 'Fish evolved into tetrapods, four-limbed vertebrates that could venture onto land, leading to amphibians and eventually reptiles.'
+      },
+      {
+        id: 'coal-forests',
+        time: '360-300 million years ago',
+        title: 'Carboniferous Coal Forests',
+        description: 'Vast swamp forests covered much of the tropical land, eventually forming coal deposits. Oxygen levels reached their highest in Earth\'s history.'
+      },
+      {
+        id: 'permian-extinction',
+        time: '252 million years ago',
+        title: 'Permian-Triassic Extinction',
+        description: 'The largest mass extinction in Earth\'s history, wiping out about 96% of marine species and 70% of terrestrial vertebrate species. Possibly caused by massive volcanic eruptions in Siberia.'
+      }
+    ]
+  },
+  {
+    id: 'mesozoic',
+    name: 'Mesozoic',
+    period: '252-66 million years ago',
+    color: '#E6550D',
+    startYear: 252,
+    endYear: 66,
+    description: 'Often called the "Age of Dinosaurs," the Mesozoic Era saw the rise and fall of these iconic reptiles. It also witnessed the appearance of the first mammals, birds, and flowering plants, as well as the breakup of the supercontinent Pangaea.',
+    species: [
+      {
+        id: 'tyrannosaurus',
+        name: 'Tyrannosaurus Rex',
+        scientificName: 'Tyrannosaurus rex',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'One of the largest carnivorous dinosaurs, living at the end of the Cretaceous period. This apex predator could grow up to 12 meters long and had powerful jaws with bone-crushing teeth.'
+      },
+      {
+        id: 'stegosaurus',
+        name: 'Stegosaurus',
+        scientificName: 'Stegosaurus stenops',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'A large herbivorous dinosaur from the late Jurassic period, characterized by its distinctive plates along its back and spiked tail used for defense.'
+      },
+      {
+        id: 'archaeopteryx',
+        name: 'Archaeopteryx',
+        scientificName: 'Archaeopteryx lithographica',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'A transitional species between dinosaurs and birds, showing features of both groups. It lived during the late Jurassic period and provides important evidence for evolution.'
+      },
+      {
+        id: 'ichthyosaur',
+        name: 'Ichthyosaur',
+        scientificName: 'Order Ichthyosauria',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'Marine reptiles that evolved a fish-like body shape through convergent evolution. They were highly adapted to aquatic life and some species gave birth to live young in water.'
+      }
+    ],
+    events: [
+      {
+        id: 'pangaea-breakup',
+        time: '200-145 million years ago',
+        title: 'Breakup of Pangaea',
+        description: 'The supercontinent Pangaea began to fragment, eventually forming the continents we know today. This created new habitats and influenced evolution.'
+      },
+      {
+        id: 'first-mammals',
+        time: '~225 million years ago',
+        title: 'First Mammals Appear',
+        description: 'Small, nocturnal creatures evolved from reptile ancestors. They would remain relatively inconspicuous until after the dinosaurs\' extinction.'
+      },
+      {
+        id: 'first-birds',
+        time: '~150 million years ago',
+        title: 'First Birds Evolve',
+        description: 'Birds evolved from small theropod dinosaurs, with Archaeopteryx representing an early transitional form.'
+      },
+      {
+        id: 'flowering-plants',
+        time: '~130 million years ago',
+        title: 'Flowering Plants Emerge',
+        description: 'Angiosperms (flowering plants) appeared and rapidly diversified, eventually becoming the dominant plant group and forming a co-evolutionary relationship with many animal pollinators.'
+      },
+      {
+        id: 'kt-extinction',
+        time: '66 million years ago',
+        title: 'Cretaceous-Paleogene Extinction',
+        description: 'An asteroid impact in the Yucatan Peninsula caused a mass extinction that wiped out all non-avian dinosaurs and many other species, opening ecological niches for mammals to diversify.'
+      }
+    ]
+  },
+  {
+    id: 'cenozoic',
+    name: 'Cenozoic',
+    period: '66 million years ago - present',
+    color: '#3182BD',
+    startYear: 66,
+    endYear: 0,
+    description: 'The "Age of Mammals," the Cenozoic Era is characterized by the diversification of mammals, birds, and flowering plants following the extinction of the dinosaurs. It saw the evolution of primates, including humans, and dramatic climate changes including multiple ice ages.',
+    species: [
+      {
+        id: 'mammoth',
+        name: 'Woolly Mammoth',
+        scientificName: 'Mammuthus primigenius',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'Ice Age mammals related to modern elephants, adapted to cold environments with long fur and curved tusks. They went extinct only about 4,000 years ago.'
+      },
+      {
+        id: 'megalodon',
+        name: 'Megalodon',
+        scientificName: 'Otodus megalodon',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'The largest shark that ever lived, reaching lengths of up to 18 meters. This apex predator dominated the oceans from 23 to 3.6 million years ago.'
+      },
+      {
+        id: 'smilodon',
+        name: 'Saber-toothed Cat',
+        scientificName: 'Smilodon fatalis',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'An iconic Ice Age predator with elongated canine teeth. It hunted large herbivores in the Americas until its extinction about 10,000 years ago.'
+      },
+      {
+        id: 'homo',
+        name: 'Early Humans',
+        scientificName: 'Homo species',
+        image: '../assets/2.svg?height=200&width=200',
+        description: 'Various human species evolved in Africa and spread across the globe. Homo sapiens emerged around 300,000 years ago and eventually became the only surviving human species.'
+      }
+    ],
+    events: [
+      {
+        id: 'mammal-radiation',
+        time: '66-56 million years ago',
+        title: 'Mammalian Adaptive Radiation',
+        description: 'With dinosaurs extinct, mammals rapidly diversified to fill vacant ecological niches, evolving into many new forms and sizes.'
+      },
+      {
+        id: 'himalaya-formation',
+        time: '50-40 million years ago',
+        title: 'Formation of the Himalayas',
+        description: 'The collision of the Indian and Eurasian plates began forming the Himalayan mountain range, affecting global climate patterns.'
+      },
+      {
+        id: 'antarctica-ice',
+        time: '~34 million years ago',
+        title: 'Antarctic Ice Sheet Forms',
+        description: 'Antarctica became covered by an ice sheet as global temperatures cooled, marking a major shift toward our modern climate.'
+      },
+      {
+        id: 'grasslands-spread',
+        time: '~25 million years ago',
+        title: 'Spread of Grasslands',
+        description: 'Grasslands expanded globally, leading to the evolution of grazing animals and new ecosystems.'
+      },
+      {
+        id: 'ice-ages',
+        time: '2.6 million - 11,700 years ago',
+        title: 'Pleistocene Ice Ages',
+        description: 'A series of glacial periods when ice sheets repeatedly advanced and retreated across North America and Eurasia, driving migrations and extinctions.'
+      },
+      {
+        id: 'human-agriculture',
+        time: '~12,000 years ago',
+        title: 'Development of Agriculture',
+        description: 'Humans began domesticating plants and animals, leading to settled civilizations and eventually transforming much of Earth\'s surface.'
+      },
+      {
+        id: 'anthropocene',
+        time: 'Present',
+        title: 'The Anthropocene',
+        description: 'The current geological age, informally defined as the period during which human activity has significantly impacted Earth\'s geology and ecosystems.'
+      }
+    ]
+  }
+])
+
+// Computed properties
+const currentEra = computed(() => {
+  return eras.value.find(era => era.id === selectedEra.value)
+})
+
+// Methods
+const calculateEraWidth = (era) => {
+  const totalYears = 4600
+  const eraSpan = era.startYear - era.endYear
+  const percentage = (eraSpan / totalYears) * 100
+  return `${percentage}%`
+}
+
+const selectEra = (eraId) => {
+  selectedEra.value = eraId
+}
+
+const scrollToTimeline = () => {
+  document.getElementById('timeline-section').scrollIntoView({ behavior: 'smooth' })
+}
+
+const subscribeNewsletter = () => {
+  if (emailInput.value && emailInput.value.includes('@')) {
+    alert(`Thank you for subscribing with ${emailInput.value}!`)
+    emailInput.value = ''
+  } else {
+    alert('Please enter a valid email address')
+  }
+}
 </script>
-<style scoped>
-@media screen and (min-width: 1200px) {
-  .w-container {
-    max-width: 1170px;
-  }
 
-  .works-row {
-    width: auto;
-  }
-  .works-column {
-    width: 25%;
-  }
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-[hidden],
-template {
-  display: none;
-}
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
-a {
-  background: transparent;
-}
-a:focus {
-  outline: thin dotted;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-b,
-strong {
-  font-weight: bold;
-}
-dfn {
-  font-style: italic;
-}
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-mark {
-  background: #ff0;
-  color: #000;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-pre {
-  white-space: pre-wrap;
-}
-q {
-  quotes: "\201C""\201D""\2018""\2019";
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-img {
-  border: 0;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-figure {
-  margin: 0;
-}
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-legend {
-  border: 0;
-  padding: 0;
-}
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-}
-button,
-input {
-  line-height: normal;
-}
-button,
-select {
-  text-transform: none;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+<style>
+/* Base Styles */
+:root {
+  --primary-color: #2e7d32;
+  --primary-light: #60ad5e;
+  --primary-dark: #005005;
+  --secondary-color: #1565c0;
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --background-light: #f5f5f5;
+  --background-white: #ffffff;
+  --accent-color: #ffc107;
+  
+  /* Era colors */
+  --precambrian-color: #8C6BB1;
+  --paleozoic-color: #41AB5D;
+  --mesozoic-color: #E6550D;
+  --cenozoic-color: #3182BD;
+  
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
 }
 
-/* ==========================================================================
-  Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
-  ========================================================================== */
-@font-face {
-  font-family: "webflow-icons";
-  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg6SAy0AAAC8AAAAYGNtYXAaVcxaAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5ZgscV1gAAAFwAAABhGhlYWQCkFKvAAAC9AAAADZoaGVhB0MDyQAAAywAAAAkaG10eBIAA10AAANQAAAAIGxvY2EBMADyAAADcAAAABJtYXhwAAwATQAAA4QAAAAgbmFtZWTuiIAAAAOkAAABe3Bvc3QAAwAAAAAFIAAAACAAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADmAwPA/8D/wAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIOYD//3//wAAAAAAIOYA//3//wAB/+MaBAADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQEgAAADIAOAAAUAAAkBBwkBFwMg/kBAAYD+gEABwAHAQP6A/oBAAAEA4AAAAuADgAAFAAATARcJAQfgAcBA/oABgEABwAHAQP6A/oBAAAADAMAA4ANAAsAAGAAxAEoAAAEhIg4CHQEUHgIzITI+Aj0BNC4CIxUhIg4CHQEUHgIzITI+Aj0BNC4CIxUhIg4CHQEUHgIzITI+Aj0BNC4CIwMg/cAHCwkFBQkLBwJABwsJBQUJCwf9wAcLCQUFCQsHAkAHCwkFBQkLB/3ABwsJBQUJCwcCQAcLCQUFCQsHAsAFCQsHIAcLCQUFCQsHIAcLCQXABQkLByAHCwkFBQkLByAHCwkFwAUJCwcgBwsJBQUJCwcgBwsJBQAAAAABAJ0AtAOBApUABQAACQIHCQEDJP7r/upcAXEBcgKU/usBFFv+egGGAAAAAAEAAAABAADSLAJOXw889QALBAAAAAAAz/iHGQAAAADP+IcZAAAAAAOBA4AAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA4EAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAABAABIAQAAOAEAADABAAAnQAAAAAACgAUAB4AMgBGAKwAwgAAAAEAAAAIAEsAAwAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAaAAAAAQAAAAAAAgAOAHEAAQAAAAAAAwAaADAAAQAAAAAABAAaAH8AAQAAAAAABQAWABoAAQAAAAAABgANAEoAAQAAAAAACgA0AJkAAwABBAkAAQAaAAAAAwABBAkAAgAOAHEAAwABBAkAAwAaADAAAwABBAkABAAaAH8AAwABBAkABQAWABoAAwABBAkABgAaAFcAAwABBAkACgA0AJkAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4AcwBWAGUAcgBzAGkAbwBuACAAMQAuADAAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4Ac3dlYmZsb3ctaWNvbnMAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4AcwBSAGUAZwB1AGwAYQByAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
-      format("truetype"),
-    url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVcAAoAAAAABRQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAZMAAAGTuzUomU9TLzIAAAKIAAAAYAAAAGAOkgMtY21hcAAAAugAAABMAAAATBpVzFpnYXNwAAADNAAAAAgAAAAIAAAAEGhlYWQAAAM8AAAANgAAADYCkFKvaGhlYQAAA3QAAAAkAAAAJAdDA8lobXR4AAADmAAAACAAAAAgEgADXW1heHAAAAO4AAAABgAAAAYACFAAbmFtZQAAA8AAAAF7AAABe2TuiIBwb3N0AAAFPAAAACAAAAAgAAMAAAEABAQAAQEBDndlYmZsb3ctaWNvbnMAAQIAAQA6+BwC+BsD+BgEHgoACXf/i4seCgAJd/+LiwwHi0v6lPpUBR0AAACaDx0AAACfER0AAAAJHQAAAYoSAAkBAQ4bHR8iJywxNndlYmZsb3ctaWNvbnN3ZWJmbG93LWljb25zdTB1MXUyMHVFNjAwdUU2MDF1RTYwMnVFNjAzAAACAYkABgAIAQEEBwoNJDvH4P6UDv6UDv6UDvyUDvm0+FQV/FT4VEtL+BT8FPwU/BTLSwUO93T4VBX4VPhUy0v8FPwU+BT8FEtLBQ75tPlUFfzUiwV5i319i3kIi2sFi3mZfZ2LCPjUiwWdi5mZi50Ii6sFi519mXmLCIv7VBX81IsFeYt9fYt5CItrBYt5mX2diwj41IsFnYuZmYudCIurBYudfZl5iwiL+1QV/NSLBXmLfX2LeQiLawWLeZl9nYsI+NSLBZ2LmZmLnQiLqwWLnX2ZeYsIDvm4+SkV+6n7qvuq96ovLvgG/Bj4BvgYBQ76lBT6lBWLDAoAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA5gMDwP/A/8ADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDmA//9//8AAAAAACDmAP/9//8AAf/jGgQAAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAC1pQTjXw889QALBAAAAAAAz/iHGQAAAADP+IcZAAAAAAOBA4AAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA4EAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAABAABIAQAAOAEAADABAAAnQAAUAAACAAAAAAADgCuAAEAAAAAAAEAGgAAAAEAAAAAAAIADgBxAAEAAAAAAAMAGgAwAAEAAAAAAAQAGgB/AAEAAAAAAAUAFgAaAAEAAAAAAAYADQBKAAEAAAAAAAoANACZAAMAAQQJAAEAGgAAAAMAAQQJAAIADgBxAAMAAQQJAAMAGgAwAAMAAQQJAAQAGgB/AAMAAQQJAAUAFgAaAAMAAQQJAAYAGgBXAAMAAQQJAAoANACZAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMAVgBlAHIAcwBpAG8AbgAgADEALgAwAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHN3ZWJmbG93LWljb25zAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMAUgBlAGcAdQBsAGEAcgB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==)
-      format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-[class^="w-icon-"],
-[class*=" w-icon-"] {
-  font-family: "webflow-icons";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.w-icon-slider-right:before {
-  content: "\e600";
-}
-.w-icon-slider-left:before {
-  content: "\e601";
-}
-.w-icon-nav-menu:before {
-  content: "\e602";
-}
-.w-icon-arrow-down:before,
-.w-icon-dropdown-toggle:before {
-  content: "\e603";
-}
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-}
+
 body {
-  margin: 0;
-  min-height: 100%;
-  background-color: #fff;
-  color: #333;
-}
-img {
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
-}
-html.w-mod-touch * {
-  background-attachment: scroll !important;
-}
-a:focus {
-  outline: 0;
-}
-.w-block {
-  display: block;
-}
-.w-inline-block {
-  max-width: 100%;
-  display: inline-block;
-}
-.w-clearfix:before,
-.w-clearfix:after {
-  content: " ";
-  display: table;
-}
-.w-clearfix:after {
-  clear: both;
-}
-.w-hidden {
-  display: none;
-}
-html[w-dynpage] [w-cloak] {
-  color: transparent !important;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-p {
-  margin: 0;
-}
-blockquote {
-  margin: 0;
-}
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.w-list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-.w-embed:before,
-.w-embed:after {
-  content: " ";
-  display: table;
-}
-.w-embed:after {
-  clear: both;
-}
-.w-video {
-  width: 100%;
-  position: relative;
-  padding: 0;
-}
-.w-video iframe,
-.w-video object,
-.w-video embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-.w-form {
-  margin: 0 0 15px;
-}
-.w-form-done {
-  display: none;
-  padding: 10px;
-  background-color: #ddd;
-}
-.w-form-fail {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #ffdede;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-.w-input,
-.w-select {
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-.w-input:-moz-placeholder,
-.w-select:-moz-placeholder {
-  color: #999;
-}
-.w-input::-moz-placeholder,
-.w-select::-moz-placeholder {
-  color: #999;
-  opacity: 1;
-}
-.w-input:-ms-input-placeholder,
-.w-select:-ms-input-placeholder {
-  color: #999;
-}
-.w-input::-webkit-input-placeholder,
-.w-select::-webkit-input-placeholder {
-  color: #999;
-}
-.w-input:focus,
-.w-select:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
-}
-.w-input[disabled],
-.w-select[disabled],
-.w-input[readonly],
-.w-select[readonly],
-fieldset[disabled] .w-input,
-fieldset[disabled] .w-select {
-  cursor: not-allowed;
-  background-color: #eee;
-}
-textarea.w-input,
-textarea.w-select {
-  height: auto;
-}
-.w-select[multiple] {
-  height: auto;
-}
-.w-button {
-  display: inline-block;
-  padding: 12px;
-  background-color: black;
-  color: white;
-  border: 0;
-  line-height: inherit;
-}
-.w-form-label {
-  display: inline-block;
-  cursor: pointer;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-.w-checkbox,
-.w-radio {
-  display: block;
-  margin-bottom: 5px;
-  padding-left: 20px;
-}
-.w-checkbox:before,
-.w-radio:before,
-.w-checkbox:after,
-.w-radio:after {
-  content: " ";
-  display: table;
-}
-.w-checkbox:after,
-.w-radio:after {
-  clear: both;
-}
-.w-checkbox-input,
-.w-radio-input {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  line-height: normal;
-  float: left;
-  margin-left: -20px;
-}
-.w-radio-input {
-  margin-top: 3px;
-}
-.w-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 940px;
-}
-.w-container:before,
-.w-container:after {
-  content: " ";
-  display: table;
-}
-.w-container:after {
-  clear: both;
-}
-.w-container .w-row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-.w-row:before,
-.w-row:after {
-  content: " ";
-  display: table;
-}
-.w-row:after {
-  clear: both;
-}
-.w-row .w-row {
-  margin-left: 0;
-  margin-right: 0;
-}
-.w-col {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.w-col .w-col {
-  padding-left: 0;
-  padding-right: 0;
-}
-.w-col-1 {
-  width: 8.33333333%;
-}
-.w-col-2 {
-  width: 16.66666667%;
-}
-.w-col-3 {
-  width: 25%;
-}
-.w-col-4 {
-  width: 33.33333333%;
-}
-.w-col-5 {
-  width: 41.66666667%;
-}
-.w-col-6 {
-  width: 50%;
-}
-.w-col-7 {
-  width: 58.33333333%;
-}
-.w-col-8 {
-  width: 66.66666667%;
-}
-.w-col-9 {
-  width: 75%;
-}
-.w-col-10 {
-  width: 83.33333333%;
-}
-.w-col-11 {
-  width: 91.66666667%;
-}
-.w-col-12 {
-  width: 100%;
-}
-.w-col-push-1 {
-  left: 8.33333333%;
-}
-.w-col-push-2 {
-  left: 16.66666667%;
-}
-.w-col-push-3 {
-  left: 25%;
-}
-.w-col-push-4 {
-  left: 33.33333333%;
-}
-.w-col-push-5 {
-  left: 41.66666667%;
-}
-.w-col-push-6 {
-  left: 50%;
-}
-.w-col-push-7 {
-  left: 58.33333333%;
-}
-.w-col-push-8 {
-  left: 66.66666667%;
-}
-.w-col-push-9 {
-  left: 75%;
-}
-.w-col-push-10 {
-  left: 83.33333333%;
-}
-.w-col-push-11 {
-  left: 91.66666667%;
-}
-.w-col-pull-1 {
-  right: 8.33333333%;
-}
-.w-col-pull-2 {
-  right: 16.66666667%;
-}
-.w-col-pull-3 {
-  right: 25%;
-}
-.w-col-pull-4 {
-  right: 33.33333333%;
-}
-.w-col-pull-5 {
-  right: 41.66666667%;
-}
-.w-col-pull-6 {
-  right: 50%;
-}
-.w-col-pull-7 {
-  right: 58.33333333%;
-}
-.w-col-pull-8 {
-  right: 66.66666667%;
-}
-.w-col-pull-9 {
-  right: 75%;
-}
-.w-col-pull-10 {
-  right: 83.33333333%;
-}
-.w-col-pull-11 {
-  right: 91.66666667%;
-}
-.w-col-offset-1 {
-  margin-left: 8.33333333%;
-}
-.w-col-offset-2 {
-  margin-left: 16.66666667%;
-}
-.w-col-offset-3 {
-  margin-left: 25%;
-}
-.w-col-offset-4 {
-  margin-left: 33.33333333%;
-}
-.w-col-offset-5 {
-  margin-left: 41.66666667%;
-}
-.w-col-offset-6 {
-  margin-left: 50%;
-}
-.w-col-offset-7 {
-  margin-left: 58.33333333%;
-}
-.w-col-offset-8 {
-  margin-left: 66.66666667%;
-}
-.w-col-offset-9 {
-  margin-left: 75%;
-}
-.w-col-offset-10 {
-  margin-left: 83.33333333%;
-}
-.w-col-offset-11 {
-  margin-left: 91.66666667%;
-}
-.w-hidden-main {
-  display: none !important;
-}
-@media screen and (max-width: 991px) {
-  .w-container {
-    max-width: 728px;
-  }
-  .w-hidden-main {
-    display: inherit !important;
-  }
-  .w-hidden-medium {
-    display: none !important;
-  }
-  .w-col-medium-1 {
-    width: 8.33333333%;
-  }
-  .w-col-medium-2 {
-    width: 16.66666667%;
-  }
-  .w-col-medium-3 {
-    width: 25%;
-  }
-  .w-col-medium-4 {
-    width: 33.33333333%;
-  }
-  .w-col-medium-5 {
-    width: 41.66666667%;
-  }
-  .w-col-medium-6 {
-    width: 50%;
-  }
-  .w-col-medium-7 {
-    width: 58.33333333%;
-  }
-  .w-col-medium-8 {
-    width: 66.66666667%;
-  }
-  .w-col-medium-9 {
-    width: 75%;
-  }
-  .w-col-medium-10 {
-    width: 83.33333333%;
-  }
-  .w-col-medium-11 {
-    width: 91.66666667%;
-  }
-  .w-col-medium-12 {
-    width: 100%;
-  }
-  .w-col-medium-push-1 {
-    left: 8.33333333%;
-  }
-  .w-col-medium-push-2 {
-    left: 16.66666667%;
-  }
-  .w-col-medium-push-3 {
-    left: 25%;
-  }
-  .w-col-medium-push-4 {
-    left: 33.33333333%;
-  }
-  .w-col-medium-push-5 {
-    left: 41.66666667%;
-  }
-  .w-col-medium-push-6 {
-    left: 50%;
-  }
-  .w-col-medium-push-7 {
-    left: 58.33333333%;
-  }
-  .w-col-medium-push-8 {
-    left: 66.66666667%;
-  }
-  .w-col-medium-push-9 {
-    left: 75%;
-  }
-  .w-col-medium-push-10 {
-    left: 83.33333333%;
-  }
-  .w-col-medium-push-11 {
-    left: 91.66666667%;
-  }
-  .w-col-medium-pull-1 {
-    right: 8.33333333%;
-  }
-  .w-col-medium-pull-2 {
-    right: 16.66666667%;
-  }
-  .w-col-medium-pull-3 {
-    right: 25%;
-  }
-  .w-col-medium-pull-4 {
-    right: 33.33333333%;
-  }
-  .w-col-medium-pull-5 {
-    right: 41.66666667%;
-  }
-  .w-col-medium-pull-6 {
-    right: 50%;
-  }
-  .w-col-medium-pull-7 {
-    right: 58.33333333%;
-  }
-  .w-col-medium-pull-8 {
-    right: 66.66666667%;
-  }
-  .w-col-medium-pull-9 {
-    right: 75%;
-  }
-  .w-col-medium-pull-10 {
-    right: 83.33333333%;
-  }
-  .w-col-medium-pull-11 {
-    right: 91.66666667%;
-  }
-  .w-col-medium-offset-1 {
-    margin-left: 8.33333333%;
-  }
-  .w-col-medium-offset-2 {
-    margin-left: 16.66666667%;
-  }
-  .w-col-medium-offset-3 {
-    margin-left: 25%;
-  }
-  .w-col-medium-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .w-col-medium-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .w-col-medium-offset-6 {
-    margin-left: 50%;
-  }
-  .w-col-medium-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .w-col-medium-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .w-col-medium-offset-9 {
-    margin-left: 75%;
-  }
-  .w-col-medium-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .w-col-medium-offset-11 {
-    margin-left: 91.66666667%;
-  }
-  .w-col-stack {
-    width: 100%;
-    left: auto;
-    right: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .w-hidden-main {
-    display: inherit !important;
-  }
-  .w-hidden-medium {
-    display: inherit !important;
-  }
-  .w-hidden-small {
-    display: none !important;
-  }
-  .w-row,
-  .w-container .w-row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .w-col {
-    width: 100%;
-    left: auto;
-    right: auto;
-  }
-  .w-col-small-1 {
-    width: 8.33333333%;
-  }
-  .w-col-small-2 {
-    width: 16.66666667%;
-  }
-  .w-col-small-3 {
-    width: 25%;
-  }
-  .w-col-small-4 {
-    width: 33.33333333%;
-  }
-  .w-col-small-5 {
-    width: 41.66666667%;
-  }
-  .w-col-small-6 {
-    width: 50%;
-  }
-  .w-col-small-7 {
-    width: 58.33333333%;
-  }
-  .w-col-small-8 {
-    width: 66.66666667%;
-  }
-  .w-col-small-9 {
-    width: 75%;
-  }
-  .w-col-small-10 {
-    width: 83.33333333%;
-  }
-  .w-col-small-11 {
-    width: 91.66666667%;
-  }
-  .w-col-small-12 {
-    width: 100%;
-  }
-  .w-col-small-push-1 {
-    left: 8.33333333%;
-  }
-  .w-col-small-push-2 {
-    left: 16.66666667%;
-  }
-  .w-col-small-push-3 {
-    left: 25%;
-  }
-  .w-col-small-push-4 {
-    left: 33.33333333%;
-  }
-  .w-col-small-push-5 {
-    left: 41.66666667%;
-  }
-  .w-col-small-push-6 {
-    left: 50%;
-  }
-  .w-col-small-push-7 {
-    left: 58.33333333%;
-  }
-  .w-col-small-push-8 {
-    left: 66.66666667%;
-  }
-  .w-col-small-push-9 {
-    left: 75%;
-  }
-  .w-col-small-push-10 {
-    left: 83.33333333%;
-  }
-  .w-col-small-push-11 {
-    left: 91.66666667%;
-  }
-  .w-col-small-pull-1 {
-    right: 8.33333333%;
-  }
-  .w-col-small-pull-2 {
-    right: 16.66666667%;
-  }
-  .w-col-small-pull-3 {
-    right: 25%;
-  }
-  .w-col-small-pull-4 {
-    right: 33.33333333%;
-  }
-  .w-col-small-pull-5 {
-    right: 41.66666667%;
-  }
-  .w-col-small-pull-6 {
-    right: 50%;
-  }
-  .w-col-small-pull-7 {
-    right: 58.33333333%;
-  }
-  .w-col-small-pull-8 {
-    right: 66.66666667%;
-  }
-  .w-col-small-pull-9 {
-    right: 75%;
-  }
-  .w-col-small-pull-10 {
-    right: 83.33333333%;
-  }
-  .w-col-small-pull-11 {
-    right: 91.66666667%;
-  }
-  .w-col-small-offset-1 {
-    margin-left: 8.33333333%;
-  }
-  .w-col-small-offset-2 {
-    margin-left: 16.66666667%;
-  }
-  .w-col-small-offset-3 {
-    margin-left: 25%;
-  }
-  .w-col-small-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .w-col-small-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .w-col-small-offset-6 {
-    margin-left: 50%;
-  }
-  .w-col-small-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .w-col-small-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .w-col-small-offset-9 {
-    margin-left: 75%;
-  }
-  .w-col-small-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .w-col-small-offset-11 {
-    margin-left: 91.66666667%;
-  }
-}
-@media screen and (max-width: 479px) {
-  .w-container {
-    max-width: none;
-  }
-  .w-hidden-main {
-    display: inherit !important;
-  }
-  .w-hidden-medium {
-    display: inherit !important;
-  }
-  .w-hidden-small {
-    display: inherit !important;
-  }
-  .w-hidden-tiny {
-    display: none !important;
-  }
-  .w-col {
-    width: 100%;
-  }
-  .w-col-tiny-1 {
-    width: 8.33333333%;
-  }
-  .w-col-tiny-2 {
-    width: 16.66666667%;
-  }
-  .w-col-tiny-3 {
-    width: 25%;
-  }
-  .w-col-tiny-4 {
-    width: 33.33333333%;
-  }
-  .w-col-tiny-5 {
-    width: 41.66666667%;
-  }
-  .w-col-tiny-6 {
-    width: 50%;
-  }
-  .w-col-tiny-7 {
-    width: 58.33333333%;
-  }
-  .w-col-tiny-8 {
-    width: 66.66666667%;
-  }
-  .w-col-tiny-9 {
-    width: 75%;
-  }
-  .w-col-tiny-10 {
-    width: 83.33333333%;
-  }
-  .w-col-tiny-11 {
-    width: 91.66666667%;
-  }
-  .w-col-tiny-12 {
-    width: 100%;
-  }
-  .w-col-tiny-push-1 {
-    left: 8.33333333%;
-  }
-  .w-col-tiny-push-2 {
-    left: 16.66666667%;
-  }
-  .w-col-tiny-push-3 {
-    left: 25%;
-  }
-  .w-col-tiny-push-4 {
-    left: 33.33333333%;
-  }
-  .w-col-tiny-push-5 {
-    left: 41.66666667%;
-  }
-  .w-col-tiny-push-6 {
-    left: 50%;
-  }
-  .w-col-tiny-push-7 {
-    left: 58.33333333%;
-  }
-  .w-col-tiny-push-8 {
-    left: 66.66666667%;
-  }
-  .w-col-tiny-push-9 {
-    left: 75%;
-  }
-  .w-col-tiny-push-10 {
-    left: 83.33333333%;
-  }
-  .w-col-tiny-push-11 {
-    left: 91.66666667%;
-  }
-  .w-col-tiny-pull-1 {
-    right: 8.33333333%;
-  }
-  .w-col-tiny-pull-2 {
-    right: 16.66666667%;
-  }
-  .w-col-tiny-pull-3 {
-    right: 25%;
-  }
-  .w-col-tiny-pull-4 {
-    right: 33.33333333%;
-  }
-  .w-col-tiny-pull-5 {
-    right: 41.66666667%;
-  }
-  .w-col-tiny-pull-6 {
-    right: 50%;
-  }
-  .w-col-tiny-pull-7 {
-    right: 58.33333333%;
-  }
-  .w-col-tiny-pull-8 {
-    right: 66.66666667%;
-  }
-  .w-col-tiny-pull-9 {
-    right: 75%;
-  }
-  .w-col-tiny-pull-10 {
-    right: 83.33333333%;
-  }
-  .w-col-tiny-pull-11 {
-    right: 91.66666667%;
-  }
-  .w-col-tiny-offset-1 {
-    margin-left: 8.33333333%;
-  }
-  .w-col-tiny-offset-2 {
-    margin-left: 16.66666667%;
-  }
-  .w-col-tiny-offset-3 {
-    margin-left: 25%;
-  }
-  .w-col-tiny-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .w-col-tiny-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .w-col-tiny-offset-6 {
-    margin-left: 50%;
-  }
-  .w-col-tiny-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .w-col-tiny-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .w-col-tiny-offset-9 {
-    margin-left: 75%;
-  }
-  .w-col-tiny-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .w-col-tiny-offset-11 {
-    margin-left: 91.66666667%;
-  }
-}
-.w-widget {
-  position: relative;
-}
-.w-widget-map {
-  width: 100%;
-  height: 400px;
-}
-.w-widget-map label {
-  width: auto;
-  display: inline;
-}
-.w-widget-map img {
-  max-width: inherit;
-}
-.w-widget-map .gm-style-iw {
-  width: 90% !important;
-  height: auto !important;
-  top: 7px !important;
-  left: 6% !important;
-  display: inline;
-  text-align: center;
-  overflow: hidden;
-}
-.w-widget-map .gm-style-iw + div {
-  display: none;
-}
-.w-widget-twitter {
-  overflow: hidden;
-}
-.w-widget-gplus {
-  overflow: hidden;
-}
-.w-slider {
-  position: relative;
-  height: 300px;
-  text-align: center;
-  background: rgba(153, 153, 153, 0.5);
-  clear: both;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.w-slider-mask {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  height: 100%;
-  white-space: nowrap;
-}
-.w-slide {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  height: 100%;
-  white-space: normal;
-  text-align: left;
-}
-.w-slider-nav {
-  position: absolute;
-  z-index: 2;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  padding-top: 10px;
-  height: 40px;
-  text-align: center;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.w-slider-nav.w-round > div {
-  -webkit-border-radius: 100%;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 100%;
-  -moz-background-clip: padding;
-  border-radius: 100%;
-  background-clip: padding-box;
-}
-.w-slider-nav.w-num > div {
-  width: auto;
-  height: auto;
-  padding: 0.2em 0.5em;
-  font-size: inherit;
-  line-height: inherit;
-}
-.w-slider-nav.w-shadow > div {
-  -webkit-box-shadow: 0 0 3px rgba(51, 51, 51, 0.4);
-  -moz-box-shadow: 0 0 3px rgba(51, 51, 51, 0.4);
-  box-shadow: 0 0 3px rgba(51, 51, 51, 0.4);
-}
-.w-slider-nav-invert {
-  color: #fff;
-}
-.w-slider-nav-invert > div {
-  background-color: rgba(34, 34, 34, 0.4);
-}
-.w-slider-nav-invert > div.w-active {
-  background-color: #222;
-}
-.w-slider-dot {
-  position: relative;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-color: rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-  margin: 0 3px 0.5em;
-  -webkit-transition: background-color 100ms, color 100ms;
-  -moz-transition: background-color 100ms, color 100ms;
-  -o-transition: background-color 100ms, color 100ms;
-  transition: background-color 100ms, color 100ms;
-}
-.w-slider-dot.w-active {
-  background-color: #fff;
-}
-.w-slider-arrow-left,
-.w-slider-arrow-right {
-  position: absolute;
-  width: 80px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  cursor: pointer;
-  overflow: hidden;
-  color: white;
-  font-size: 40px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.w-slider-arrow-left [class^="w-icon-"],
-.w-slider-arrow-right [class^="w-icon-"],
-.w-slider-arrow-left [class*=" w-icon-"],
-.w-slider-arrow-right [class*=" w-icon-"] {
-  position: absolute;
-}
-.w-slider-arrow-left {
-  z-index: 3;
-  right: auto;
-}
-.w-slider-arrow-right {
-  z-index: 4;
-  left: auto;
-}
-.w-icon-slider-left,
-.w-icon-slider-right {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 1em;
-  height: 1em;
-}
-.w-dropdown {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 900;
-}
-.w-dropdown-btn,
-.w-dropdown-toggle,
-.w-dropdown-link {
-  position: relative;
-  vertical-align: top;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--background-light);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--primary-dark);
+}
+
+a {
+  color: var(--secondary-color);
   text-decoration: none;
-  color: #222;
-  padding: 20px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  white-space: nowrap;
+  transition: var(--transition);
 }
-.w-dropdown-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  display: inline-block;
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
   cursor: pointer;
-  padding-right: 40px;
+  font-family: inherit;
+  border: none;
+  transition: var(--transition);
 }
-.w-dropdown-toggle:focus {
-  outline: 0;
-}
-.w-icon-dropdown-toggle {
-  position: absolute;
+
+/* Header Styles */
+.main-header {
+  background-color: var(--background-white);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
   top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  margin-right: 20px;
-  width: 1em;
-  height: 1em;
+  z-index: 100;
 }
-.w-dropdown-list {
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.nav-link.active::after {
+  content: '';
   position: absolute;
-  background: #f2f2f2;
-  display: none;
-  min-width: 100%;
-}
-.w-dropdown-list.w--open {
-  display: block;
-}
-.w-dropdown-link {
-  padding: 10px 20px;
-  display: block;
-}
-.w-dropdown-link.w--current {
-  color: #339ce1;
-}
-.w-nav[data-collapse="all"] .w-dropdown,
-.w-nav[data-collapse="all"] .w-dropdown-toggle {
-  display: block;
-}
-.w-nav[data-collapse="all"] .w-dropdown-list {
-  position: static;
-}
-@media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-dropdown,
-  .w-nav[data-collapse="medium"] .w-dropdown-toggle {
-    display: block;
-  }
-  .w-nav[data-collapse="medium"] .w-dropdown-list {
-    position: static;
-  }
-}
-@media screen and (max-width: 767px) {
-  .w-nav[data-collapse="small"] .w-dropdown,
-  .w-nav[data-collapse="small"] .w-dropdown-toggle {
-    display: block;
-  }
-  .w-nav[data-collapse="small"] .w-dropdown-list {
-    position: static;
-  }
-  .w-nav-brand {
-    padding-left: 10px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .w-nav[data-collapse="tiny"] .w-dropdown,
-  .w-nav[data-collapse="tiny"] .w-dropdown-toggle {
-    display: block;
-  }
-  .w-nav[data-collapse="tiny"] .w-dropdown-list {
-    position: static;
-  }
-}
-.w-lightbox-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana,
-    sans-serif;
-  font-size: 17px;
-  font-weight: 300;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+  color: white;
+  padding: 6rem 0;
   text-align: center;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 2000;
-  outline: 0;
-  opacity: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transform: translate(0, 0);
 }
-.w-lightbox-backdrop,
-.w-lightbox-container {
-  height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: white;
 }
-.w-lightbox-content {
+
+.hero-description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-button {
+  background-color: var(--accent-color);
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+}
+
+.primary-button:hover {
+  background-color: #ffb300;
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  border: 2px solid white;
+}
+
+.secondary-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Timeline Intro */
+.timeline-intro {
+  padding: 5rem 0 3rem;
+  background-color: var(--background-white);
+}
+
+.timeline-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: var(--background-light);
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow);
+}
+
+.stat-icon {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+}
+
+.stat-description {
+  color: var(--text-secondary);
+}
+
+/* Timeline Section */
+.timeline-section {
+  padding: 3rem 0 5rem;
+  background-color: var(--background-light);
+}
+
+.timeline-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.era-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--background-white);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.era-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow);
+}
+
+.era-button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.timeline-container {
+  background-color: var(--background-white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.timeline-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
   position: relative;
-  height: 100vh;
+}
+
+.scale-marker {
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+
+.marker-line {
+  height: 12px;
+  width: 2px;
+  background-color: var(--text-secondary);
+  margin: 0 auto 0.5rem;
+}
+
+.marker-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.timeline-visual {
+  display: flex;
+  height: 60px;
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
   overflow: hidden;
 }
-.w-lightbox-view {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+
+.era-block {
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.era-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.era-block.active {
+  height: 70px;
+  margin-top: -5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+
+.era-name {
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+/* Animation Definitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
-.w-lightbox-view:before {
-  content: "";
-  height: 100vh;
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.5s ease;
 }
-.w-lightbox-group,
-.w-lightbox-group .w-lightbox-view,
-.w-lightbox-group .w-lightbox-view:before {
-  height: 86vh;
+
+.scale-enter-from {
+  opacity: 0;
+  transform: scale(0.8);
 }
-.w-lightbox-frame,
-.w-lightbox-view:before {
-  display: inline-block;
-  vertical-align: middle;
+
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(1.2);
 }
-.w-lightbox-figure {
-  position: relative;
-  margin: 0;
+
+.scale-move {
+  transition: transform 0.5s ease;
 }
-.w-lightbox-group .w-lightbox-figure {
-  cursor: pointer;
+
+/* 确保文本缩放时保持可读性 */
+.event-item, .species-card {
+  transform-origin: center;
 }
-.w-lightbox-img {
-  width: auto;
+
+/* Era Details (保持原有样式，调整为支持动画) */
+.era-details {
+  margin-top: 2rem;
+}
+
+.era-header {
+  margin-bottom: 2rem;
+}
+
+.era-header h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+.era-period {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--text-secondary);
+  margin-left: 1rem;
+}
+
+.era-description {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.era-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .era-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.era-species h4,
+.era-events h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark);
+}
+
+.species-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.species-card {
+  display: flex;
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.species-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow);
+}
+
+.species-image {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+}
+
+.species-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.species-info {
+  padding: 1rem;
+}
+
+.species-info h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.species-scientific-name {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.species-description {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.events-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.event-time {
+  min-width: 120px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.event-content h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-content p {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+/* Biodiversity Section */
+.biodiversity-section {
+  padding: 5rem 0;
+  background-color: var(--background-white);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  padding: 2rem;
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow);
+}
+
+.benefit-icon {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.benefit-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+}
+
+/* Conservation CTA */
+.conservation-cta {
+  padding: 5rem 0;
+  background-color: var(--background-light);
+}
+
+.conservation-cta .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .conservation-cta .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.cta-image img {
+  width: 100%;
   height: auto;
-  max-width: none;
+  border-radius: var(--border-radius);
 }
-.w-lightbox-image {
-  display: block;
-  max-width: 100vw;
-  max-height: 100vh;
+
+/* Resources Section */
+.resources-section {
+  padding: 5rem 0;
+  background-color: var(--background-white);
 }
-.w-lightbox-group .w-lightbox-image {
-  max-height: 86vh;
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
-.w-lightbox-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0.5em 1em;
-  background: rgba(0, 0, 0, 0.4);
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+
+.resource-card {
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
   overflow: hidden;
+  transition: var(--transition);
 }
-.w-lightbox-embed {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow);
 }
-.w-lightbox-control {
-  position: absolute;
-  top: 0;
-  width: 4em;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.w-lightbox-left {
-  display: none;
-  bottom: 0;
-  left: 0;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAwIDI0IDQwIiB3aWR0aD0iMjQiIGhlaWdodD0iNDAiPjxnIHRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHBhdGggZD0ibTAgMGg1djIzaDIzdjVoLTI4eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDN2MjNoMjN2M2gtMjZ6IiBmaWxsPSIjZmZmIi8+PC9nPjwvc3ZnPg==");
-}
-.w-lightbox-right {
-  display: none;
-  right: 0;
-  bottom: 0;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMjQgNDAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0MCI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMC0waDI4djI4aC01di0yM2gtMjN6IiBvcGFjaXR5PSIuNCIvPjxwYXRoIGQ9Im0xIDFoMjZ2MjZoLTN2LTIzaC0yM3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+");
-}
-.w-lightbox-close {
-  right: 0;
-  height: 2.6em;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMTggMTciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMCAwaDd2LTdoNXY3aDd2NWgtN3Y3aC01di03aC03eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDd2LTdoM3Y3aDd2M2gtN3Y3aC0zdi03aC03eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=");
-  background-size: 18px;
-}
-.w-lightbox-strip {
-  padding: 0 1vh;
-  line-height: 0;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-.w-lightbox-item {
-  display: inline-block;
-  width: 10vh;
-  padding: 2vh 1vh;
-  box-sizing: content-box;
-  cursor: pointer;
-  -webkit-transform: translate3d(0, 0, 0);
-}
-.w-lightbox-active {
-  opacity: 0.3;
-}
-.w-lightbox-thumbnail {
+
+.resource-image {
   position: relative;
-  height: 10vh;
-  background: #222;
-  overflow: hidden;
+  height: 180px;
 }
-.w-lightbox-thumbnail-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.w-lightbox-thumbnail .w-lightbox-tall {
-  top: 50%;
+
+.resource-image img {
   width: 100%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-}
-.w-lightbox-thumbnail .w-lightbox-wide {
-  left: 50%;
   height: 100%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  object-fit: cover;
 }
-.w-lightbox-spinner {
+
+.resource-type {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  box-sizing: border-box;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.resource-content {
+  padding: 1.5rem;
+}
+
+.resource-content h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.resource-content p {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.resource-link {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.resource-link:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  padding: 5rem 0;
+}
+
+.newsletter-container {
+  background-color: var(--primary-color);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  color: white;
+  text-align: center;
+}
+
+.newsletter-content {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.newsletter-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  font-size: 1rem;
+}
+
+.subscribe-button {
+  background-color: var(--accent-color);
+  color: var(--text-primary);
+  padding: 0 1.5rem;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  font-weight: 500;
+}
+
+.subscribe-button:hover {
+  background-color: #ffb300;
+}
+
+.privacy-note {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #1b5e20;
+  color: white;
+  padding: 3rem 0 1rem;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer-section p {
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
-  margin-top: -20px;
-  margin-left: -20px;
-  border: 5px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  -webkit-animation: spin 0.8s infinite linear;
-  animation: spin 0.8s infinite linear;
-}
-.w-lightbox-spinner:after {
-  content: "";
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  border: 3px solid transparent;
-  border-bottom-color: #fff;
-  border-radius: 50%;
-}
-.w-lightbox-hide {
-  display: none;
-}
-.w-lightbox-noscroll {
-  overflow: hidden;
-}
-@media (min-width: 768px) {
-  .w-lightbox-content {
-    height: 96vh;
-    margin-top: 2vh;
-  }
-  .w-lightbox-view,
-  .w-lightbox-view:before {
-    height: 96vh;
-  }
-  .w-lightbox-group,
-  .w-lightbox-group .w-lightbox-view,
-  .w-lightbox-group .w-lightbox-view:before {
-    height: 84vh;
-  }
-  .w-lightbox-image {
-    max-width: 96vw;
-    max-height: 96vh;
-  }
-  .w-lightbox-group .w-lightbox-image {
-    max-width: 82.3vw;
-    max-height: 84vh;
-  }
-  .w-lightbox-left,
-  .w-lightbox-right {
-    display: block;
-    opacity: 0.5;
-  }
-  .w-lightbox-close {
-    opacity: 0.8;
-  }
-  .w-lightbox-control:hover {
-    opacity: 1;
-  }
-}
-.w-lightbox-inactive,
-.w-lightbox-inactive:hover {
-  opacity: 0;
-}
-.w-nav {
-  position: relative;
-  background: #bbb;
-  z-index: 1000;
-}
-.w-nav:before,
-.w-nav:after {
-  content: " ";
-  display: table;
-}
-.w-nav:after {
-  clear: both;
-}
-.w-nav-brand {
-  position: relative;
-  float: left;
-  text-decoration: none;
-  color: #222;
-}
-.w-nav-link {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  color: #222;
-  padding: 20px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-.w-nav-link.w--current {
-  color: #339ce1;
-}
-.w-nav-menu {
-  position: relative;
-  float: right;
-}
-.w--nav-menu-open {
-  display: block !important;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #999;
-  text-align: center;
-  overflow: visible;
-  min-width: 200px;
-}
-.w--nav-link-open {
-  display: block;
-  position: relative;
-}
-.w-nav-overlay {
-  position: absolute;
-  overflow: hidden;
-  display: none;
-  top: 100%;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-.w-nav-overlay .w--nav-menu-open {
-  top: 0;
-}
-.w-nav[data-animation="over-left"] .w-nav-overlay {
-  width: auto;
-}
-.w-nav[data-animation="over-left"] .w-nav-overlay,
-.w-nav[data-animation="over-left"] .w--nav-menu-open {
-  right: auto;
-  z-index: 1;
-  top: 0;
-}
-.w-nav[data-animation="over-right"] .w-nav-overlay {
-  width: auto;
-}
-.w-nav[data-animation="over-right"] .w-nav-overlay,
-.w-nav[data-animation="over-right"] .w--nav-menu-open {
-  left: auto;
-  z-index: 1;
-  top: 0;
-}
-.w-nav-button {
-  position: relative;
-  float: right;
-  padding: 18px;
-  font-size: 24px;
-  display: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.w-nav-button.w--open {
-  background-color: #999;
   color: white;
-}
-.w-nav[data-collapse="all"] .w-nav-menu {
-  display: none;
-}
-.w-nav[data-collapse="all"] .w-nav-button {
-  display: block;
-}
-@media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-nav-menu {
-    display: none;
-  }
-  .w-nav[data-collapse="medium"] .w-nav-button {
-    display: block;
-  }
-}
-@media screen and (max-width: 767px) {
-  .w-nav[data-collapse="small"] .w-nav-menu {
-    display: none;
-  }
-  .w-nav[data-collapse="small"] .w-nav-button {
-    display: block;
-  }
-  .w-nav-brand {
-    padding-left: 10px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .w-nav[data-collapse="tiny"] .w-nav-menu {
-    display: none;
-  }
-  .w-nav[data-collapse="tiny"] .w-nav-button {
-    display: block;
-  }
-}
-.w-tabs {
-  position: relative;
-}
-.w-tabs:before,
-.w-tabs:after {
-  content: " ";
-  display: table;
-}
-.w-tabs:after {
-  clear: both;
-}
-.w-tab-menu {
-  position: relative;
-}
-.w-tab-link {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  padding: 8px 30px;
-  text-align: left;
-  cursor: pointer;
-  background-color: #e8e8e8;
-}
-.w-tab-link.w--current {
-  background-color: #bcd3f3;
-}
-.w-tab-content {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-.w-tab-pane {
-  position: relative;
-  display: none;
-}
-.w--tab-active {
-  display: block;
-}
-@media screen and (max-width: 479px) {
-  .w-tab-link {
-    display: block;
-  }
-}
-.w-ix-emptyfix:after {
-  content: "";
-}
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.w-dyn-loading {
-  display: block;
-  padding: 10px;
-}
-.w-dyn-items {
-  display: none;
-}
-.w-dyn-items.visible {
-  display: block;
-}
-.w-dyn-empty {
-  padding: 10px;
-  background-color: #ddd;
-}
-.w-dyn-error {
-  display: none;
-  padding: 10px;
-  background-color: #ffdede;
+  transition: var(--transition);
 }
 
-/* ==========================================================================
-  Start of custom Webflow CSS
-  ========================================================================== */
-body {
-  font-family: futura-pt, sans-serif;
-  color: #262626;
-  font-size: 16px;
-  line-height: 20px;
-}
-h1 {
-  position: relative;
-  z-index: 1;
-  margin-right: 0px;
-  margin-left: 0px;
-  font-family: "Montserrat", sans-serif;
-  color: black;
-  font-size: 99px;
-  line-height: 87px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-h2 {
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-bottom: 92px;
-  font-family: "Montserrat", sans-serif;
-  color: #262626;
-  font-size: 31px;
-  line-height: 35px;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-}
-h3 {
-  margin-bottom: 19px;
-  color: #262626;
-  font-size: 28px;
-  line-height: 30px;
-  font-weight: 400;
-}
-h4 {
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  color: black;
-  font-size: 19px;
-  line-height: 25px;
-  font-weight: 400;
-}
-h5 {
-  margin: 0px 0px 10px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-}
-h6 {
-  margin: 10px 0px;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-}
-p {
-  margin-bottom: 15px;
-  -webkit-transition-delay: initial;
-  transition-delay: initial;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 21px;
-}
-.button {
-  display: inline-block;
-  margin-right: 13px;
-  padding: 13px 38px 15px;
-  border-radius: 32px;
-  background-color: #2dad6f;
-  box-shadow: rgba(255, 255, 255, 0.27) 0px 22px 33px -16px inset,
-    rgba(255, 255, 255, 0) 0px 0px 0px 1px inset,
-    rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset,
-    rgba(0, 0, 0, 0.2) 0px -4px 0px 0px inset;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  color: white;
-  font-size: 17px;
-  font-weight: 400;
-  text-align: center;
+.social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
   text-decoration: none;
-  text-transform: capitalize;
-  text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
 }
-.button:hover {
-  box-shadow: rgba(255, 255, 255, 0.49) 0px 22px 33px -16px inset,
-    rgba(255, 255, 255, 0.09) 0px 0px 0px 1px inset,
-    rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset,
-    rgba(0, 0, 0, 0.09) 0px -4px 0px 0px inset;
-  -webkit-transform: translate(0px, -2px);
-  -ms-transform: translate(0px, -2px);
-  transform: translate(0px, -2px);
+
+.footer-section ul {
+  list-style: none;
 }
-.button:active {
-  box-shadow: rgba(0, 0, 0, 0.27) 0px 22px 33px -16px inset,
-    rgba(255, 255, 255, 0.09) 0px 0px 0px 1px inset,
-    rgba(0, 0, 0, 0.2) 0px 1px 0px 0px inset,
-    rgba(0, 0, 0, 0.09) 0px 4px 0px 0px inset;
-  -webkit-transform: translate(0px, 2px);
-  -ms-transform: translate(0px, 2px);
-  transform: translate(0px, 2px);
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
 }
-.header {
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding-bottom: 99px;
-  background-color: #3ec7c2;
-}
-.header.page {
-  padding-bottom: 47px;
-}
-.nav-link {
-  padding: 16px 0px 16px 29px;
-  -webkit-transition: color 300ms ease;
-  transition: color 300ms ease;
-  color: #262626;
-  font-size: 19px;
-  text-transform: capitalize;
-}
-.nav-link:hover {
+
+.footer-section ul li a {
   color: white;
+  opacity: 0.8;
+  transition: var(--transition);
 }
-.section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: white;
-  color: #616161;
-}
-.section.lightgrey {
-  background-color: #f2f2f2;
-}
-.section.lightgrey.videos {
-  padding-bottom: 75px;
-}
-.section.black {
-  background-color: black;
-  color: #d1d1d1;
-}
-.section.black.footer {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-.section.accent {
-  background-color: #3ec7c2;
-  color: rgba(0, 0, 0, 0.74);
-}
-.section.accent.light {
-  background-color: #d4ecfc;
-}
-.section.help {
-  padding-top: 70px;
-  padding-bottom: 63px;
-  text-align: center;
-}
-.section.lightcolor {
-  background-color: #e8feff;
-}
-.section.video-page {
-  padding-top: 77px;
-  padding-bottom: 77px;
-}
-.webflow-logo {
-  margin-right: 10px;
-  width: 10vw;
-  float: left;
-}
-.webflow-logo.scroll {
+
+.footer-section ul li a:hover {
   opacity: 1;
+  text-decoration: underline;
 }
-.brand {
-  padding-top: 14px;
-  padding-bottom: 14px;
-  -webkit-transition: opacity 300ms ease;
-  transition: opacity 300ms ease;
-}
-.brand:hover {
-  opacity: 1;
-}
-.nav-menu {
-  padding-top: 0px;
+
+.footer-bottom {
   text-align: center;
-}
-.menu-button {
-  padding: 10px;
-  background-color: transparent;
-  opacity: 0.27;
-  -webkit-transition: color 100ms ease;
-  transition: color 100ms ease;
-  color: black;
-  font-size: 32px;
-}
-.menu-button.w--open {
-  background-color: transparent;
-  color: transparent;
-}
-.nav {
-  padding-top: 11px;
-  padding-bottom: 11px;
-  background-color: transparent;
-}
-.nav.page {
-  margin-bottom: 27px;
-}
-.brand-subtitle {
-  float: left;
-  color: black;
-  font-size: 22px;
-  line-height: 20px;
-  font-weight: 400;
-}
-.close-link {
-  margin-bottom: 24px;
-}
-.without-code {
-  color: white;
-}
-.main-heading-wrapper {
-  position: relative;
-  margin-top: 76px;
-  margin-bottom: 76px;
-}
-.object {
-  position: absolute;
-  top: 44%;
-  right: 0px;
-  display: none;
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.03);
-}
-.object._2 {
-  left: 0px;
-  top: 10%;
-  right: auto;
-  width: 200px;
-  height: 200px;
-  background-color: transparent;
-}
-.main-subtitle {
-  padding-bottom: 57px;
-  font-family: futura-pt, sans-serif;
-  color: black;
-  font-size: 28px;
-  line-height: 48px;
-  font-style: normal;
-  font-weight: 400;
-  text-align: left;
-  text-transform: none;
-}
-.link {
-  border-bottom: 1px solid #0082fc;
-  -webkit-transition: color 200ms ease, border-color 200ms ease;
-  transition: color 200ms ease, border-color 200ms ease;
-  color: #358df2;
-  text-decoration: none;
-}
-.link:hover {
-  border-bottom-color: black;
-  color: black;
-}
-.link.black {
-  display: inline-block;
-  border-bottom-color: black;
-  color: black;
-}
-.link.black:hover {
-  border-bottom-color: white;
-  color: white;
-}
-.down-arrow {
-  display: inline-block;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  margin-right: 51px;
-  float: left;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: black;
-  font-size: 46px;
-  line-height: 40px;
-  text-decoration: none;
-}
-.arrow-text {
-  margin-top: 72px;
-  margin-bottom: 8px;
-  margin-left: 31px;
-  font-family: jubilat, sans-serif;
-  color: rgba(38, 38, 38, 0.34);
-  font-size: 22px;
-  line-height: 28px;
-  font-style: italic;
-}
-.feature-pill {
-  padding-right: 31px;
-  padding-left: 31px;
-  text-align: center;
-}
-.feature-icon {
-  margin-bottom: 25px;
-}
-.setup-pill {
-  position: relative;
-  display: inline-block;
-  width: 240px;
-  height: 292px;
-  margin-bottom: 18px;
-  padding: 36px 30px 21px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.09);
-  background-color: white;
-  text-align: left;
-}
-.setup-pill.dark {
-  background-color: #333;
-  color: rgba(255, 255, 255, 0.72);
-}
-.setup-pill.dark._1 {
-  background-color: rgba(156, 141, 252, 0.29);
-}
-.setup-pill.dark._2 {
-  background-color: rgba(54, 164, 255, 0.31);
-}
-.setup-pill.dark._3 {
-  background-color: rgba(27, 219, 245, 0.29);
-}
-.setup-pill.dark._4 {
-  background-color: rgba(69, 230, 216, 0.29);
-}
-.white-heading {
-  color: white;
-}
-.coming-soon {
-  position: absolute;
-  left: 0px;
-  top: 42px;
-  right: 0px;
-  -webkit-transform: rotate(-39deg);
-  -ms-transform: rotate(-39deg);
-  transform: rotate(-39deg);
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-shadow: black 0px 0px 14px, black 0px 0px 20px;
-}
-.top-bar {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  height: 2px;
-  background-color: #07f;
-}
-.top-bar.blue {
-  background-color: #8472fc;
-}
-.top-bar.blue._2 {
-  background-color: #45a5f5;
-}
-.top-bar.blue._3 {
-  background-color: #1bdbf5;
-}
-.top-bar.blue._4 {
-  background-color: #45e6d8;
-}
-.number {
-  margin-bottom: 14px;
-  color: #8472fc;
-  font-weight: 700;
-}
-.number._2 {
-  color: #45a5f5;
-}
-.number._3 {
-  color: #1bdbf5;
-}
-.number._4 {
-  color: #45e6d8;
-}
-.widget {
-  width: 95px;
-  margin-top: 15px;
-  float: right;
-}
-.works-row {
-  display: block;
-  width: 534px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.screenshot {
-  max-width: 240px;
-  margin-bottom: 64px;
-}
-.caption-text {
-  margin-bottom: 5px;
-  font-family: "Montserrat", sans-serif;
-  color: #787878;
-  font-size: 11px;
-  line-height: 16px;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.caption-text.on-white {
-  color: black;
-  font-size: 13px;
-  text-align: left;
-  letter-spacing: 0.5px;
-}
-.caption-text.on-white.example-click {
-  margin-top: 29px;
-}
-.caption-text.works {
-  margin-bottom: 12px;
-}
-.carrot {
-  width: 30px;
-  height: 30px;
-}
-.thin-text {
-  font-weight: 300;
-}
-.right-border {
-  border-right: 1px solid rgba(0, 76, 163, 0.09);
-}
-.trig-wrapper {
-  margin-right: 1px;
-  margin-bottom: 1px;
-  padding: 20px;
-  box-shadow: #e3e3e3 0px 0px 0px 1px;
-}
-.left-heading {
-  text-align: left;
-}
-.left-heading.left-border {
-  margin-bottom: 22px;
-  padding-bottom: 70px;
-  padding-left: 13px;
-  box-shadow: #e3e3e3 -1px 0px 0px 0px;
-}
-.left-heading.small-padding {
-  margin-right: 29px;
-  padding-bottom: 31px;
-  border-bottom: 1px solid #dbdbdb;
-}
-.trigger-heading {
-  margin-bottom: 10px;
-}
-.no-padding {
-  margin-bottom: 0px;
-}
-.light-grey-text {
-  color: #adadad;
-  font-size: 23px;
-  line-height: 28px;
-  font-weight: 300;
-}
-.left-column {
-  padding-right: 0px;
-}
-.right-column {
-  padding-left: 0px;
-}
-.trigg-icon {
-  margin-bottom: 8px;
-  margin-left: 1px;
-}
-.nav-scroll {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  display: none;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 0px 0px;
-}
-.nav-menu-scroll {
-  padding-top: 0px;
-}
-.nav-link-scroll {
-  margin-top: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 6px 14px 5px;
-  float: right;
-  border-radius: 3px;
-  background-color: #358df2;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 0px 0px;
-  -webkit-transition: background-color 300ms ease;
-  transition: background-color 300ms ease;
-  color: white;
-  text-transform: uppercase;
-}
-.nav-link-scroll:hover {
-  background-color: black;
-  text-decoration: none;
-}
-.footer-heading {
-  margin-bottom: 16px;
-  padding-bottom: 0px;
-  font-family: futura-pt, sans-serif;
-  font-size: 38px;
-  font-weight: 400;
-  text-transform: none;
-}
-.share-wrapper {
-  text-align: center;
-}
-.footer-paragraph {
-  margin-bottom: 45px;
-  font-size: 18px;
-}
-.social-big {
-  display: inline-block;
-  margin-right: 4px;
-  margin-left: 4px;
-}
-.social-big.twitter {
-  top: 2px;
-  margin-right: 11px;
-}
-.facebook-img {
-  display: none;
-}
-.cta-button {
-  display: inline-block;
-  padding: 17px 31px;
-  border-radius: 3px;
-  background-color: #8f69d9;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 0px 0px;
-  -webkit-transition: background-color 300ms ease;
-  transition: background-color 300ms ease;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.cta-button:hover {
-  background-color: black;
-}
-.cta-button.ex {
-  margin-bottom: 33px;
-}
-.cta-button.ex.one {
-  background-color: #e83174;
-}
-.cta-button.ex.two {
-  background-color: #8860d6;
-}
-.cta-button.ex.three {
-  float: left;
-  background-color: #3a8ff0;
-}
-.cta-button.ex.three:hover {
-  background-color: black;
-}
-.cta-button.ex.four {
-  float: left;
-  background-color: #23bdc2;
-}
-.cta-button.ex.four:hover {
-  background-color: black;
-}
-.cta-button.ex.four.close {
-  margin-top: 8px;
-  margin-bottom: 21px;
-  padding: 12px 20px;
-  background-color: #e83f61;
-}
-.cta-button.ex.four.close:hover {
-  background-color: #737373;
-}
-.cta-button.ex.five {
-  background-color: #27c498;
-}
-.cta-button.sign-up {
-  background-color: #1a7ded;
-  color: white;
-}
-.cta-button.sign-up:hover {
-  background-color: black;
-}
-.cta-button.subpagenav {
-  margin-top: 5px;
-  padding: 10px 17px;
-  background-color: black;
-}
-.footer-logo {
-  margin-right: 10px;
-  float: left;
-  opacity: 0.9;
-}
-.footer-link-wrapper {
-  margin-top: 1px;
-  font-family: "Montserrat", sans-serif;
-  color: dimgray;
-  font-size: 17px;
-}
-.footer-link {
-  -webkit-transition: color 300ms ease;
-  transition: color 300ms ease;
-  color: #e8e8e8;
-  font-weight: 300;
-  text-decoration: none;
-}
-.footer-link:hover {
-  color: white;
-}
-.copyright {
-  margin-top: 7px;
-  clear: left;
-  font-family: "Montserrat", sans-serif;
-  color: #8a8a8a;
-  font-size: 14px;
-}
-.webflow-social {
-  margin-top: 5px;
-  float: right;
-}
-.social-link {
-  margin-left: 11px;
-  opacity: 0.9;
-  -webkit-transition: opacity 300ms ease;
-  transition: opacity 300ms ease;
-}
-.social-link:hover {
-  opacity: 1;
-}
-.ix-playground {
-  margin-bottom: 36px;
-}
-.ix-playground.ex2 {
-  padding: 55px 30px 40px;
-  border-radius: 2px;
-  background-color: #e9e1fa;
-  box-shadow: #8860d6 0px 0px 0px 2px inset;
-  text-align: center;
-}
-.ix-wrapper {
-  padding: 20px;
-  background-color: #fafafa;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px inset,
-    rgba(0, 0, 0, 0.09) 0px 1px 9px 0px;
-}
-.ix-wrapper.inlineblock {
-  display: block;
-  padding: 36px;
-  border-radius: 2px;
-  background-color: #fff2f7;
-  box-shadow: #e83174 0px 0px 0px 2px inset;
-  color: rgba(64, 51, 56, 0.59);
-  text-align: left;
-}
-.example-specs {
-  font-family: "Montserrat", sans-serif;
-}
-.property {
-  display: inline-block;
-  color: black;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.example-left-col {
-  padding-top: 40px;
-  padding-right: 40px;
-  box-shadow: #dbdbdb 1px 0px 0px 0px;
-}
-.example-right-col {
-  padding-top: 40px;
-  padding-left: 40px;
-  box-shadow: #dbdbdb 1px 0px 0px 0px inset;
-  text-align: left;
-}
-.mobile-error {
-  margin-bottom: 32px;
-  padding: 20px;
-  background-color: #fff4b5;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px inset;
-}
-.mobile-icon {
-  margin-right: 17px;
-  float: left;
-}
-.small-paragraph {
-  margin-bottom: 0px;
-  font-size: 14px;
-}
-.footer-flyout {
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 100;
-  display: none;
-}
-.monkey-img {
-  margin-right: 3px;
-  float: left;
-}
-.monkey-text {
-  margin-top: 6px;
-  padding: 15px 26px;
-  float: left;
-  border-radius: 11px;
-  background-color: white;
-  box-shadow: #e0e0e0 0px 0px 0px 1px inset, #e0e0e0 0px 1px 0px 0px;
-  font-family: "Montserrat", sans-serif;
-}
-.monkey-text.circle {
-  width: 17px;
-  height: 17px;
-  margin-top: 13px;
-  margin-right: 8px;
-  padding: 0px;
-}
-.monkey-heading {
-  margin-bottom: 5px;
-  font-family: futura-pt, sans-serif;
-  font-size: 26px;
-  line-height: 29px;
-  font-weight: 500;
-}
-.hidden-text {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  background-color: #e8f3ff;
-  box-shadow: rgba(58, 143, 240, 0.27) 0px 0px 0px 2px inset;
-  color: black;
-}
-.hidden-wrapper {
-  padding: 18px 18px 3px;
-  -webkit-transition-delay: initial;
-  transition-delay: initial;
-  color: rgba(0, 0, 0, 0.59);
-}
-.sidebar {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 999;
-  display: none;
-  width: 300px;
-  padding: 95px 31px 31px;
-  background-color: black;
-  color: #c2c2c2;
-}
-.example-1-img {
-  margin-right: 30px;
-  float: left;
-}
-.example-1-title {
-  margin-bottom: 5px;
-}
-.album-art {
-  position: relative;
-  display: block;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  width: 350px;
-  height: 350px;
-  margin-right: 21px;
-  padding: 21px;
-  float: left;
-  background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/5349c1a4c983950e4d00001c_War-On-Drugs-The---Slave-Ambient.jpg);
-  background-size: cover;
-  color: white;
-}
-.social-btn {
-  display: inline-block;
-  margin-right: 4px;
-  margin-left: 4px;
-  padding: 7px;
-}
-.icons-wrapper {
-  position: relative;
-  margin-top: 78px;
-  text-align: center;
-}
-.album-title {
-  margin-bottom: 6px;
-  font-family: futura-pt, sans-serif;
-  color: white;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 500;
-  text-transform: none;
-}
-.album-artist {
-  padding-bottom: 0px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 300;
-  text-align: left;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.album-info {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  padding: 25px;
-  background-color: rgba(0, 0, 0, 0.54);
-}
-.album-gradient {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  height: 100%;
-  background-image: -webkit-linear-gradient(
-    89deg,
-    #d6394e,
-    rgba(214, 57, 78, 0)
-  );
-  background-image: linear-gradient(1deg, #d6394e, rgba(214, 57, 78, 0));
-  opacity: 1;
-}
-.works-column {
-  width: 50%;
-  padding-right: 5px;
-  padding-left: 5px;
-  float: left;
-  text-align: center;
-}
-.center {
-  text-align: center;
-}
-.example-text {
-  margin-bottom: 12px;
-  font-size: 35px;
-  line-height: 40px;
-}
-.video-wrapper {
-  padding-bottom: 31px;
-}
-.video-title {
-  margin-bottom: 7px;
-  line-height: 25px;
-  font-weight: 400;
-}
-.video-title.time {
-  color: rgba(0, 0, 0, 0.43);
-}
-.class {
-  padding-right: 5px;
-  padding-left: 5px;
-  border-radius: 2px;
-  background-color: rgba(3, 3, 3, 0);
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px inset;
-}
-.video-link {
-  display: block;
-  padding: 38px 23px 23px;
-  border-radius: 2px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 2px inset;
-  -webkit-transition: background-color 300ms ease;
-  transition: background-color 300ms ease;
-  color: #a3a3a3;
-  text-decoration: none;
-}
-.video-link:hover {
-  background-color: #f2f2f2;
-}
-.video-link._1 {
-  box-shadow: #8860d6 0px 0px 0px 2px inset;
-}
-.video-link._1:hover {
-  background-color: #f5f0ff;
-}
-.video-link._2 {
-  box-shadow: #3a8ff0 0px 0px 0px 2px inset;
-}
-.video-link._2:hover {
-  background-color: #ebf4ff;
-}
-.video-link._3 {
-  box-shadow: #15cde6 0px 0px 0px 2px inset;
-}
-.video-link._3:hover {
-  background-color: #e3fcff;
-}
-.video-link._4 {
-  box-shadow: #27c498 0px 0px 0px 2px inset;
-}
-.video-link._4:hover {
-  background-color: #e3fff4;
-}
-.video-link._0 {
-  box-shadow: #e83174 0px 0px 0px 2px inset;
-}
-.video-link._0:hover {
-  background-color: #fcebf1;
-}
-.circle-play {
-  display: inline-block;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  width: 55px;
-  height: 55px;
-  margin-bottom: 23px;
-  padding-top: 17px;
-  padding-right: 0px;
-  padding-left: 0px;
-  border: 2px solid black;
-  border-radius: 50px;
-  background-color: white;
-  text-align: center;
-}
-.circle-play._0 {
-  border-color: #e83174;
-}
-.circle-play._1 {
-  border-color: #8860d6;
-}
-.circle-play._2 {
-  border-color: #3a8ff0;
-}
-.circle-play._3 {
-  border-color: #15cde6;
-}
-.circle-play._4 {
-  border-color: #27c498;
-}
-.play-arrow {
-  display: inline-block;
-  width: 1px;
-  height: 1px;
-  margin-left: 4px;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
-  border-left: 13px solid black;
-}
-.play-arrow._0 {
-  border-left-color: #e83174;
-}
-.play-arrow._1 {
-  border-left-color: #8860d6;
-}
-.play-arrow._2 {
-  border-left-color: #3a8ff0;
-}
-.play-arrow._3 {
-  border-left-color: #15cde6;
-}
-.play-arrow._4 {
-  border-left-color: #27c498;
-}
-.bar-icon {
-  display: block;
-  width: 21px;
-  height: 3px;
-  margin-right: auto;
-  margin-bottom: 4px;
-  margin-left: auto;
-  background-color: black;
-}
-.page-heading {
-  font-size: 52px;
-  line-height: 57px;
-}
-.big-video-title {
-  font-size: 35px;
-  line-height: 40px;
-}
-.nav-scroll-content {
-  position: relative;
-}
-.note {
-  opacity: 0.58;
-}
-.scroll-1 {
-  margin-top: 3px;
-  margin-left: 22px;
-  float: left;
-  font-family: "kremlin-pro-web", sans-serif;
-  color: #4c9efc;
-  font-size: 25px;
-  line-height: 19px;
-  letter-spacing: 0.7px;
-}
-.header-2 {
-  display: inline-block;
-  margin-top: 6px;
-  padding-left: 62px;
-  float: left;
-  background-image: url("src/assets/images/arrow-left.png");
-  background-position: 0px 50%;
-  background-size: 49px;
-  background-repeat: no-repeat;
-  opacity: 0.75;
-  font-family: "kremlin-pro-web", sans-serif;
-  color: white;
-  font-size: 29px;
-  line-height: 34px;
-  letter-spacing: 0.7px;
-}
-.header-1 {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  z-index: 2;
-  width: 386px;
-  padding-left: 56px;
-  background-image: url("src/assets/images/arrow-left.png");
-  background-position: 0% 15%;
-  background-size: 47px;
-  background-repeat: no-repeat;
-  opacity: 0.75;
-  font-family: "kremlin-pro-web" !important;
-  color: white;
-  font-size: 29px;
-  line-height: 34px;
-  letter-spacing: 0.7px;
-}
-.note-text {
-  display: inline-block;
-  font-family: "kremlin-pro-web", sans-serif;
-  color: #4c9efc;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.7px;
-}
-.note-text.features {
-  margin-top: 44px;
-  padding-top: 10px;
-  padding-right: 33px;
-  padding-left: 33px;
-  background-image: url("../assets/images/arrow-right-up-blue.png");
-  background-position: 101% 0px;
-  background-size: 33px;
-  background-repeat: no-repeat;
-}
-.note-text.btw {
-  padding-top: 18px;
-  padding-right: 30px;
-  padding-left: 30px;
-  background-image: url("../assets/images/arrow-around-white.png");
-  background-position: 100% 0px;
-  background-size: 26px;
-  background-repeat: no-repeat;
-  color: white;
-}
-.note-text.ex {
-  display: inline-block;
-  margin-bottom: 13px;
-  padding-bottom: 10px;
-  font-size: 28px;
-  text-align: left;
-}
-.note-text.ex.pink {
-  padding-right: 47px;
-  background-image: url("../assets/images/arrow-pink.png");
-  background-position: 100% 100%;
-  background-size: 36px;
-  background-repeat: no-repeat;
-  color: #e83174;
-}
-.note-text.ex.purple {
-  margin-bottom: 25px;
-  padding-right: 41px;
-  background-image: url("../assets/images/arrows-scroll.png");
-  background-position: 100% 0px;
-  background-size: 27px;
-  background-repeat: no-repeat;
-  color: #8860d6;
-}
-.note-text.ex.blue {
-  margin-top: 13px;
-  margin-left: 26px;
-  padding-bottom: 0px;
-  padding-left: 36px;
-  float: left;
-  background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534e3bfe3392f3d069000167_arrow-blue-leftz.png);
-  background-position: 0px 38%;
-  background-size: 32px;
-  background-repeat: no-repeat;
-}
-.note-text.ex.blue.turq {
-  background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534e3ce53392f3d069000178_arrow-turq.png);
-  color: #23bdc2;
-}
-.note-text.ex.close {
-  display: block;
-  margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 0px;
-  padding-left: 31px;
-  clear: left;
-  background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534e3dee3392f3d06900017e_arrow-close.png);
-  background-position: 0px 0px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  color: #23bdc2;
-}
-.note-text.ex.green {
-  width: 200px;
-  margin-top: 113px;
-  margin-right: 16px;
-  padding-bottom: 54px;
-  padding-left: 20px;
-  float: right;
-  background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534e40bc94be38d2690001fd_arrow-big-hover.png);
-  background-position: 0px 100%;
-  background-size: 54px;
-  background-repeat: no-repeat;
-  color: #27c498;
-}
-.note-text.screen {
-  display: block;
-  width: 240px;
-  margin-top: 16px;
-  color: black;
-}
-.watch {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  margin-right: 8px;
-  margin-bottom: 0px;
-  margin-left: 3px;
-  float: left;
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  line-height: 21px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.bars-group {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-.awwwards {
-  position: absolute;
-  top: 102px;
-  right: 0px;
-}
-html.w-mod-js *[data-ix="fade-in-heading"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, -30px);
-  -ms-transform: translate(0px, -30px);
-  transform: translate(0px, -30px);
-}
-html.w-mod-js *[data-ix="fade-in-heading-2"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, -30px);
-  -ms-transform: translate(0px, -30px);
-  transform: translate(0px, -30px);
-}
-html.w-mod-js *[data-ix="fade-in-heading-3"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, -30px);
-  -ms-transform: translate(0px, -30px);
-  transform: translate(0px, -30px);
-}
-html.w-mod-js *[data-ix="fade-in-heading-4"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, -30px);
-  -ms-transform: translate(0px, -30px);
-  transform: translate(0px, -30px);
-}
-html.w-mod-js *[data-ix="nav-bar-load"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, -80px);
-  -ms-transform: translate(0px, -80px);
-  transform: translate(0px, -80px);
-}
-html.w-mod-js *[data-ix="subtitle-load"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, 41px);
-  -ms-transform: translate(0px, 41px);
-  transform: translate(0px, 41px);
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="scale-on-scroll"] {
-  opacity: 0;
-  -webkit-transform: scale(0.79);
-  -ms-transform: scale(0.79);
-  transform: scale(0.79);
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="scale-on-scroll-delay-100"] {
-  opacity: 0;
-  -webkit-transform: scale(0.79);
-  -ms-transform: scale(0.79);
-  transform: scale(0.79);
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="scale-on-scroll-delay-200"] {
-  opacity: 0;
-  -webkit-transform: scale(0.79);
-  -ms-transform: scale(0.79);
-  transform: scale(0.79);
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="scale-on-scroll-delay-300"] {
-  opacity: 0;
-  -webkit-transform: scale(0.79);
-  -ms-transform: scale(0.79);
-  transform: scale(0.79);
-}
-html.w-mod-js *[data-ix="hide-on-load"] {
-  -webkit-transform: translate(0px, -59px);
-  -ms-transform: translate(0px, -59px);
-  transform: translate(0px, -59px);
-}
-html.w-mod-js *[data-ix="new-interaction"] {
-  opacity: 0;
-  -webkit-transform: translate(-434px, 0px) rotate(180deg);
-  -ms-transform: translate(-434px, 0px) rotate(180deg);
-  transform: translate(-434px, 0px) rotate(180deg);
-}
-html.w-mod-js *[data-ix="0-opacity-on-load"] {
-  opacity: 0;
-}
-html.w-mod-js *[data-ix="display-none-on-load"] {
-  display: none;
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="fade-from-left"] {
-  opacity: 0;
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="fade-from-right"] {
-  opacity: 0;
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="example-1"] {
-  opacity: 0;
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="example-1a"] {
-  opacity: 0;
-}
-html.w-mod-js.w-mod-no-ios *[data-ix="example-1b"] {
-  opacity: 0;
-}
-html.w-mod-js *[data-ix="example-2-initial-appearance"] {
-  display: none;
-  -webkit-transform: translate(0px, 120px);
-  -ms-transform: translate(0px, 120px);
-  transform: translate(0px, 120px);
-}
-html.w-mod-js *[data-ix="sidebar-initial-appearance"] {
-  display: none;
-  -webkit-transform: translate(305px, 0px);
-  -ms-transform: translate(305px, 0px);
-  transform: translate(305px, 0px);
-}
-html.w-mod-js *[data-ix="made-in-webflow"] {
-  opacity: 0;
-  -webkit-transform: scale(1.19) rotate(-15deg);
-  -ms-transform: scale(1.19) rotate(-15deg);
-  transform: scale(1.19) rotate(-15deg);
-}
-html.w-mod-js *[data-ix="album-icons"] {
-  opacity: 0;
-}
-html.w-mod-js *[data-ix="album-info-initial-appearance"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, 105px);
-  -ms-transform: translate(0px, 105px);
-  transform: translate(0px, 105px);
-}
-html.w-mod-js *[data-ix="heading-text-load"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, 41px);
-  -ms-transform: translate(0px, 41px);
-  transform: translate(0px, 41px);
-}
-html.w-mod-js *[data-ix="play-buttons"] {
-  width: 55px;
-}
-html.w-mod-js *[data-ix="down-arrow-on-load"] {
-  opacity: 0;
-  -webkit-transform: translate(0px, 30px);
-  -ms-transform: translate(0px, 30px);
-  transform: translate(0px, 30px);
-}
-html.w-mod-js *[data-ix="awwwwwards"] {
-  opacity: 0.39;
-  -webkit-transform: translate(73px, 0px);
-  -ms-transform: translate(73px, 0px);
-  transform: translate(73px, 0px);
-}
-@media (max-width: 991px) {
-  h4 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 19px;
-    line-height: 21px;
-    font-weight: 600;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
   }
-  .button {
-    margin-bottom: 16px;
+  
+  .section-header h2 {
+    font-size: 2rem;
   }
-  .nav-link {
-    padding-top: 27px;
-    padding-bottom: 27px;
-    padding-left: 0px;
-    color: #3ec7c2;
-    font-size: 57px;
-    line-height: 41px;
-    text-align: center;
+  
+  .era-header h3 {
+    font-size: 1.75rem;
   }
-  .nav-menu {
-    width: 100%;
-    padding-top: 104px;
-    background-color: black;
-  }
-  .nav-menu.subpage {
-    width: auto;
-    padding-top: 0px;
-    background-color: transparent;
-  }
-  .menu-button {
-    opacity: 1;
-  }
-  .close-link {
-    margin-bottom: 25px;
-    padding: 15px;
-    color: white;
-    font-size: 58px;
-    line-height: 46px;
-    text-decoration: none;
-  }
-  .example-left-col {
-    padding-top: 20px;
-    padding-right: 20px;
-  }
-  .example-right-col {
-    padding-top: 20px;
-    padding-left: 20px;
-  }
-  .mobile-error {
-    padding-bottom: 13px;
-  }
-  .mobile-icon {
-    margin-top: 4px;
-    margin-bottom: 14px;
-  }
-  .example-1-img {
-    margin-bottom: 22px;
-  }
-  .note-text.ex.green {
-    width: auto;
-    margin-top: 0px;
-    margin-bottom: 17px;
-    padding-right: 47px;
-    padding-bottom: 11px;
-    padding-left: 0px;
-    float: left;
-    background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534e41de3392f3d0690001cf_green-arrow-mobile.png);
-    background-position: 100% 100%;
-    background-size: 38px;
-  }
-}
-@media (max-width: 767px) {
-  h1 {
-    font-size: 69px;
-    line-height: 63px;
-    text-align: left;
-  }
-  h2 {
-    margin-bottom: 9px;
-    padding-bottom: 43px;
-  }
-  h4 {
-    margin-bottom: 5px;
-  }
-  .button {
-    margin-top: 5px;
-  }
-  .header {
-    padding-bottom: 40px;
-    text-align: center;
-  }
-  .nav-link {
-    margin-right: 12px;
-    margin-left: 12px;
-    font-size: 47px;
-    line-height: 30px;
-  }
-  .section {
-    padding: 50px 10px;
-  }
-  .section.black.footer {
-    padding-right: 20px;
-    padding-left: 20px;
-    text-align: center;
-  }
-  .section.video-page {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .brand {
-    padding-left: 0px;
-  }
-  .nav-menu {
-    padding-top: 28px;
-  }
-  .nav {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .close-link {
-    font-size: 38px;
-    line-height: 25px;
-  }
-  .main-heading-wrapper {
-    margin-top: 32px;
-    margin-bottom: 47px;
-  }
-  .feature-pill {
-    margin-bottom: 30px;
-  }
-  .feature-pill.last {
-    margin-bottom: 0px;
-  }
-  .setup-pill {
-    height: auto;
-  }
-  .widget {
+  
+  .era-period {
     display: block;
-    margin-bottom: 0px;
-    float: none;
-  }
-  .works-row {
-    width: auto;
-  }
-  .caption-text.left {
-    margin-bottom: 9px;
-    text-align: left;
-  }
-  .right-border {
-    margin-bottom: 40px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
-    border-right-width: 0px;
-  }
-  .left-heading {
-    text-align: center;
-  }
-  .left-heading.left-border {
-    margin-bottom: 0px;
-    padding-bottom: 40px;
-    padding-left: 0px;
-    box-shadow: transparent -1px 0px 0px 0px;
-    text-align: center;
-  }
-  .left-heading.small-padding {
-    margin-right: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
-    line-height: 34px;
-  }
-  .left-column {
-    margin-bottom: 57px;
-    padding-right: 10px;
-  }
-  .right-column {
-    padding-left: 10px;
-  }
-  .nav-scroll {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .nav-menu-scroll {
-    padding: 20px 16px 15px;
-    background-color: black;
-    text-align: left;
-  }
-  .nav-link-scroll {
-    display: block;
-    margin-bottom: 13px;
-    padding: 0px;
-    float: none;
-    background-color: transparent;
-    color: white;
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 400;
-    text-align: left;
-    letter-spacing: 1px;
-  }
-  .social-wrapper {
-    margin-bottom: 40px;
-  }
-  .cta-button.ex.three {
-    clear: left;
-  }
-  .footer-logo {
-    margin-right: 0px;
-    margin-bottom: 14px;
-    float: none;
-  }
-  .footer-link-wrapper {
-    margin-bottom: 13px;
-  }
-  .footer-link {
-    display: inline-block;
-  }
-  .copyright {
-    margin-bottom: 15px;
-  }
-  .webflow-social.phone {
-    float: none;
-  }
-  .social-link.phone {
-    margin-right: 10px;
-    margin-left: 0px;
-  }
-  .scroll-nav {
-    padding: 9px 0px 9px 13px;
-    font-size: 32px;
-  }
-  .scroll-nav.w--open {
-    background-color: white;
-    color: black;
-  }
-  .ix-playground {
-    text-align: center;
-  }
-  .example-left-col {
-    padding-right: 10px;
-    padding-bottom: 20px;
-    box-shadow: #dbdbdb 0px 1px 0px 0px;
-  }
-  .example-right-col {
-    padding-left: 10px;
-    box-shadow: transparent 1px 0px 0px 0px inset;
-    text-align: center;
-  }
-  .mobile-error {
-    color: rgba(0, 0, 0, 0.56);
-  }
-  .footer-flyout {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .monkey-img {
-    width: 86px;
-  }
-  .monkey-text {
-    width: 328px;
-  }
-  .monkey-heading {
-    font-size: 18px;
-    line-height: 21px;
-  }
-  .album-art {
-    display: inline-block;
-  }
-  .works-column {
-    width: 100%;
-  }
-  .padding-mobile {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .contents {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .button-wrapper {
-    text-align: center;
-  }
-  .subpage-content {
-    padding-right: 20px;
-    padding-left: 20px;
-    text-align: left;
-  }
-  .header-1 {
-    position: static;
-    display: block;
-    margin-left: auto;
-  }
-  .note-text.btw {
-    font-size: 21px;
-  }
-  .note-text.ex.blue {
-    display: block;
-    margin-bottom: 19px;
-    margin-left: 0px;
-    padding-bottom: 8px;
-    padding-left: 43px;
-    float: none;
-    background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534eab296360a961390005be_down-arrow-mobile.png);
-    background-position: 0px 100%;
-  }
-  .note-text.ex.blue.turq {
-    background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534eab4cb485866039000552_down-arrow-mobile-green.png);
-    background-size: 34px;
-  }
-  .note-text.screen {
-    width: auto;
-    text-align: center;
-  }
-}
-@media (max-width: 479px) {
-  h1 {
-    font-size: 40px;
-    line-height: 43px;
-  }
-  h3 {
-    margin-top: 0px;
-  }
-  .button {
-    display: block;
-  }
-  .nav-menu.subpage {
-    float: left;
-  }
-  .main-subtitle {
-    font-size: 23px;
-    line-height: 32px;
-  }
-  .setup-pill.dark {
-    width: auto;
-  }
-  .works-row {
-    width: auto;
-    text-align: center;
-  }
-  .left-heading.small-padding {
-    font-size: 29px;
-  }
-  .monkey-text {
-    width: 158px;
-    margin-top: -33px;
-    padding-right: 16px;
-    padding-left: 16px;
-  }
-  .sidebar {
-    width: 100%;
-  }
-  .album-art {
-    width: 280px;
-    height: 280px;
-  }
-  .icons-wrapper {
-    margin-top: 59px;
-  }
-  .album-info {
-    padding: 16px;
-  }
-  .note-text.ex.green {
-    background-position: 100% 50%;
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .w-container {
-    max-width: 1170px;
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
   }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-scale .marker-label {
+    font-size: 0.7rem;
+  }
+  
+  .era-name {
+    font-size: 0.8rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-form input {
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+  }
+  
+  .subscribe-button {
+    border-radius: var(--border-radius);
+    padding: 0.75rem 0;
+  }
+}
 
-  .works-row {
-    width: auto;
+@media (max-width: 480px) {
+  .main-header .container {
+    flex-direction: column;
+    gap: 1rem;
   }
-  .works-column {
-    width: 25%;
+  
+  .main-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+  
+  .timeline-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .timeline-scale {
+    display: none;
+  }
+  
+  .era-block .era-name {
+    display: none;
+  }
+  
+  .event-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .event-time {
+    min-width: auto;
+  }
+  
+  .species-card {
+    flex-direction: column;
+  }
+  
+  .species-image {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .newsletter-container {
+    padding: 2rem 1rem;
   }
 }
 </style>
