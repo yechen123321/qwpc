@@ -2,17 +2,17 @@
   <div class="categories-page">
     <!-- Navigation Header -->
     <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <h2>生物百科</h2>
-        </div>
-        <nav class="main-nav">
-          <a href="/library" class="nav-link">主页</a>
-          <a href="/categories" class="nav-link active">类别</a>
-          <a href="#" class="nav-link">发现</a>
-          <a href="#" class="nav-link">关于</a>
-        </nav>
+      <!-- <div class="logo">
+        <a href="/">
+          <img style="width: 180px" src="../assets/logo.png" alt="" />
+        </a>
       </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link">首页</a>
+        <a href="/library" class="nav-link active">百科</a>
+        <a href="#" class="nav-link">发现</a>
+        <a href="#" class="nav-link">助手</a>
+      </nav> -->
     </header>
 
     <!-- Hero Section -->
@@ -28,6 +28,10 @@
     <!-- Search and Filter -->
     <section class="search-section">
       <div class="container">
+        <div class="breadcrumb">
+          <a href="#" @click.prevent="goBack">主页</a>&gt; 
+          <a href="#" @click.prevent="goToCategory">类别</a> 
+        </div>
         <div class="search-container">
           <div class="search-box">
             <input
@@ -274,14 +278,25 @@
   
   <script setup>
 import { ref, computed, onMounted } from "vue";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 // State
 const searchQuery = ref("");
 const selectedDomain = ref("all");
 const sortBy = ref("name");
 const categories = ref([]);
 const popularSubcategories = ref([]);
+const goBack = () => {
+  console.log("Go back to home");
+  router.push({ name: "library" });
+  // In a real app, this would navigate back to the home page
+};
 
+const goToCategory = () => {
+  console.log("Go to category:", species.category);
+  // In a real app, this would navigate to the category page
+};
 // Fetch categories data (in a real app, this would come from an API)
 onMounted(() => {
   // Simulate API call
@@ -650,7 +665,24 @@ body {
   color: var(--text-primary);
   background-color: var(--background-light);
 }
+.breadcrumb {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
 
+.breadcrumb a {
+  color: var(--text-secondary);
+  margin-right: 0.5rem;
+}
+
+.breadcrumb a:hover {
+  color: var(--primary-color);
+}
+
+.breadcrumb span {
+  margin-left: 0.5rem;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -684,21 +716,18 @@ button {
 }
 
 /* Header Styles */
+/* Header Styles */
 .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
   background-color: var(--background-white);
-  padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
 }
-
-.main-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo h2 {
   color: var(--primary-color);
   font-size: 1.5rem;

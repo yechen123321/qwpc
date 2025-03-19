@@ -5,6 +5,8 @@ import * as ElementPlusIconsVue from "@element-plus/icons-vue";
 import router from "./router";
 import App from "./App.vue";
 import Antd from "ant-design-vue";
+import VueAMap, { initAMapApiLoader } from "@vuemap/vue-amap";
+import '@vuemap/vue-amap/dist/style.css'
 import "ant-design-vue/dist/reset.css";
 // 确保 lucide-vue-next 已正确安装
 import * as LucideIcons from "lucide-vue-next";
@@ -15,7 +17,11 @@ app.use(Antd);
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component as Component);
 }
-
+initAMapApiLoader({
+  key: "e4aca150aefe0ddb39f37ce94eafddf9", // 替换为你的高德地图 API Key
+  securityJsCode: "3355637d8322b0877af48e7dbd8111f4", // 替换为你的安全密钥（可选）
+  plugins: ["AMap.Loca"], // 加载 Loca 插件以支持热力图
+});
 // 注册 Lucide 图标
 type LucideIconComponent = Component & ((props: any) => any);
 Object.entries(LucideIcons).forEach(([name, component]) => {
@@ -27,6 +33,6 @@ Object.entries(LucideIcons).forEach(([name, component]) => {
 // 使用 ElementPlus 和 路由
 app.use(ElementPlus);
 app.use(router);
-
+app.use(VueAMap);
 // 挂载应用
 app.mount("#app");

@@ -108,6 +108,26 @@ const router = createRouter({
       name: 'chat',
       component: () => import('@/views/chat.vue')
     },
+    {
+      path: '/more',
+      name: 'more',
+      component: () => import('@/views/DetailPage.vue')
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: () => import('@/components/map.vue')
+    },
+    {
+      path: '/public',
+      name: 'public',
+      component: () => import('@/views/PublicationPage.vue')
+    },
+    {
+      path: '/public/detail',
+      name: 'PublicDetail',
+      component: () => import('@/views/PublicationDetailPage.vue')
+    },
   ]
 })
 

@@ -1,41 +1,42 @@
+<!-- HomePage.vue -->
 <template>
   <div class="home-page">
-    <!-- Navigation Header -->
+    <!-- 导航头部 -->
     <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <h2>EarthChronicle</h2>
-        </div>
-        <nav class="main-nav">
-          <a href="/" class="nav-link active">首页</a>
-          <a href="/library" class="nav-link">百科</a>
-          <a href="#" class="nav-link">发现</a>
-          <a href="#" class="nav-link">助手</a>
-        </nav>
+      <div class="logo">
+        <a href="/">
+          <img style="width:180px;" src="../assets/logo.png" alt="地球编年史">
+        </a>
       </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link active">首页</a>
+        <a href="/library" class="nav-link">百科</a>
+        <a href="#" class="nav-link">发现</a>
+        <a href="/chat" class="nav-link">助手</a>
+      </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- 英雄部分 -->
     <section class="hero-section">
       <div class="container">
-        <h1>Journey Through Earth's History</h1>
+        <h1>穿越地球历史的旅程</h1>
         <p class="hero-description">
-          Explore the fascinating story of life on our planet, from the earliest microorganisms to today's complex ecosystems.
-          Discover how Earth's biodiversity evolved and the environmental changes that shaped our world.
+          探索地球上生命引人入胜的故事，从最早的微生物到今日复杂的生态系统。
+          了解地球生物多样性如何演化，以及塑造我们世界的环境变化。
         </p>
         <div class="hero-buttons">
-          <button class="primary-button" @click="scrollToTimeline">Explore Timeline</button>
-          <button class="secondary-button">Learn About Conservation</button>
+          <button class="primary-button" @click="scrollToTimeline">探索时间线</button>
+          <button class="secondary-button">了解保护工作</button>
         </div>
       </div>
     </section>
 
-    <!-- Timeline Introduction -->
+    <!-- 时间线介绍 -->
     <section class="timeline-intro">
       <div class="container">
         <div class="section-header">
-          <h2>The History of Life on Earth</h2>
-          <p>Our interactive timeline spans 4.6 billion years of Earth's history, highlighting key evolutionary milestones and environmental events that shaped our planet's biodiversity.</p>
+          <h2>地球生命的历史</h2>
+          <p>我们的互动时间线跨越了46亿年的地球历史，突出了塑造地球生物多样性的关键进化里程碑和环境事件。</p>
         </div>
         <div class="timeline-stats">
           <div class="stat-card">
@@ -45,8 +46,8 @@
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
             </div>
-            <div class="stat-number">4.6 Billion</div>
-            <div class="stat-description">Years of Earth's History</div>
+            <div class="stat-number">46亿</div>
+            <div class="stat-description">地球历史年限</div>
           </div>
           <div class="stat-card">
             <div class="stat-icon">
@@ -54,8 +55,8 @@
                 <path d="M20.84 4.61a5.4 5.4 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.4 5.4 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.4 5.4 0 0 0 0-7.78z"></path>
               </svg>
             </div>
-            <div class="stat-number">8.7 Million</div>
-            <div class="stat-description">Species on Earth Today</div>
+            <div class="stat-number">870万</div>
+            <div class="stat-description">今日地球上的物种数量</div>
           </div>
           <div class="stat-card">
             <div class="stat-icon">
@@ -70,7 +71,7 @@
               </svg>
             </div>
             <div class="stat-number">5</div>
-            <div class="stat-description">Mass Extinction Events</div>
+            <div class="stat-description">大规模灭绝事件</div>
           </div>
           <div class="stat-card">
             <div class="stat-icon">
@@ -84,13 +85,13 @@
               </svg>
             </div>
             <div class="stat-number">4</div>
-            <div class="stat-description">Major Geological Eras</div>
+            <div class="stat-description">主要地质时代</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Timeline -->
+    <!-- 互动时间线 -->
     <section id="timeline-section" class="timeline-section">
       <div class="container">
         <div class="timeline-controls">
@@ -124,7 +125,7 @@
             </div>
           </div>
           
-          <!-- Era Details with Transition -->
+          <!-- 时代详情与过渡动画 -->
           <Transition name="scale" mode="out-in">
             <div class="era-details" v-if="currentEra" key="era-details">
               <div class="era-header">
@@ -134,7 +135,7 @@
               
               <div class="era-content">
                 <div class="era-species">
-                  <h4>Notable Species</h4>
+                  <h4>代表性物种</h4>
                   <TransitionGroup name="scale" tag="div" class="species-grid">
                     <div class="species-card" v-for="species in currentEra.species" :key="species.id">
                       <div class="species-image">
@@ -150,7 +151,7 @@
                 </div>
                 
                 <div class="era-events">
-                  <h4>Key Environmental Events</h4>
+                  <h4>关键环境事件</h4>
                   <TransitionGroup name="scale" tag="div" class="events-timeline">
                     <div class="event-item" v-for="event in currentEra.events" :key="event.id">
                       <div class="event-time">{{ event.time }}</div>
@@ -168,12 +169,12 @@
       </div>
     </section>
 
-    <!-- Biodiversity Importance -->
+    <!-- 生物多样性的重要性 -->
     <section class="biodiversity-section">
       <div class="container">
         <div class="section-header">
-          <h2>Why Biodiversity Matters</h2>
-          <p>Understanding Earth's biological history helps us appreciate the importance of preserving biodiversity today.</p>
+          <h2>为什么生物多样性重要</h2>
+          <p>了解地球的生物历史有助于我们认识到保护今日生物多样性的重要性。</p>
         </div>
         
         <div class="benefits-grid">
@@ -184,8 +185,8 @@
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
               </svg>
             </div>
-            <h3>Ecosystem Stability</h3>
-            <p>Diverse ecosystems are more resilient to environmental changes and can better recover from disturbances.</p>
+            <h3>生态系统稳定性</h3>
+            <p>多样化的生态系统对环境变化更具韧性，能够更好地从干扰中恢复。</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">
@@ -193,8 +194,8 @@
                 <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
               </svg>
             </div>
-            <h3>Human Health</h3>
-            <p>Biodiversity provides essential resources for medicine, nutrition, and clean air and water.</p>
+            <h3>人类健康</h3>
+            <p>生物多样性为医药、营养以及清洁的空气和水提供了重要资源。</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">
@@ -202,8 +203,8 @@
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
-            <h3>Climate Regulation</h3>
-            <p>Diverse ecosystems help regulate climate by storing carbon and mitigating extreme weather events.</p>
+            <h3>气候调节</h3>
+            <p>多样化的生态系统通过储存碳和缓解极端天气事件来帮助调节气候。</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">
@@ -212,97 +213,97 @@
                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
               </svg>
             </div>
-            <h3>Scientific Knowledge</h3>
-            <p>Studying biodiversity provides insights into evolution, adaptation, and the development of new technologies.</p>
+            <h3>科学知识</h3>
+            <p>研究生物多样性为进化、适应和新技术的开发提供了深刻见解。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Conservation Call to Action -->
+    <!-- 保护行动号召 -->
     <section class="conservation-cta">
       <div class="container">
         <div class="cta-content">
-          <h2>Join Our Conservation Efforts</h2>
-          <p>Help protect Earth's biodiversity for future generations. Learn about conservation initiatives and how you can contribute.</p>
-          <button class="primary-button">Get Involved</button>
+          <h2>加入我们的保护工作</h2>
+          <p>帮助保护地球的生物多样性，为子孙后代守护自然。了解保护倡议以及您如何做出贡献。</p>
+          <button class="primary-button">参与其中</button>
         </div>
         <div class="cta-image">
-          <img src="../assets/2.svg" alt="Conservation efforts">
+          <img src="../assets/2.svg" alt="保护工作">
         </div>
       </div>
     </section>
 
-    <!-- Educational Resources -->
+    <!-- 教育资源 -->
     <section class="resources-section">
       <div class="container">
         <div class="section-header">
-          <h2>Educational Resources</h2>
-          <p>Explore our collection of articles, videos, and interactive materials about Earth's biological history and conservation.</p>
+          <h2>教育资源</h2>
+          <p>探索我们关于地球生物历史和保护的文章、视频和互动材料的收藏。</p>
         </div>
         
         <div class="resources-grid">
           <div class="resource-card">
             <div class="resource-image">
-              <img src="../assets/2.svg" alt="Article">
-              <div class="resource-type">Article</div>
+              <img src="../assets/2.svg" alt="文章">
+              <div class="resource-type">文章</div>
             </div>
             <div class="resource-content">
-              <h3>The Big Five Mass Extinctions</h3>
-              <p>Learn about the five major extinction events that dramatically altered life on Earth.</p>
-              <a href="#" class="resource-link">Read More →</a>
+              <h3>五大灭绝事件</h3>
+              <p>了解五次大规模灭绝事件如何显著改变了地球上的生命。</p>
+              <a href="#" class="resource-link">阅读更多 →</a>
             </div>
           </div>
           <div class="resource-card">
             <div class="resource-image">
-              <img src="../assets/2.svg" alt="Video">
-              <div class="resource-type">Video</div>
+              <img src="../assets/2.svg" alt="视频">
+              <div class="resource-type">视频</div>
             </div>
             <div class="resource-content">
-              <h3>Evolution of Mammals</h3>
-              <p>Watch how mammals evolved from small nocturnal creatures to diverse species across the globe.</p>
-              <a href="#" class="resource-link">Watch Now →</a>
+              <h3>哺乳动物的进化</h3>
+              <p>观看哺乳动物如何从小型夜行生物进化成遍布全球的多样物种。</p>
+              <a href="#" class="resource-link">立即观看 →</a>
             </div>
           </div>
           <div class="resource-card">
             <div class="resource-image">
-              <img src="../assets/2.svg" alt="Interactive">
-              <div class="resource-type">Interactive</div>
+              <img src="../assets/2.svg" alt="互动">
+              <div class="resource-type">互动</div>
             </div>
             <div class="resource-content">
-              <h3>Climate Change Simulator</h3>
-              <p>Explore how different factors affect Earth's climate and biodiversity over time.</p>
-              <a href="#" class="resource-link">Try It →</a>
+              <h3>气候变化模拟器</h3>
+              <p>探索不同因素如何随时间影响地球的气候和生物多样性。</p>
+              <a href="#" class="resource-link">尝试一下 →</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Newsletter -->
+    <!-- 通讯订阅 -->
     <section class="newsletter-section">
       <div class="container">
         <div class="newsletter-container">
           <div class="newsletter-content">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter for the latest research, conservation news, and educational resources.</p>
+            <h2>保持更新</h2>
+            <p>订阅我们的通讯，获取最新的研究、保护新闻和教育资源。</p>
           </div>
           <div class="newsletter-form">
-            <input type="email" placeholder="Your email address" v-model="emailInput">
-            <button @click="subscribeNewsletter" class="subscribe-button">Subscribe</button>
+            <input type="email" placeholder="您的电子邮件地址" v-model="emailInput">
+            <button @click="subscribeNewsletter" class="subscribe-button">订阅</button>
           </div>
-          <p class="privacy-note">We respect your privacy and will never share your information.</p>
+          <p class="privacy-note">我们尊重您的隐私，绝不分享您的信息。</p>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- 页脚 -->
     <footer class="main-footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>EarthChronicle</h3>
-            <p>Exploring Earth's biological history and promoting conservation</p>
+            <h3>地球编年史</h3>
+            <p>探索地球的生物历史并推动保护工作</p>
             <div class="social-icons">
               <a href="#" class="social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -331,35 +332,35 @@
             </div>
           </div>
           <div class="footer-section">
-            <h4>Explore</h4>
+            <h4>探索</h4>
             <ul>
-              <li><a href="#">Timeline</a></li>
-              <li><a href="#">Species Database</a></li>
-              <li><a href="#">Geological Eras</a></li>
-              <li><a href="#">Conservation</a></li>
+              <li><a href="#">时间线</a></li>
+              <li><a href="#">物种数据库</a></li>
+              <li><a href="#">地质时代</a></li>
+              <li><a href="#">保护</a></li>
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Resources</h4>
+            <h4>资源</h4>
             <ul>
-              <li><a href="#">Articles</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Interactive Tools</a></li>
-              <li><a href="#">Educational Materials</a></li>
+              <li><a href="#">文章</a></li>
+              <li><a href="#">视频</a></li>
+              <li><a href="#">互动工具</a></li>
+              <li><a href="#">教育材料</a></li>
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Connect</h4>
+            <h4>联系我们</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Volunteer</a></li>
-              <li><a href="#">Donate</a></li>
+              <li><a href="#">关于我们</a></li>
+              <li><a href="#">联系方式</a></li>
+              <li><a href="#">志愿者</a></li>
+              <li><a href="#">捐款</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>© {{ new Date().getFullYear() }} EarthChronicle. All rights reserved.</p>
+          <p>© {{ new Date().getFullYear() }} 地球编年史。保留所有权利。</p>
         </div>
       </div>
     </footer>
@@ -367,347 +368,347 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue';
 
-// State
-const emailInput = ref('')
-const selectedEra = ref('cenozoic')
+// 状态
+const emailInput = ref('');
+const selectedEra = ref('cenozoic');
 const timelineMarkers = ref([
-  { year: 4600, label: '4.6 Billion Years Ago' },
-  { year: 3500, label: '3.5 Billion Years Ago' },
-  { year: 2500, label: '2.5 Billion Years Ago' },
-  { year: 541, label: '541 Million Years Ago' },
-  { year: 252, label: '252 Million Years Ago' },
-  { year: 66, label: '66 Million Years Ago' },
-  { year: 0, label: 'Present' }
-])
+  { year: 4600, label: '46亿年前' },
+  { year: 3500, label: '35亿年前' },
+  { year: 2500, label: '25亿年前' },
+  { year: 541, label: '5.41亿年前' },
+  { year: 252, label: '2.52亿年前' },
+  { year: 66, label: '6600万年前' },
+  { year: 0, label: '现在' },
+]);
 
-// Eras data
+// 时代数据
 const eras = ref([
   {
     id: 'precambrian',
-    name: 'Precambrian',
-    period: '4.6 billion - 541 million years ago',
+    name: '前寒武纪',
+    period: '46亿年前 - 5.41亿年前',
     color: '#8C6BB1',
     startYear: 4600,
     endYear: 541,
-    description: 'The Precambrian covers approximately 88% of Earth\'s history. It saw the formation of Earth, the emergence of continents, oceans, atmosphere, and the first life forms - simple, single-celled organisms that later evolved into more complex forms.',
+    description: '前寒武纪涵盖了地球历史的约88%。这一时期见证了地球的形成、大陆、海洋、大气的出现，以及最早的生命形式——简单的单细胞生物，后来演化为更复杂的形态。',
     species: [
       {
         id: 'stromatolites',
-        name: 'Stromatolites',
-        scientificName: 'Various cyanobacteria',
+        name: '叠层石',
+        scientificName: '多种蓝细菌',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'Layered structures formed by colonies of photosynthetic cyanobacteria. They are among the oldest evidence of life on Earth, dating back over 3.5 billion years.'
+        description: '由光合蓝细菌群落形成的层状结构。它们是地球上最古老的生命证据之一，可追溯到超过35亿年前。',
       },
       {
         id: 'ediacaran',
-        name: 'Ediacaran Biota',
-        scientificName: 'Various soft-bodied organisms',
+        name: '埃迪卡拉生物群',
+        scientificName: '多种软体生物',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'Mysterious soft-bodied organisms that appeared about 575 million years ago. They represent the first complex multicellular organisms in Earth\'s history.'
+        description: '大约5.75亿年前出现的神秘软体生物。它们代表了地球历史上首批复杂的多细胞生物。',
       },
       {
         id: 'cloudina',
-        name: 'Cloudina',
+        name: '克劳迪纳',
         scientificName: 'Cloudina hartmannae',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'One of the first animals to produce a mineralized skeleton, appearing around 550 million years ago. These small, tube-shaped fossils mark an important evolutionary milestone.'
-      }
+        description: '首批产生矿化骨骼的动物之一，出现于约5.5亿年前。这些小型管状化石标志着重要的进化里程碑。',
+      },
     ],
     events: [
       {
         id: 'earth-formation',
-        time: '4.6 billion years ago',
-        title: 'Formation of Earth',
-        description: 'Earth formed from the solar nebula, a disk of gas and dust left over from the formation of the Sun.'
+        time: '46亿年前',
+        title: '地球形成',
+        description: '地球从太阳星云中形成，太阳星云是太阳形成后留下的气体和尘埃盘。',
       },
       {
         id: 'first-oceans',
-        time: '4.4 billion years ago',
-        title: 'First Oceans Form',
-        description: 'As Earth cooled, water vapor condensed to form the first oceans, creating environments where life could eventually emerge.'
+        time: '44亿年前',
+        title: '首批海洋形成',
+        description: '随着地球冷却，水蒸气凝结形成首批海洋，为生命最终出现创造了环境。',
       },
       {
         id: 'first-life',
-        time: '~3.5 billion years ago',
-        title: 'First Life Appears',
-        description: 'Simple, single-celled prokaryotic organisms emerged, likely near hydrothermal vents in the ocean.'
+        time: '约35亿年前',
+        title: '首批生命出现',
+        description: '简单的单细胞原核生物出现，可能在海洋中的热液喷口附近。',
       },
       {
         id: 'oxygen-revolution',
-        time: '2.4-2.0 billion years ago',
-        title: 'Great Oxygenation Event',
-        description: 'Photosynthetic cyanobacteria produced oxygen as a waste product, gradually changing Earth\'s atmosphere and making it possible for aerobic life to evolve.'
+        time: '24亿 - 20亿年前',
+        title: '大氧化事件',
+        description: '光合蓝细菌将氧气作为废物产生，逐渐改变了地球的大气，使需氧生命得以进化。',
       },
       {
         id: 'multicellular',
-        time: '~1.5 billion years ago',
-        title: 'First Multicellular Organisms',
-        description: 'Cells began to cooperate and specialize, leading to the first simple multicellular organisms.'
-      }
-    ]
+        time: '约15亿年前',
+        title: '首批多细胞生物',
+        description: '细胞开始合作并特化，导致首批简单的多细胞生物出现。',
+      },
+    ],
   },
   {
     id: 'paleozoic',
-    name: 'Paleozoic',
-    period: '541-252 million years ago',
+    name: '古生代',
+    period: '5.41亿年前 - 2.52亿年前',
     color: '#41AB5D',
     startYear: 541,
     endYear: 252,
-    description: 'The Paleozoic Era saw an explosion of life forms, including the first fish, land plants, insects, and reptiles. It began with the Cambrian Explosion, a rapid diversification of complex life, and ended with the largest mass extinction in Earth\'s history.',
+    description: '古生代见证了生命形式的爆发，包括首批鱼类、陆地植物、昆虫和爬行动物。它始于寒武纪大爆发，复杂的生命迅速多样化，并以地球历史上最大的大规模灭绝事件结束。',
     species: [
       {
         id: 'trilobite',
-        name: 'Trilobite',
-        scientificName: 'Phylum Trilobita',
+        name: '三叶虫',
+        scientificName: '三叶虫门',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'Marine arthropods that dominated the early Paleozoic seas. They were among the most successful and diverse groups of their time, with over 20,000 known species.'
+        description: '海洋节肢动物，在早古生代海洋中占主导地位。它们是当时最成功和多样化的群体之一，已知有超过20,000种。',
       },
       {
         id: 'dunkleosteus',
-        name: 'Dunkleosteus',
+        name: '邓氏鱼',
         scientificName: 'Dunkleosteus terrelli',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'A massive armored fish from the late Devonian period, growing up to 6 meters long. It was one of the first vertebrate apex predators.'
+        description: '晚泥盆纪的一种巨大装甲鱼，体长可达6米。它是首批脊椎动物顶级掠食者之一。',
       },
       {
         id: 'meganeura',
-        name: 'Meganeura',
+        name: '巨脉蜻蜓',
         scientificName: 'Meganeura monyi',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'A giant dragonfly-like insect with a wingspan of up to 65 cm. It lived during the Carboniferous period when oxygen levels were much higher than today.'
+        description: '一种巨型蜻蜓状昆虫，翼展可达65厘米。它生活在石炭纪，当时氧气水平远高于今天。',
       },
       {
         id: 'dimetrodon',
-        name: 'Dimetrodon',
+        name: '异齿龙',
         scientificName: 'Dimetrodon limbatus',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'Often mistaken for a dinosaur, this sail-backed reptile-like animal was actually more closely related to mammals. It lived during the Permian period.'
-      }
+        description: '常被误认为是恐龙，这种背帆爬行动物实际上与哺乳动物更接近。它生活在二叠纪。',
+      },
     ],
     events: [
       {
         id: 'cambrian-explosion',
-        time: '541-530 million years ago',
-        title: 'Cambrian Explosion',
-        description: 'A relatively short period when most major animal phyla appeared in the fossil record. Complex life diversified rapidly during this time.'
+        time: '5.41亿 - 5.30亿年前',
+        title: '寒武纪大爆发',
+        description: '一个相对较短的时期，大多数主要动物门类在化石记录中出现。复杂生命在此期间迅速多样化。',
       },
       {
         id: 'land-plants',
-        time: '~470 million years ago',
-        title: 'First Land Plants',
-        description: 'Simple plants like mosses and liverworts began to colonize the land, eventually leading to the development of forests.'
+        time: '约4.7亿年前',
+        title: '首批陆地植物',
+        description: '类似苔藓和地钱这样的简单植物开始在陆地上定居，最终发展成森林。',
       },
       {
         id: 'vertebrates-land',
-        time: '~375 million years ago',
-        title: 'Vertebrates Move to Land',
-        description: 'Fish evolved into tetrapods, four-limbed vertebrates that could venture onto land, leading to amphibians and eventually reptiles.'
+        time: '约3.75亿年前',
+        title: '脊椎动物登陆',
+        description: '鱼类进化成四足动物，四肢脊椎动物能够冒险登陆，导致两栖动物和最终爬行动物的出现。',
       },
       {
         id: 'coal-forests',
-        time: '360-300 million years ago',
-        title: 'Carboniferous Coal Forests',
-        description: 'Vast swamp forests covered much of the tropical land, eventually forming coal deposits. Oxygen levels reached their highest in Earth\'s history.'
+        time: '3.60亿 - 3亿年前',
+        title: '石炭纪煤林',
+        description: '热带陆地上覆盖着巨大的沼泽森林，最终形成了煤层。地球历史上的氧气水平达到最高。',
       },
       {
         id: 'permian-extinction',
-        time: '252 million years ago',
-        title: 'Permian-Triassic Extinction',
-        description: 'The largest mass extinction in Earth\'s history, wiping out about 96% of marine species and 70% of terrestrial vertebrate species. Possibly caused by massive volcanic eruptions in Siberia.'
-      }
-    ]
+        time: '2.52亿年前',
+        title: '二叠纪-三叠纪灭绝',
+        description: '地球历史上最大的大规模灭绝事件，消灭了约96%的海洋物种和70%的陆地脊椎动物物种。可能是由西伯利亚的大规模火山喷发引起的。',
+      },
+    ],
   },
   {
     id: 'mesozoic',
-    name: 'Mesozoic',
-    period: '252-66 million years ago',
+    name: '中生代',
+    period: '2.52亿年前 - 6600万年前',
     color: '#E6550D',
     startYear: 252,
     endYear: 66,
-    description: 'Often called the "Age of Dinosaurs," the Mesozoic Era saw the rise and fall of these iconic reptiles. It also witnessed the appearance of the first mammals, birds, and flowering plants, as well as the breakup of the supercontinent Pangaea.',
+    description: '常被称为“恐龙时代”，中生代见证了这些标志性爬行动物的兴衰。它还见证了首批哺乳动物、鸟类和开花植物的出现，以及超大陆盘古大陆的解体。',
     species: [
       {
         id: 'tyrannosaurus',
-        name: 'Tyrannosaurus Rex',
+        name: '霸王龙',
         scientificName: 'Tyrannosaurus rex',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'One of the largest carnivorous dinosaurs, living at the end of the Cretaceous period. This apex predator could grow up to 12 meters long and had powerful jaws with bone-crushing teeth.'
+        description: '最大的肉食性恐龙之一，生活在白垩纪末期。这种顶级掠食者可长到12米长，拥有强大的下颚和碎骨牙齿。',
       },
       {
         id: 'stegosaurus',
-        name: 'Stegosaurus',
+        name: '剑龙',
         scientificName: 'Stegosaurus stenops',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'A large herbivorous dinosaur from the late Jurassic period, characterized by its distinctive plates along its back and spiked tail used for defense.'
+        description: '晚侏罗纪的大型植食性恐龙，以其背部独特的板状结构和用于防御的尖尾而闻名。',
       },
       {
         id: 'archaeopteryx',
-        name: 'Archaeopteryx',
+        name: '始祖鸟',
         scientificName: 'Archaeopteryx lithographica',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'A transitional species between dinosaurs and birds, showing features of both groups. It lived during the late Jurassic period and provides important evidence for evolution.'
+        description: '恐龙与鸟类之间的过渡物种，显示出两者的特征。它生活在晚侏罗纪，为进化提供了重要证据。',
       },
       {
         id: 'ichthyosaur',
-        name: 'Ichthyosaur',
-        scientificName: 'Order Ichthyosauria',
+        name: '鱼龙',
+        scientificName: '鱼龙目',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'Marine reptiles that evolved a fish-like body shape through convergent evolution. They were highly adapted to aquatic life and some species gave birth to live young in water.'
-      }
+        description: '通过趋同进化形成鱼类体型的海洋爬行动物。它们高度适应水生生活，一些物种在水中直接产下活仔。',
+      },
     ],
     events: [
       {
         id: 'pangaea-breakup',
-        time: '200-145 million years ago',
-        title: 'Breakup of Pangaea',
-        description: 'The supercontinent Pangaea began to fragment, eventually forming the continents we know today. This created new habitats and influenced evolution.'
+        time: '2亿 - 1.45亿年前',
+        title: '盘古大陆解体',
+        description: '超大陆盘古大陆开始分裂，最终形成了我们今天所知的各大洲。这创造了新的栖息地并影响了进化。',
       },
       {
         id: 'first-mammals',
-        time: '~225 million years ago',
-        title: 'First Mammals Appear',
-        description: 'Small, nocturnal creatures evolved from reptile ancestors. They would remain relatively inconspicuous until after the dinosaurs\' extinction.'
+        time: '约2.25亿年前',
+        title: '首批哺乳动物出现',
+        description: '小型夜行动物从爬行动物祖先进化而来。它们在恐龙灭绝之前一直相对低调。',
       },
       {
         id: 'first-birds',
-        time: '~150 million years ago',
-        title: 'First Birds Evolve',
-        description: 'Birds evolved from small theropod dinosaurs, with Archaeopteryx representing an early transitional form.'
+        time: '约1.5亿年前',
+        title: '首批鸟类进化',
+        description: '鸟类从小型兽脚类恐龙进化而来，始祖鸟代表了早期的过渡形态。',
       },
       {
         id: 'flowering-plants',
-        time: '~130 million years ago',
-        title: 'Flowering Plants Emerge',
-        description: 'Angiosperms (flowering plants) appeared and rapidly diversified, eventually becoming the dominant plant group and forming a co-evolutionary relationship with many animal pollinators.'
+        time: '约1.3亿年前',
+        title: '开花植物出现',
+        description: '被子植物（开花植物）出现并迅速多样化，最终成为主要植物群体，并与许多动物传粉者形成共进化关系。',
       },
       {
         id: 'kt-extinction',
-        time: '66 million years ago',
-        title: 'Cretaceous-Paleogene Extinction',
-        description: 'An asteroid impact in the Yucatan Peninsula caused a mass extinction that wiped out all non-avian dinosaurs and many other species, opening ecological niches for mammals to diversify.'
-      }
-    ]
+        time: '6600万年前',
+        title: '白垩纪-古近纪灭绝',
+        description: '一颗小行星撞击尤卡坦半岛引发了大规模灭绝，消灭了所有非鸟类恐龙和许多其他物种，为哺乳动物多样化开辟了生态位。',
+      },
+    ],
   },
   {
     id: 'cenozoic',
-    name: 'Cenozoic',
-    period: '66 million years ago - present',
+    name: '新生代',
+    period: '6600万年前 - 现在',
     color: '#3182BD',
     startYear: 66,
     endYear: 0,
-    description: 'The "Age of Mammals," the Cenozoic Era is characterized by the diversification of mammals, birds, and flowering plants following the extinction of the dinosaurs. It saw the evolution of primates, including humans, and dramatic climate changes including multiple ice ages.',
+    description: '“哺乳动物时代”，新生代以恐龙灭绝后哺乳动物、鸟类和开花植物的多样化为特征。它见证了灵长类动物（包括人类）的进化，以及包括多次冰期在内的剧烈气候变化。',
     species: [
       {
         id: 'mammoth',
-        name: 'Woolly Mammoth',
+        name: '猛犸象',
         scientificName: 'Mammuthus primigenius',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'Ice Age mammals related to modern elephants, adapted to cold environments with long fur and curved tusks. They went extinct only about 4,000 years ago.'
+        description: '冰期哺乳动物，与现代大象有关，适应寒冷环境，长有长毛和弯曲的象牙。它们在大约4000年前灭绝。',
       },
       {
         id: 'megalodon',
-        name: 'Megalodon',
+        name: '巨齿鲨',
         scientificName: 'Otodus megalodon',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'The largest shark that ever lived, reaching lengths of up to 18 meters. This apex predator dominated the oceans from 23 to 3.6 million years ago.'
+        description: '有史以来最大的鲨鱼，体长可达18米。这种顶级掠食者在2300万至360万年前主宰了海洋。',
       },
       {
         id: 'smilodon',
-        name: 'Saber-toothed Cat',
+        name: '剑齿猫',
         scientificName: 'Smilodon fatalis',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'An iconic Ice Age predator with elongated canine teeth. It hunted large herbivores in the Americas until its extinction about 10,000 years ago.'
+        description: '冰期的标志性掠食者，拥有长长的犬齿。它在美洲猎食大型食草动物，直到大约1万年前灭绝。',
       },
       {
         id: 'homo',
-        name: 'Early Humans',
-        scientificName: 'Homo species',
+        name: '早期人类',
+        scientificName: '人属物种',
         image: '../assets/2.svg?height=200&width=200',
-        description: 'Various human species evolved in Africa and spread across the globe. Homo sapiens emerged around 300,000 years ago and eventually became the only surviving human species.'
-      }
+        description: '各种人类物种在非洲进化并扩散到全球。智人约30万年前出现，最终成为唯一幸存的人类物种。',
+      },
     ],
     events: [
       {
         id: 'mammal-radiation',
-        time: '66-56 million years ago',
-        title: 'Mammalian Adaptive Radiation',
-        description: 'With dinosaurs extinct, mammals rapidly diversified to fill vacant ecological niches, evolving into many new forms and sizes.'
+        time: '6600万 - 5600万年前',
+        title: '哺乳动物适应性辐射',
+        description: '恐龙灭绝后，哺乳动物迅速多样化，填补了空缺的生态位，进化出许多新形态和体型。',
       },
       {
         id: 'himalaya-formation',
-        time: '50-40 million years ago',
-        title: 'Formation of the Himalayas',
-        description: 'The collision of the Indian and Eurasian plates began forming the Himalayan mountain range, affecting global climate patterns.'
+        time: '5000万 - 4000万年前',
+        title: '喜马拉雅山形成',
+        description: '印度板块与欧亚板块碰撞，开始形成喜马拉雅山脉，影响了全球气候模式。',
       },
       {
         id: 'antarctica-ice',
-        time: '~34 million years ago',
-        title: 'Antarctic Ice Sheet Forms',
-        description: 'Antarctica became covered by an ice sheet as global temperatures cooled, marking a major shift toward our modern climate.'
+        time: '约3400万年前',
+        title: '南极冰盖形成',
+        description: '随着全球气温下降，南极洲被冰盖覆盖，标志着向现代气候的重大转变。',
       },
       {
         id: 'grasslands-spread',
-        time: '~25 million years ago',
-        title: 'Spread of Grasslands',
-        description: 'Grasslands expanded globally, leading to the evolution of grazing animals and new ecosystems.'
+        time: '约2500万年前',
+        title: '草原扩展',
+        description: '草原在全球范围内扩展，导致食草动物的进化和新生态系统的形成。',
       },
       {
         id: 'ice-ages',
-        time: '2.6 million - 11,700 years ago',
-        title: 'Pleistocene Ice Ages',
-        description: 'A series of glacial periods when ice sheets repeatedly advanced and retreated across North America and Eurasia, driving migrations and extinctions.'
+        time: '260万 - 1.17万年前',
+        title: '更新世冰期',
+        description: '一系列冰川期，冰盖在北美和欧亚大陆反复前进和后退，推动了迁徙和灭绝。',
       },
       {
         id: 'human-agriculture',
-        time: '~12,000 years ago',
-        title: 'Development of Agriculture',
-        description: 'Humans began domesticating plants and animals, leading to settled civilizations and eventually transforming much of Earth\'s surface.'
+        time: '约1.2万年前',
+        title: '农业发展',
+        description: '人类开始驯化植物和动物，导致定居文明的出现，并最终改变了地球表面的大部分。',
       },
       {
         id: 'anthropocene',
-        time: 'Present',
-        title: 'The Anthropocene',
-        description: 'The current geological age, informally defined as the period during which human activity has significantly impacted Earth\'s geology and ecosystems.'
-      }
-    ]
-  }
-])
+        time: '现在',
+        title: '人类世',
+        description: '当前的地质时代，非正式定义为人类活动显著影响地球地质和生态系统的时期。',
+      },
+    ],
+  },
+]);
 
-// Computed properties
+// 计算属性
 const currentEra = computed(() => {
-  return eras.value.find(era => era.id === selectedEra.value)
-})
+  return eras.value.find(era => era.id === selectedEra.value);
+});
 
-// Methods
+// 方法
 const calculateEraWidth = (era) => {
-  const totalYears = 4600
-  const eraSpan = era.startYear - era.endYear
-  const percentage = (eraSpan / totalYears) * 100
-  return `${percentage}%`
-}
+  const totalYears = 4600;
+  const eraSpan = era.startYear - era.endYear;
+  const percentage = (eraSpan / totalYears) * 100;
+  return `${percentage}%`;
+};
 
 const selectEra = (eraId) => {
-  selectedEra.value = eraId
-}
+  selectedEra.value = eraId;
+};
 
 const scrollToTimeline = () => {
-  document.getElementById('timeline-section').scrollIntoView({ behavior: 'smooth' })
-}
+  document.getElementById('timeline-section').scrollIntoView({ behavior: 'smooth' });
+};
 
 const subscribeNewsletter = () => {
   if (emailInput.value && emailInput.value.includes('@')) {
-    alert(`Thank you for subscribing with ${emailInput.value}!`)
-    emailInput.value = ''
+    alert(`感谢您使用 ${emailInput.value} 订阅！`);
+    emailInput.value = '';
   } else {
-    alert('Please enter a valid email address')
+    alert('请输入有效的电子邮件地址');
   }
-}
+};
 </script>
 
 <style>
-/* Base Styles */
+/* 基础样式 */
 :root {
   --primary-color: #2e7d32;
   --primary-light: #60ad5e;
@@ -719,7 +720,7 @@ const subscribeNewsletter = () => {
   --background-white: #ffffff;
   --accent-color: #ffc107;
   
-  /* Era colors */
+  /* 时代颜色 */
   --precambrian-color: #8C6BB1;
   --paleozoic-color: #41AB5D;
   --mesozoic-color: #E6550D;
@@ -772,20 +773,17 @@ button {
   transition: var(--transition);
 }
 
-/* Header Styles */
+/* 头部样式 */
 .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
   background-color: var(--background-white);
-  padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-.main-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo h2 {
@@ -820,7 +818,7 @@ button {
   background-color: var(--primary-color);
 }
 
-/* Hero Section */
+/* 英雄部分 */
 .hero-section {
   background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
   color: white;
@@ -874,7 +872,7 @@ button {
   transform: translateY(-2px);
 }
 
-/* Section Headers */
+/* 部分标题 */
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -892,7 +890,7 @@ button {
   font-size: 1.1rem;
 }
 
-/* Timeline Intro */
+/* 时间线介绍 */
 .timeline-intro {
   padding: 5rem 0 3rem;
   background-color: var(--background-white);
@@ -934,7 +932,7 @@ button {
   color: var(--text-secondary);
 }
 
-/* Timeline Section */
+/* 时间线部分 */
 .timeline-section {
   padding: 3rem 0 5rem;
   background-color: var(--background-light);
@@ -1041,7 +1039,7 @@ button {
   font-size: 0.9rem;
 }
 
-/* Animation Definitions */
+/* 动画定义 */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
@@ -1076,7 +1074,7 @@ button {
   transform-origin: center;
 }
 
-/* Era Details (保持原有样式，调整为支持动画) */
+/* 时代详情（保持原有样式，调整为支持动画） */
 .era-details {
   margin-top: 2rem;
 }
@@ -1202,7 +1200,7 @@ button {
   color: var(--text-primary);
 }
 
-/* Biodiversity Section */
+/* 生物多样性部分 */
 .biodiversity-section {
   padding: 5rem 0;
   background-color: var(--background-white);
@@ -1240,7 +1238,7 @@ button {
   color: var(--text-secondary);
 }
 
-/* Conservation CTA */
+/* 保护行动号召 */
 .conservation-cta {
   padding: 5rem 0;
   background-color: var(--background-light);
@@ -1276,7 +1274,7 @@ button {
   border-radius: var(--border-radius);
 }
 
-/* Resources Section */
+/* 资源部分 */
 .resources-section {
   padding: 5rem 0;
   background-color: var(--background-white);
@@ -1346,7 +1344,7 @@ button {
   text-decoration: underline;
 }
 
-/* Newsletter Section */
+/* 通讯部分 */
 .newsletter-section {
   padding: 5rem 0;
 }
@@ -1401,7 +1399,7 @@ button {
   opacity: 0.8;
 }
 
-/* Footer */
+/* 页脚 */
 .main-footer {
   background-color: #1b5e20;
   color: white;
@@ -1487,7 +1485,7 @@ button {
   font-size: 0.9rem;
 }
 
-/* Responsive Styles */
+/* 响应式样式 */
 @media (max-width: 1024px) {
   .hero-section h1 {
     font-size: 2.5rem;

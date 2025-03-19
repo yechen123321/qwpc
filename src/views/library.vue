@@ -3,15 +3,15 @@
     <!-- Navigation Header -->
     <header class="main-header">
       <div class="logo">
-        <a href="/time">
-        <h2>生物百科</h2>
+        <a href="/">
+          <img style="width:180px;" src="../assets/logo.png" alt="">
         </a>
       </div>
       <nav class="main-nav">
         <a href="/" class="nav-link ">首页</a>
           <a href="/library" class="nav-link active">百科</a>
           <a href="#" class="nav-link">发现</a>
-          <a href="#" class="nav-link">助手</a>
+          <a href="/chat" class="nav-link">助手</a>
       </nav>
     </header>
 
@@ -30,7 +30,7 @@
             placeholder="搜索物种，栖息地或类别..."
             class="search-input"
           />
-          <button class="search-button">Search</button>
+          <button class="search-button">搜索</button>
         </div>
 
         <div class="quick-links">
