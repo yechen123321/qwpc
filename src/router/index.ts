@@ -128,6 +128,31 @@ const router = createRouter({
       name: 'PublicDetail',
       component: () => import('@/views/PublicationDetailPage.vue')
     },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('@/views/ItemManagementPage.vue')
+    },
+    {
+      path: '/1',
+      name: '1',
+      component: () => import('@/components/phone/EncyclopediaEntryPage.vue')
+    },
+    {
+      path: '/2',
+      name: '2',
+      component: () => import('@/components/phone/BeachCleanupEventPage.vue')
+    },
+    {
+      path: '/3',
+      name: '3',
+      component: () => import('@/components/phone/CommunityPostDetailPage.vue')
+    },
+    {
+      path: '/5',
+      name: '5',
+      component: () => import('@/components/phone/AIChat.vue')
+    },
   ]
 })
 

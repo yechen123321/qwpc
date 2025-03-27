@@ -11,8 +11,8 @@
           <nav class="main-nav">
             <a href="/" class="nav-link">首页</a>
             <a href="/library" class="nav-link">百科</a>
-            <a href="/publications" class="nav-link active">出版物</a>
-            <a href="/assistant" class="nav-link">助手</a>
+            <a href="/public" class="nav-link active">出版物</a>
+            <a href="/chat" class="nav-link">助手</a>
           </nav>
         </div>
       </header>
