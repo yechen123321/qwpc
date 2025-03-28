@@ -628,8 +628,8 @@
   
   <style>
   :root {
-    --primary-color: #0288d1;
-    --primary-light: #5eb8ff;
+    --primary-color: #48A351;
+    --primary-light: #48A351;
     --primary-dark: #005b9f;
     --secondary-color: #26a69a;
     --accent-color: #ffc107;

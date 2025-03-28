@@ -17,11 +17,18 @@ app.use(Antd);
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component as Component);
 }
-initAMapApiLoader({
-  key: "e4aca150aefe0ddb39f37ce94eafddf9", // 替换为你的高德地图 API Key
-  securityJsCode: "3355637d8322b0877af48e7dbd8111f4", // 替换为你的安全密钥（可选）
-  plugins: ["AMap.Loca"], // 加载 Loca 插件以支持热力图
-});
+// 高德地图全局配置
+// initAMapApiLoader({
+//   key: "e4aca150aefe0ddb39f37ce94eafddf9",
+//   securityJsCode: "3355637d8322b0877af48e7dbd8111f4",
+//   plugins: [
+//     'AMap.Geolocation',
+//     'AMap.Marker',
+//     'AMap.InfoWindow',
+//     'AMap.Loca'  // Loca需要单独处理
+//   ],
+// })
+
 // 注册 Lucide 图标
 type LucideIconComponent = Component & ((props: any) => any);
 Object.entries(LucideIcons).forEach(([name, component]) => {

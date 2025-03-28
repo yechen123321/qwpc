@@ -206,7 +206,7 @@ const formatViews = (views) => {
 
 // 跳转详情页
 const goToDetail = (id) => {
-  router.push({ name: "VideoDetail", params: { id } });
+  router.push({ name: "9", params: { id } });
 };
 
 // 滚动加载

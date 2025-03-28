@@ -173,6 +173,36 @@ const router = createRouter({
       name: '8',
       component: () => import('@/components/phone/ScheduleManagementPage.vue')
     },
+    {
+      path: '/9',
+      name: '9',
+      component: () => import('@/components/phone/VideoDetial.vue')
+    },
+    {
+      path: '/10',
+      name: '10',
+      component: () => import('@/components/phone/AnimalDetail.vue')
+    },
+    {
+      path: '/11',
+      name: '11',
+      component: () => import('@/components/phone/PostList.vue')
+    },
+    {
+      path: '/12',
+      name: '12',
+      component: () => import('@/components/phone/PostDetail.vue')
+    },
+    {
+      path: '/13',
+      name: '13',
+      component: () => import('@/components/phone/Birds.vue')
+    },
+    {
+      path: '/14',
+      name: '14',
+      component: () => import('@/components/phone/ActiveMap.vue')
+    },
   ]
 })
 

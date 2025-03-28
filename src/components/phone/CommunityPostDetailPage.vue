@@ -393,7 +393,7 @@
   const currentUser = ref({
     id: 'user123',
     name: '当前用户',
-    avatar: '/placeholder.svg?height=40&width=40'
+    avatar: 'src/assets/avatar.png?height=40&width=40'
   });
   
   // Mock data for the post
@@ -408,7 +408,7 @@
     author: {
       id: 'author456',
       name: '城市探索者',
-      avatar: '/placeholder.svg?height=50&width=50',
+      avatar: 'src/assets/avatar.png?height=50&width=50',
       isVerified: true
     },
     content: [
@@ -435,7 +435,7 @@
         user: {
           id: 'user1',
           name: '自然爱好者',
-          avatar: '/placeholder.svg?height=40&width=40'
+          avatar: 'src/assets/avatar.png?height=40&width=40'
         },
         text: '非常喜欢这篇文章！我也是城市绿色空间的忠实粉丝，每周末都会去探索不同的公园。最近发现了一个废弃工厂改造的生态公园，非常值得一去。',
         createdAt: '2023-11-15T10:15:00Z',
@@ -446,7 +446,7 @@
             user: {
               id: 'user2',
               name: '城市规划师',
-              avatar: '/placeholder.svg?height=40&width=40'
+              avatar: 'src/assets/avatar.png?height=40&width=40'
             },
             text: '废弃工厂改造的公园是近年来城市更新的一个很好的例子，既保留了工业遗产，又创造了新的绿色空间。',
             createdAt: '2023-11-15T11:30:00Z',
@@ -458,7 +458,7 @@
             user: {
               id: 'author456',
               name: '城市探索者',
-              avatar: '/placeholder.svg?height=40&width=40'
+              avatar: 'src/assets/avatar.png?height=40&width=40'
             },
             text: '谢谢分享！能告诉我这个公园的具体位置吗？我很想去看看并在下一篇文章中介绍它。',
             createdAt: '2023-11-15T12:45:00Z',
@@ -472,7 +472,7 @@
         user: {
           id: 'user3',
           name: '环保志愿者',
-          avatar: '/placeholder.svg?height=40&width=40'
+          avatar: 'src/assets/avatar.png?height=40&width=40'
         },
         text: '城市绿化对改善空气质量和减缓城市热岛效应有很大帮助。希望更多人能关注这个话题，支持城市绿化项目。',
         createdAt: '2023-11-15T14:20:00Z',
@@ -484,7 +484,7 @@
         user: {
           id: 'user4',
           name: '摄影爱好者',
-          avatar: '/placeholder.svg?height=40&width=40'
+          avatar: 'src/assets/avatar.png?height=40&width=40'
         },
         text: '图片拍得真美！特别是那个垂直绿化墙，构图很有创意。请问是用什么相机拍摄的？',
         createdAt: '2023-11-16T09:10:00Z',
@@ -495,7 +495,7 @@
             user: {
               id: 'author456',
               name: '城市探索者',
-              avatar: '/placeholder.svg?height=40&width=40'
+              avatar: 'src/assets/avatar.png?height=40&width=40'
             },
             text: '谢谢夸奖！这是用索尼A7III拍摄的，镜头是24-70mm F2.8。',
             createdAt: '2023-11-16T10:05:00Z',
@@ -510,21 +510,21 @@
         id: 'related1',
         title: '城市屋顶花园设计指南：打造你的空中绿洲',
         author: '园艺设计师',
-        image: '/placeholder.svg?height=120&width=200',
+        image: 'src/assets/avatar.png?height=120&width=200',
         likes: 156
       },
       {
         id: 'related2',
         title: '城市中的野生动物：都市生态系统中的隐秘居民',
         author: '野生动物学家',
-        image: '/placeholder.svg?height=120&width=200',
+        image: 'src/assets/avatar.png?height=120&width=200',
         likes: 203
       },
       {
         id: 'related3',
         title: '社区花园如何增强邻里关系：案例研究',
         author: '社区工作者',
-        image: '/placeholder.svg?height=120&width=200',
+        image: 'src/assets/avatar.png?height=120&width=200',
         likes: 89
       }
     ]

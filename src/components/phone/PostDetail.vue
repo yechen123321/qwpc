@@ -1,33 +1,5 @@
 <template>
     <div class="publication-detail-page">
-      <!-- Navigation Header -->
-      <header class="main-header">
-        <div class="container header-container">
-          <div class="logo">
-            <a href="/">
-              <img style="width: 180px" src="../assets/logo.png" alt="生息云纪" />
-            </a>
-          </div>
-          <nav class="main-nav">
-            <a href="/" class="nav-link">首页</a>
-            <a href="/library" class="nav-link">百科</a>
-            <a href="/publications" class="nav-link active">出版物</a>
-            <a href="/assistant" class="nav-link">助手</a>
-          </nav>
-        </div>
-      </header>
-  
-      <!-- Breadcrumb Navigation -->
-      <section class="breadcrumb-section">
-        <div class="container">
-          <div class="breadcrumb">
-            <a href="/" @click.prevent="navigateTo('home')">主页</a> &gt; 
-            <a href="/publications" @click.prevent="navigateTo('publications')">出版物</a> &gt; 
-            <span>{{ publication?.title || '加载中...' }}</span>
-          </div>
-        </div>
-      </section>
-  
       <div v-if="loading" class="loading-container">
         <div class="loading-spinner"></div>
         <p>加载出版物内容...</p>
@@ -138,7 +110,7 @@
                 </div>
                 
                 <!-- Social Sharing -->
-                <div class="social-sharing">
+                <!-- <div class="social-sharing">
                   <h3>分享这篇文章</h3>
                   <div class="sharing-buttons">
                     <button class="share-button facebook" @click="shareOnSocial('facebook')">
@@ -169,10 +141,10 @@
                       Email
                     </button>
                   </div>
-                </div>
+                </div> -->
                 
                 <!-- Comments Section -->
-                <div class="comments-section">
+                <!-- <div class="comments-section">
                   <h2>评论 ({{ publication.comments }})</h2>
                   
                   <div class="comment-form">
@@ -219,7 +191,7 @@
                   <div class="load-more-comments" v-if="publication.commentsList && publication.commentsList.length < publication.comments">
                     <button class="load-more-button" @click="loadMoreComments">加载更多评论</button>
                   </div>
-                </div>
+                </div> -->
               </div>
               
               <!-- Sidebar -->
@@ -251,7 +223,7 @@
                 </div>
                 
                 <!-- Download Resources -->
-                <div class="sidebar-section" v-if="publication.resources && publication.resources.length">
+                <!-- <div class="sidebar-section" v-if="publication.resources && publication.resources.length">
                   <h3>下载资源</h3>
                   <ul class="resources-list">
                     <li v-for="(resource, index) in publication.resources" :key="index">
@@ -265,10 +237,10 @@
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> -->
                 
                 <!-- Tags Cloud -->
-                <div class="sidebar-section" v-if="popularTags && popularTags.length">
+                <!-- <div class="sidebar-section" v-if="popularTags && popularTags.length">
                   <h3>标签云</h3>
                   <div class="tags-cloud">
                     <a 
@@ -282,23 +254,23 @@
                       {{ tag.name }}
                     </a>
                   </div>
-                </div>
+                </div> -->
                 
                 <!-- Reading Progress -->
-                <div class="sidebar-section reading-progress-section">
+                <!-- <div class="sidebar-section reading-progress-section">
                   <h3>阅读进度</h3>
                   <div class="reading-progress-container">
                     <div class="reading-progress-bar" :style="{ width: `${readingProgress}%` }"></div>
                   </div>
                   <div class="reading-progress-text">{{ Math.round(readingProgress) }}% 已阅读</div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </section>
   
         <!-- More From This Author -->
-        <section v-if="publication && publication.author && authorPublications && authorPublications.length" class="more-from-author">
+        <!-- <section v-if="publication && publication.author && authorPublications && authorPublications.length" class="more-from-author">
           <div class="container">
             <h2>来自 {{ publication.author }} 的更多出版物</h2>
             <div class="author-publications">
@@ -319,10 +291,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
   
         <!-- You May Also Like -->
-        <section v-if="recommendedPublications && recommendedPublications.length" class="you-may-also-like">
+        <!-- <section v-if="recommendedPublications && recommendedPublications.length" class="you-may-also-like">
           <div class="container">
             <h2>您可能也喜欢</h2>
             <div class="recommended-publications">
@@ -344,10 +316,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
   
         <!-- Newsletter Section -->
-        <section class="newsletter-section">
+        <!-- <section class="newsletter-section">
           <div class="container">
             <div class="newsletter-container">
               <div class="newsletter-content">
@@ -360,11 +332,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
       </template>
   
       <!-- Footer -->
-      <footer class="main-footer">
+      <!-- <footer class="main-footer">
         <div class="container">
           <div class="footer-content">
             <div class="footer-section">
@@ -403,10 +375,10 @@
             <p>&copy; 2025 生息云纪. 保留所有权利.</p>
           </div>
         </div>
-      </footer>
+      </footer> -->
   
       <!-- Back to Top Button -->
-      <button 
+      <!-- <button 
         class="back-to-top" 
         :class="{ 'visible': showBackToTop }"
         @click="scrollToTop"
@@ -414,7 +386,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
-      </button>
+      </button> -->
     </div>
   </template>
   
