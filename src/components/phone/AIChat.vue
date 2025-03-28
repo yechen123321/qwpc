@@ -307,9 +307,24 @@
   const previewImageUrl = ref('');
   let mediaRecorder = null;
   let audioChunks = [];
-  
+  // 检查麦克风权限状态
+const checkMicrophonePermission = async () => {
+  if (navigator.permissions) {
+    try {
+      const status = await navigator.permissions.query({ name: 'microphone' });
+      microphonePermission.value = status.state;
+      status.onchange = () => {
+        microphonePermission.value = status.state;
+      };
+    } catch (error) {
+      console.error('Permission query failed:', error);
+    }
+  }
+};
+
   // Connect to AI assistant
   onMounted(() => {
+    checkMicrophonePermission();
     setTimeout(() => {
       isAssistantOnline.value = true;
     }, 1500);

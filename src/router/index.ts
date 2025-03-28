@@ -149,9 +149,29 @@ const router = createRouter({
       component: () => import('@/components/phone/CommunityPostDetailPage.vue')
     },
     {
+      path: '/4',
+      name: '4',
+      component: () => import('@/components/phone/Comms.vue')
+    },
+    {
       path: '/5',
       name: '5',
       component: () => import('@/components/phone/AIChat.vue')
+    },
+    {
+      path: '/6',
+      name: '6',
+      component: () => import('@/components/phone/AddObject.vue')
+    },
+    {
+      path: '/7',
+      name: '7',
+      component: () => import('@/components/phone/VideosGalleryPage.vue')
+    },
+    {
+      path: '/8',
+      name: '8',
+      component: () => import('@/components/phone/ScheduleManagementPage.vue')
     },
   ]
 })
