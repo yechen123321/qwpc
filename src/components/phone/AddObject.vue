@@ -554,24 +554,24 @@
       id: 'r1',
       name: '不锈钢保温杯',
       status: '使用中',
-      image: '/placeholder.svg?height=120&width=120&text=保温杯',
+      image: 'src/assets/images.jpg?height=120&width=120&text=保温杯',
       acquiredDate: '2024年3月获得',
       impact: '减少45个一次性杯子',
       usageCount: 45,
       maxUsage: 50,
       category: 'reusable'
     },
-    {
-      id: 'r2',
-      name: '环保购物袋',
-      status: '使用中',
-      image: '/placeholder.svg?height=120&width=120&text=购物袋',
-      acquiredDate: '2024年1月获得',
-      impact: '减少32个塑料袋',
-      usageCount: 32,
-      maxUsage: 50,
-      category: 'reusable'
-    }
+    // {
+    //   id: 'r2',
+    //   name: '环保购物袋',
+    //   status: '使用中',
+    //   image: '/placeholder.svg?height=120&width=120&text=购物袋',
+    //   acquiredDate: '2024年1月获得',
+    //   impact: '减少32个塑料袋',
+    //   usageCount: 32,
+    //   maxUsage: 50,
+    //   category: 'reusable'
+    // }
   ]);
   
   // 可回收物品数据

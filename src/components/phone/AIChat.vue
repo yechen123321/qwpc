@@ -15,8 +15,8 @@
             <span class="status-indicator" :class="{ 'online': isAssistantOnline }"></span>
           </div>
           <div class="assistant-info">
-            <h1>AI Assistant</h1>
-            <span class="status-text">{{ isAssistantOnline ? 'Online' : 'Connecting...' }}</span>
+            <h1>AI 助手</h1>
+            <span class="status-text">{{ isAssistantOnline ? '在线' : '连接中...' }}</span>
           </div>
         </div>
         <div class="header-actions">
@@ -37,7 +37,7 @@
             <polyline points="3 6 5 6 21 6"></polyline>
             <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
           </svg>
-          <span>Clear chat</span>
+          <span>清除聊天</span>
         </div>
         <div class="menu-item" @click="shareConversation">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -47,14 +47,14 @@
             <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
             <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
           </svg>
-          <span>Share conversation</span>
+          <span>分享对话</span>
         </div>
         <div class="menu-item" @click="openSettings">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="3"></circle>
             <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
           </svg>
-          <span>Settings</span>
+          <span>设置</span>
         </div>
         <div class="menu-item" @click="showHelp">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -62,7 +62,7 @@
             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
             <line x1="12" y1="17" x2="12.01" y2="17"></line>
           </svg>
-          <span>Help</span>
+          <span>帮助</span>
         </div>
       </div>
   
@@ -78,17 +78,17 @@
               <line x1="15" y1="9" x2="15.01" y2="9"></line>
             </svg>
           </div>
-          <h2>Welcome to AI Assistant</h2>
-          <p>I can help answer your questions and assist with various tasks. Try asking me something like:</p>
+          <h2>欢迎使用AI助手</h2>
+          <p>我可以帮助回答您的问题，并协助您完成各种任务。试着问我这样的问题：</p>
           <div class="suggestion-chips">
-            <button class="suggestion-chip" @click="askSuggestion('What can you help me with today?')">
-              What can you help me with?
+            <button class="suggestion-chip" @click="askSuggestion('今天你能帮我什么？')">
+              今天你能帮我什么？
             </button>
-            <button class="suggestion-chip" @click="askSuggestion('Tell me about the latest AI advancements')">
-              Latest AI advancements
+            <button class="suggestion-chip" @click="askSuggestion('告诉我最新的环保进展')">
+             告诉我最新的环保进展
             </button>
-            <button class="suggestion-chip" @click="askSuggestion('How do I create a compelling presentation?')">
-              Creating a presentation
+            <button class="suggestion-chip" @click="askSuggestion('帮我添加一个个人物品')">
+              帮我添加一个个人物品
             </button>
           </div>
         </div>
@@ -105,7 +105,7 @@
             }"
           >
             <div class="message-avatar" v-if="message.sender === 'assistant'">
-              <img src="@/assets/2.svg??height=36&width=36" alt="AI Assistant">
+              <img src="@/assets/avatar.png?height=36&width=36" alt="AI Assistant">
             </div>
             <div class="message-content">
               <div class="message-bubble">
@@ -137,7 +137,7 @@
               <div class="message-time">{{ formatTime(message.timestamp) }}</div>
             </div>
             <div class="message-avatar user-avatar" v-if="message.sender === 'user'">
-              <img src="@/assets/2.svg?height=36&width=36" alt="User">
+              <img src="@/assets/avatar.png?height=36&width=36" alt="User">
             </div>
           </div>
         </div>
@@ -174,7 +174,7 @@
                 <polyline points="21 15 16 10 5 21"></polyline>
               </svg>
             </div>
-            <span>Image</span>
+            <span>图片</span>
           </div>
           <div class="attachment-option" @click="startVoiceRecording">
             <div class="option-icon">
@@ -185,7 +185,7 @@
                 <line x1="8" y1="23" x2="16" y2="23"></line>
               </svg>
             </div>
-            <span>Voice</span>
+            <span>音频</span>
           </div>
           <div class="attachment-option" @click="uploadDocument">
             <div class="option-icon">
@@ -197,14 +197,14 @@
                 <polyline points="10 9 9 9 8 9"></polyline>
               </svg>
             </div>
-            <span>Document</span>
+            <span>文件</span>
           </div>
         </div>
         
         <div class="input-wrapper">
           <textarea 
             class="message-input" 
-            placeholder="Type your message..." 
+            placeholder="请输入..." 
             v-model="userInput"
             @keydown.enter.prevent="sendMessage"
             ref="messageInput"
@@ -286,7 +286,9 @@
   </template>
   
   <script setup>
-  import { ref, onMounted, nextTick, watch } from 'vue';
+  import router from '@/router';
+import { set } from 'lodash';
+import { ref, onMounted, nextTick, watch } from 'vue';
   
   // State variables
   const userInput = ref('');
@@ -507,16 +509,16 @@ const checkMicrophonePermission = async () => {
   
   10. **Design matters**: Use consistent, clean design that supports your message without distracting.
   
-  Would you like me to elaborate on any of these points?`
+  Would you like me to elaborate on any of these points?`,
+  '帮我添加一个个人物品，是一个保温杯，可回收，正在用':'好的，正在为你添加一个物品，是一个保温杯，可回收，正在用'
     };
-  
     // Check if there's a specific response for this message
     for (const [key, value] of Object.entries(responses)) {
       if (userMessage.toLowerCase().includes(key.toLowerCase())) {
         return value;
       }
     }
-  
+   
     // Default response
     return "I understand your message. How can I assist you further with your question?";
   };
@@ -735,7 +737,7 @@ const checkMicrophonePermission = async () => {
             
             // Add AI response
             messages.value.push({
-              sender: 'assistant',
+              sender: '助手',
               content: 'I heard your voice message. In a real implementation, I would transcribe and respond to what you said.',
               type: 'text',
               timestamp: new Date().toISOString()

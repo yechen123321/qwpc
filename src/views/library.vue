@@ -55,7 +55,7 @@
           <button class="highlight-button">了解更多</button>
         </div>
         <div class="highlight-image">
-          <img src="../assets/2.svg?height=300&width=400" alt="Giant Panda" />
+          <img src="../assets/pandafinger.png" alt="Giant Panda" />
         </div>
       </div>
     </section>
@@ -132,7 +132,7 @@
       <div class="spotlight-content">
         <div class="spotlight-image">
           <img
-            src="../assets/2.svg?height=300&width=400"
+            src="../assets/3.png?height=300&width=400"
             alt="Conservation Efforts"
           />
         </div>
@@ -346,7 +346,7 @@ const featuredSpecies = [
     id: 1,
     name: "蓝鲸",
     scientificName: "鲸鳖",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/whale.png?height=300&width=400",
     shortDescription: "迄今为止已知存在的最大动物，最大确认长度达29.9米。",
     status: "濒危",
     tags: ["海洋", "哺乳动物", "食肉动物"],
@@ -355,7 +355,7 @@ const featuredSpecies = [
     id: 2,
     name: "巨型红杉",
     scientificName: "巨型红杉",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/jxhs.png?height=300&width=400",
     shortDescription:
       "这些巨树是地球上最大的树木，寿命可达 3,000 年甚至更长时间。",
     status: "易受伤害的",
@@ -365,7 +365,7 @@ const featuredSpecies = [
     id: 3,
     name: "帝王蝶",
     scientificName: "斑蝶",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/dwd.png?height=300&width=400",
     shortDescription: "因其每年横跨北美、跨越多代人的壮观迁徙而闻名。",
     status: "易受伤害的",
     tags: ["昆虫", "迁徙", "传粉者"],
@@ -378,7 +378,7 @@ const recentDiscoveries = [
     title: "秘鲁雨林发现新兰花物种",
     date: "2024年6月15日",
     description: "科学家在秘鲁亚马逊偏远地区发现了一种以前未知的兰花物种。",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/lh.png?height=300&width=400",
   },
   {
     id: 2,
@@ -386,7 +386,7 @@ const recentDiscoveries = [
     date: "2024年5月28日",
     description:
       "海洋生物学家已经记录了几种生活在 3,000 米深水下的新种类发光鱼。",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/fgy.png?height=300&width=400",
   },
 ];
 

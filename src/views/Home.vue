@@ -16,7 +16,7 @@
       </nav>
     </header>
 
-    <!-- 英雄部分 -->
+    <!-- TOU部分 -->
     <section class="hero-section">
       <div class="container">
         <h1>穿越地球历史的旅程</h1>
@@ -229,7 +229,7 @@
           <button class="primary-button">参与其中</button>
         </div>
         <div class="cta-image">
-          <img src="../assets/2.svg" alt="保护工作">
+          <img src="../assets/homedown.png" alt="保护工作">
         </div>
       </div>
     </section>
@@ -398,21 +398,21 @@ const eras = ref([
         id: 'stromatolites',
         name: '叠层石',
         scientificName: '多种蓝细菌',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/1.png?height=200&width=200',
         description: '由光合蓝细菌群落形成的层状结构。它们是地球上最古老的生命证据之一，可追溯到超过35亿年前。',
       },
       {
         id: 'ediacaran',
         name: '埃迪卡拉生物群',
         scientificName: '多种软体生物',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/2.png?height=200&width=200',
         description: '大约5.75亿年前出现的神秘软体生物。它们代表了地球历史上首批复杂的多细胞生物。',
       },
       {
         id: 'cloudina',
         name: '克劳迪纳',
         scientificName: 'Cloudina hartmannae',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/3.png?height=200&width=200',
         description: '首批产生矿化骨骼的动物之一，出现于约5.5亿年前。这些小型管状化石标志着重要的进化里程碑。',
       },
     ],
@@ -462,28 +462,28 @@ const eras = ref([
         id: 'trilobite',
         name: '三叶虫',
         scientificName: '三叶虫门',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/4.png?height=200&width=200',
         description: '海洋节肢动物，在早古生代海洋中占主导地位。它们是当时最成功和多样化的群体之一，已知有超过20,000种。',
       },
       {
         id: 'dunkleosteus',
         name: '邓氏鱼',
         scientificName: 'Dunkleosteus terrelli',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/5.png?height=200&width=200',
         description: '晚泥盆纪的一种巨大装甲鱼，体长可达6米。它是首批脊椎动物顶级掠食者之一。',
       },
       {
         id: 'meganeura',
         name: '巨脉蜻蜓',
         scientificName: 'Meganeura monyi',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/6.png?height=200&width=200',
         description: '一种巨型蜻蜓状昆虫，翼展可达65厘米。它生活在石炭纪，当时氧气水平远高于今天。',
       },
       {
         id: 'dimetrodon',
         name: '异齿龙',
         scientificName: 'Dimetrodon limbatus',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/7.png?height=200&width=200',
         description: '常被误认为是恐龙，这种背帆爬行动物实际上与哺乳动物更接近。它生活在二叠纪。',
       },
     ],
@@ -533,28 +533,28 @@ const eras = ref([
         id: 'tyrannosaurus',
         name: '霸王龙',
         scientificName: 'Tyrannosaurus rex',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/8.png?height=200&width=200',
         description: '最大的肉食性恐龙之一，生活在白垩纪末期。这种顶级掠食者可长到12米长，拥有强大的下颚和碎骨牙齿。',
       },
       {
         id: 'stegosaurus',
         name: '剑龙',
         scientificName: 'Stegosaurus stenops',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/9.png?height=200&width=200',
         description: '晚侏罗纪的大型植食性恐龙，以其背部独特的板状结构和用于防御的尖尾而闻名。',
       },
       {
         id: 'archaeopteryx',
         name: '始祖鸟',
         scientificName: 'Archaeopteryx lithographica',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/10.png?height=200&width=200',
         description: '恐龙与鸟类之间的过渡物种，显示出两者的特征。它生活在晚侏罗纪，为进化提供了重要证据。',
       },
       {
         id: 'ichthyosaur',
         name: '鱼龙',
         scientificName: '鱼龙目',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/11.png?height=200&width=200',
         description: '通过趋同进化形成鱼类体型的海洋爬行动物。它们高度适应水生生活，一些物种在水中直接产下活仔。',
       },
     ],
@@ -604,28 +604,28 @@ const eras = ref([
         id: 'mammoth',
         name: '猛犸象',
         scientificName: 'Mammuthus primigenius',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/12.png?height=200&width=200',
         description: '冰期哺乳动物，与现代大象有关，适应寒冷环境，长有长毛和弯曲的象牙。它们在大约4000年前灭绝。',
       },
       {
         id: 'megalodon',
         name: '巨齿鲨',
         scientificName: 'Otodus megalodon',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/13.png?height=200&width=200',
         description: '有史以来最大的鲨鱼，体长可达18米。这种顶级掠食者在2300万至360万年前主宰了海洋。',
       },
       {
         id: 'smilodon',
         name: '剑齿猫',
         scientificName: 'Smilodon fatalis',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/15.png?height=200&width=200',
         description: '冰期的标志性掠食者，拥有长长的犬齿。它在美洲猎食大型食草动物，直到大约1万年前灭绝。',
       },
       {
         id: 'homo',
         name: '早期人类',
         scientificName: '人属物种',
-        image: '../assets/2.svg?height=200&width=200',
+        image: 'src/assets/years/14.png?height=200&width=200',
         description: '各种人类物种在非洲进化并扩散到全球。智人约30万年前出现，最终成为唯一幸存的人类物种。',
       },
     ],
@@ -683,10 +683,13 @@ const currentEra = computed(() => {
 
 // 方法
 const calculateEraWidth = (era) => {
-  const totalYears = 4600;
-  const eraSpan = era.startYear - era.endYear;
-  const percentage = (eraSpan / totalYears) * 100;
-  return `${percentage}%`;
+  const eraWidths = {
+    'precambrian': 50,  // 前寒武纪占 50%（4/8）
+    'paleozoic': 14.25,  // 古生代占 12.5%（1/8）
+    'mesozoic': 14.25,   // 中生代占 12.5%（1/8）
+    'cenozoic': 21.5      // 新生代占 25%（2/8）
+  };
+  return `${eraWidths[era.id]}%`;
 };
 
 const selectEra = (eraId) => {
@@ -1110,7 +1113,7 @@ button {
 
 @media (min-width: 768px) {
   .era-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
   }
 }
 
@@ -1142,8 +1145,11 @@ button {
 
 .species-image {
   width: 100px;
-  min-width: 100px;
-  height: 100px;
+  min-width: 120px;
+  margin: auto 16px;
+  height: 120px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 默认阴影 */
 }
 
 .species-image img {
