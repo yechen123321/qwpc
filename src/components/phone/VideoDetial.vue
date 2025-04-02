@@ -188,30 +188,30 @@ import { useRoute, useRouter } from "vue-router";
 const route = useRoute();
 const router = useRouter();
 
-// 视频数据
+// 视频数据mf
 const videoData = ref({
   id: route.params.id,
-  title: "宇宙大爆炸理论详解",
-  videoUrl: "src/assets/v/1.mp4",
+  title: "蜜蜂的重要性",
+  videoUrl: "src/assets/v/mf.mp4",
   cover: "https://picsum.photos/800/450?random=1",
   views: 12500,
   likes: 842,
   createdAt: "2025-03-15T14:30:00Z",
   description:
-    "本视频详细解释了宇宙大爆炸理论，包括宇宙的起源、膨胀过程以及相关证据。内容涵盖宇宙微波背景辐射、哈勃定律、元素丰度等重要科学发现，适合对天文学感兴趣的观众观看学习。",
+    "本视频详细解释了蜜蜂的重要性，包括其扮演的角色与职责。蜜蜂正在消失的原因和现状。杀虫剂对蜜蜂的伤害。总结与思考",
   author: {
     id: "author1",
-    name: "天文科普馆",
+    name: "生物科普馆",
     avatar: "https://picsum.photos/100/100?random=10",
   },
   tags: ["宇宙", "天文", "科学", "科普"],
   chapters: [
-    { time: 0, title: "开场介绍" },
-    { time: 120, title: "宇宙大爆炸理论概述" },
-    { time: 240, title: "关键证据：宇宙微波背景" },
-    { time: 360, title: "哈勃定律与宇宙膨胀" },
-    { time: 480, title: "元素丰度的观测证据" },
-    { time: 600, title: "总结与思考" },
+    { time: 10, title: "开场介绍" },
+    { time: 30, title: "扮演的角色与职责" },
+    { time: 71, title: "蜜蜂正在消失" },
+    { time: 118, title: "杀虫剂对蜜蜂的伤害" },
+    { time: 148, title: "实际案例" },
+    { time: 170, title: "总结与思考" },
   ],
 });
 

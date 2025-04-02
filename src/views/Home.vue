@@ -245,7 +245,7 @@
         <div class="resources-grid">
           <div class="resource-card">
             <div class="resource-image">
-              <img src="../assets/2.svg" alt="文章">
+              <img src="../assets/years/16.png" alt="文章">
               <div class="resource-type">文章</div>
             </div>
             <div class="resource-content">
@@ -256,7 +256,7 @@
           </div>
           <div class="resource-card">
             <div class="resource-image">
-              <img src="../assets/2.svg" alt="视频">
+              <img src="../assets/years/17.png" alt="视频">
               <div class="resource-type">视频</div>
             </div>
             <div class="resource-content">
@@ -267,13 +267,13 @@
           </div>
           <div class="resource-card">
             <div class="resource-image">
-              <img src="../assets/2.svg" alt="互动">
-              <div class="resource-type">互动</div>
+              <img src="../assets/years/18.png" alt="视频">
+              <div class="resource-type">视频</div>
             </div>
             <div class="resource-content">
-              <h3>气候变化模拟器</h3>
-              <p>探索不同因素如何随时间影响地球的气候和生物多样性。</p>
-              <a href="#" class="resource-link">尝试一下 →</a>
+              <h3>人类的进化</h3>
+              <p>起源于森林古猿，从灵长类经过漫长的进化过程一步一步发展而来。</p>
+              <a href="#" class="resource-link">立即观看 →</a>
             </div>
           </div>
         </div>
@@ -302,7 +302,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>地球编年史</h3>
+            <h3>生息云纪</h3>
             <p>探索地球的生物历史并推动保护工作</p>
             <div class="social-icons">
               <a href="#" class="social-icon">
@@ -355,7 +355,6 @@
               <li><a href="#">关于我们</a></li>
               <li><a href="#">联系方式</a></li>
               <li><a href="#">志愿者</a></li>
-              <li><a href="#">捐款</a></li>
             </ul>
           </div>
         </div>

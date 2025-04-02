@@ -74,7 +74,9 @@
             <h2>简要事实</h2>
             <div class="fact-grid">
               <div class="fact-item">
-                <div class="fact-icon habitat-icon"></div>
+                <div class="fact-icon habitat-icon">
+                  <img src="/src/assets/qxd.svg" style="width: 70%; height: 70%; margin: 5px 5px" alt="">
+                </div>
                 <div class="fact-content">
                   <h3>栖息地</h3>
                   <p>{{ species.quickFacts.habitat }}</p>
@@ -82,7 +84,9 @@
               </div>
               
               <div class="fact-item">
-                <div class="fact-icon diet-icon"></div>
+                <div class="fact-icon diet-icon">
+                  <img src="/src/assets/ys.svg" style="width: 70%; height: 70%; margin: 5px 5px" alt="">
+                </div>
                 <div class="fact-content">
                   <h3>饮食</h3>
                   <p>{{ species.quickFacts.diet }}</p>
@@ -90,7 +94,9 @@
               </div>
               
               <div class="fact-item">
-                <div class="fact-icon lifespan-icon"></div>
+                <div class="fact-icon lifespan-icon">
+                  <img src="/src/assets/sm.svg" style="width: 70%; height: 70%; margin: 5px 5px" alt="">
+                </div>
                 <div class="fact-content">
                   <h3>寿命</h3>
                   <p>{{ species.quickFacts.lifespan }}</p>
@@ -98,7 +104,9 @@
               </div>
               
               <div class="fact-item">
-                <div class="fact-icon size-icon"></div>
+                <div class="fact-icon size-icon">
+                  <img src="/src/assets/cc.svg" style="width: 70%; height: 70%; margin: 5px 5px" alt="">
+                </div>
                 <div class="fact-content">
                   <h3>尺寸</h3>
                   <p>{{ species.quickFacts.size }}</p>
@@ -106,7 +114,9 @@
               </div>
               
               <div class="fact-item">
-                <div class="fact-icon weight-icon"></div>
+                <div class="fact-icon weight-icon">
+                  <img src="/src/assets/zl.svg" style="width: 70%; height: 70%; margin: 5px 5px" alt="">
+                </div>
                 <div class="fact-content">
                   <h3>重量</h3>
                   <p>{{ species.quickFacts.weight }}</p>
@@ -114,7 +124,9 @@
               </div>
               
               <div class="fact-item">
-                <div class="fact-icon population-icon"></div>
+                <div class="fact-icon population-icon">
+                  <img src="/src/assets/sl.svg" style="width: 70%; height: 70%; margin: 5px 5px" alt="">
+                </div>
                 <div class="fact-content">
                   <h3>数量</h3>
                   <p>{{ species.quickFacts.population }}</p>
@@ -164,7 +176,8 @@
               <h2>栖息地与分布</h2>
               <div class="info-content">
                 <div class="habitat-map">
-                  <img :src="species.habitat.mapImage" alt="Distribution map">
+                  <!-- <img :src="species.habitat.mapImage" alt="Distribution map"> -->
+                   <Maps style="height: 400px;"></Maps>
                   <p class="map-caption">Geographical distribution of {{ species.name }}</p>
                 </div>
                 
@@ -222,7 +235,7 @@
                   <div class="status-scale">
                     <div class="scale-item" :class="{ active: isStatusActive('无危') }">无危</div>
                     <div class="scale-item" :class="{ active: isStatusActive('近危') }">近危</div>
-                    <div class="scale-item" :class="{ active: isStatusActive('脆弱') }">脆弱</div>
+                    <div class="scale-item" :class="{ active: isStatusActive('易危') }">易危</div>
                     <div class="scale-item" :class="{ active: isStatusActive('濒危') }">濒危</div>
                     <div class="scale-item" :class="{ active: isStatusActive('极度濒危') }">极度濒危</div>
                     <div class="scale-item" :class="{ active: isStatusActive('野外灭绝') }">野外灭绝</div>
@@ -259,6 +272,10 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div v-if="activeTab === 'model'" class="tab-panel">
+              <ModelViewer style="height: 800px;"></ModelViewer>
             </div>
           </div>
         </section>
@@ -312,6 +329,8 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from "vue-router";
+import ModelViewer from './Model.vue';
+import Maps from './maps.vue'
 
 const router = useRouter();
 // State
@@ -324,7 +343,8 @@ const tabs = [
   { id: 'characteristics', label: '特征' },
   { id: 'habitat', label: '栖息地与分布' },
   { id: 'diet', label: '饮食与喂养' },
-  { id: 'conservation', label: '保护' }
+  { id: 'conservation', label: '保护' },
+  { id: 'model', label: '模型' },
 ]
 
 // Sample species data (in a real app, this would come from an API)
@@ -363,19 +383,19 @@ const species = {
   },
   images: [
     { 
-      url: '/placeholder.svg?height=600&width=800', 
+      url: '/src/assets/specie/lj.png?height=600&width=800', 
       caption: '太平洋海域蓝鲸浮出水面' 
     },
     { 
-      url: '/placeholder.svg?height=600&width=800', 
+      url: '/src/assets/specie/yz.png?height=600&width=800', 
       caption: '蓝鲸与幼鲸' 
     },
     { 
-      url: '/placeholder.svg?height=600&width=800', 
+      url: '/src/assets/specie/bs.png?height=600&width=800', 
       caption: '蓝鲸捕食磷虾' 
     },
     { 
-      url: '/placeholder.svg?height=600&width=800', 
+      url: '/src/assets/specie/wq.png?height=600&width=800', 
       caption: '蓝鲸尾鳍' 
     }
   ],
@@ -437,28 +457,28 @@ const species = {
       id: 'fin-whale',
       name: '长须鲸',
       scientificName: '长须鲸',
-      image: '/placeholder.svg?height=300&width=400',
+      image: '/src/assets/specie/cxj.png?height=300&width=400',
       status: '易危'
     },
     {
       id: 'humpback-whale',
       name: '座头鲸',
       scientificName: '座头鲸',
-      image: '/placeholder.svg?height=300&width=400',
+      image: '/src/assets/specie/ztj.png?height=300&width=400',
       status: '无危'
     },
     {
       id: 'sei-whale',
       name: '塞鲸',
       scientificName: '北极鲸鱼',
-      image: '/placeholder.svg?height=300&width=400',
+      image: '/src/assets/specie/sj.png?height=300&width=400',
       status: '濒危'
     },
     {
       id: 'minke-whale',
       name: '小须鲸',
       scientificName: '尖喙鲸',
-      image: '/placeholder.svg?height=300&width=400',
+      image: '/src/assets/specie/xxj.png?height=300&width=400',
       status: '无危'
     }
   ],
@@ -512,7 +532,7 @@ const getStatusClass = (status) => {
   const statusMap = {
     '无危': 'status-lc',
     '近危': 'status-nt',
-    '脆弱': 'status-vu',
+    '易危': 'status-vu',
     '濒危': 'status-en',
     '极度濒危': 'status-cr',
     '野外灭绝': 'status-ew',

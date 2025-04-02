@@ -441,13 +441,13 @@
         id: 'pub-001',
         title: '亚马逊雨林生物多样性调查报告',
         author: '李明博士',
-        authorAvatar: '/placeholder.svg?height=100&width=100',
+        authorAvatar: '/src/assets/avatar.png?height=100&width=100',
         authorBio: '李明博士是一位资深的生态学家，专注于热带雨林生态系统研究已有15年。他曾参与多个国际保护项目，发表过30多篇学术论文，并著有《热带雨林的秘密生活》一书。',
         publishDate: '2023-11-15',
         category: 'report',
         summary: '本报告详细记录了2023年亚马逊雨林生物多样性调查的结果，包括新发现的物种和濒危物种的最新状况。调查团队在为期六个月的实地考察中，记录了超过2000种植物和1500种动物，其中包括12个可能的新物种。',
         tags: ['亚马逊', '生物多样性', '热带雨林', '保护', '物种调查', '濒危物种'],
-        coverImage: '/placeholder.svg?height=800&width=1200',
+        coverImage: '/src/assets/public/yms.png?height=800&width=1200',
         views: 3245,
         likes: 287,
         comments: 42,
@@ -465,7 +465,7 @@
               '本次调查采用了多种科学方法，包括样线调查、红外相机陷阱、声音监测、环境DNA采样以及传统的物种分类学鉴定。调查区域覆盖了亚马逊雨林的四个不同生态区：北部高地、中部河岸、西部山麓和南部季节性洪泛区。',
               '每个区域设置了25个1公顷的永久样方，进行了详细的植物群落调查。同时，在每个样方周围2公里范围内，安装了10台红外相机陷阱和5个声音监测装置，持续记录野生动物活动。环境DNA样本从每个区域的主要水体中采集，用于检测难以直接观察的水生物种。'
             ],
-            image: '/placeholder.svg?height=600&width=800',
+            image: '/src/assets/public/hw.png?height=600&width=800',
             imageCaption: '科研团队在亚马逊雨林中设置红外相机陷阱'
           },
           {
@@ -475,7 +475,7 @@
               '特别值得注意的是，我们在北部高地区域发现了一个被认为已在该地区灭绝的黑脸狮猴（Leontopithecus caissara）小种群，这一发现为该濒危物种的保护提供了新的希望。',
               '调查还记录了43种IUCN红色名录中的濒危或极危物种，其中包括亚马逊河豚（Inia geoffrensis）、巨水獭（Pteronura brasiliensis）和美洲虎（Panthera onca）。通过与历史数据比较，我们发现这些物种的种群数量和分布范围继续呈下降趋势，尤其是在靠近人类活动区域的地方。'
             ],
-            image: '/placeholder.svg?height=600&width=800',
+            image: '/src/assets/public/hlsh.png?height=600&width=800',
             imageCaption: '调查中发现的黑脸狮猴（Leontopithecus caissara）'
           },
           {
@@ -538,7 +538,7 @@
         resources: [
           {
             name: '完整调查报告 (PDF)',
-            url: '#',
+            url: '/src/assets/1.pdf',
             size: 4500000
           },
           {
@@ -555,21 +555,21 @@
         commentsList: [
           {
             name: '张伟',
-            avatar: '/placeholder.svg?height=50&width=50',
+            avatar: '/src/assets/avatar.png?height=50&width=50',
             date: '2023-11-16',
             content: '非常详尽的调查报告！我特别关注亚马逊地区的两栖动物多样性，很高兴看到有新的蛙类被发现。希望能看到更多关于这些新物种的详细信息。',
             likes: 12
           },
           {
             name: '王丽',
-            avatar: '/placeholder.svg?height=50&width=50',
+            avatar: '/src/assets/avatar.png?height=50&width=50',
             date: '2023-11-17',
             content: '作为一名保护生物学研究生，这份报告对我的研究非常有帮助。我想知道调查团队是否计划公开发布原始数据集？这对比较研究将非常有价值。',
             likes: 8
           },
           {
             name: '刘明',
-            avatar: '/placeholder.svg?height=50&width=50',
+            avatar: '/src/assets/avatar.png?height=50&width=50',
             date: '2023-11-18',
             content: '报告中提到的黑脸狮猴重新发现令人振奋！我曾在2015年参与过该地区的一项调查，当时我们没有发现任何这个物种的踪迹。这真的给保护工作带来了希望。',
             likes: 15
@@ -583,19 +583,19 @@
           id: 'pub-006',
           title: '全球两栖动物减少趋势分析',
           author: '陈明教授',
-          coverImage: '/placeholder.svg?height=150&width=200'
+          coverImage: '/src/assets/public/yms.png?height=150&width=200'
         },
         {
           id: 'pub-014',
           title: '全球塑料污染对海洋生物的影响',
           author: '陈海博士',
-          coverImage: '/placeholder.svg?height=150&width=200'
+          coverImage: '/src/assets/public/qqsl.png?height=150&width=200'
         },
         {
           id: 'pub-010',
           title: '蜜蜂减少与全球粮食安全',
           author: '孙丽研究员',
-          coverImage: '/placeholder.svg?height=150&width=200'
+          coverImage: '/src/assets/public/mf.png?height=150&width=200'
         }
       ];
       
@@ -606,14 +606,14 @@
           title: '热带雨林碳储量变化研究',
           publishDate: '2022-08-10',
           summary: '这项研究分析了过去20年热带雨林碳储量的变化趋势，评估了森林保护措施对碳封存的影响。',
-          coverImage: '/placeholder.svg?height=200&width=300'
+          coverImage: '/src/assets/public/rdyl.png?height=200&width=300'
         },
         {
           id: 'pub-017',
           title: '亚马逊河流域水质与生物多样性关系',
           publishDate: '2021-05-22',
           summary: '本研究探讨了亚马逊河流域水质变化与水生生物多样性之间的关系，为水资源保护提供科学依据。',
-          coverImage: '/placeholder.svg?height=200&width=300'
+          coverImage: '/src/assets/public/yms.png?height=200&width=300'
         }
       ];
       
@@ -625,7 +625,7 @@
           author: '王芳研究员',
           publishDate: '2023-09-12',
           category: 'article',
-          coverImage: '/placeholder.svg?height=200&width=300'
+          coverImage: '/src/assets/public/wsw.png?height=200&width=300'
         },
         {
           id: 'pub-007',
@@ -633,7 +633,7 @@
           author: '林小红研究员',
           publishDate: '2023-05-10',
           category: 'article',
-          coverImage: '/placeholder.svg?height=200&width=300'
+          coverImage: '/src/assets/public/kc.png?height=200&width=300'
         },
         {
           id: 'pub-012',
@@ -641,7 +641,7 @@
           author: '李芳研究员',
           publishDate: '2022-12-15',
           category: 'article',
-          coverImage: '/placeholder.svg?height=200&width=300'
+          coverImage: '/src/assets/public/zwjl.png?height=200&width=300'
         },
         {
           id: 'pub-015',
@@ -649,7 +649,7 @@
           author: '赵明研究员',
           publishDate: '2022-09-18',
           category: 'research',
-          coverImage: '/placeholder.svg?height=200&width=300'
+          coverImage: '/src/assets/public/rdyl.png?height=200&width=300'
         }
       ];
       

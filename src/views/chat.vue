@@ -496,6 +496,7 @@
 <script setup>
 import { ref, reactive, onMounted, nextTick, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { marked } from 'marked';
 
 const router = useRouter()
 const goBack = () => {
@@ -505,6 +506,7 @@ const goBack = () => {
     router.push({ name: 'Home' })
   }
 }
+
 // State
 const isDrawerOpen = ref(false)
 const isAvatarActive = ref(false)
@@ -525,9 +527,7 @@ const toggleDrawer = () => {
 // Toggle avatar
 const toggleAvatar = () => {
   isAvatarActive.value = !isAvatarActive.value
-  
   if (isAvatarActive.value) {
-    // Simulate avatar loading
     setTimeout(() => {
       avatarLoaded.value = true
     }, 1500)
@@ -538,7 +538,6 @@ const toggleAvatar = () => {
 const sendMessage = async () => {
   if (!userInput.value.trim()) return
   
-  // Add user message
   const userMessage = {
     sender: 'user',
     text: userInput.value,
@@ -547,19 +546,15 @@ const sendMessage = async () => {
   
   messages.value.push(userMessage)
   
-  // Clear input and scroll to bottom
   userInput.value = ''
   await nextTick()
   scrollToBottom()
   
-  // Simulate assistant typing
   isTyping.value = true
   
-  // Simulate response delay
   setTimeout(() => {
     isTyping.value = false
     
-    // Add assistant response
     const assistantMessage = {
       sender: 'assistant',
       text: generateResponse(userMessage.text),
@@ -568,7 +563,6 @@ const sendMessage = async () => {
     
     messages.value.push(assistantMessage)
     
-    // Scroll to bottom again after response
     nextTick(() => {
       scrollToBottom()
     })
@@ -578,7 +572,6 @@ const sendMessage = async () => {
 // Auto-resize input
 const autoResizeInput = () => {
   if (!chatInput.value) return
-  
   chatInput.value.style.height = 'auto'
   chatInput.value.style.height = Math.min(chatInput.value.scrollHeight, 150) + 'px'
 }
@@ -602,13 +595,10 @@ const clearChat = () => {
 // Handle file upload
 const handleFileUpload = (event) => {
   const uploadedFiles = event.target.files
-  
   if (!uploadedFiles.length) return
   
   Array.from(uploadedFiles).forEach(file => {
     const fileType = file.name.split('.').pop().toLowerCase()
-    
-    // Create file object
     const fileObj = {
       id: Date.now() + Math.random().toString(36).substring(2, 9),
       name: file.name,
@@ -618,7 +608,6 @@ const handleFileUpload = (event) => {
       content: null
     }
     
-    // For text files, read content
     if (fileType === 'txt' || fileType === 'md') {
       const reader = new FileReader()
       reader.onload = (e) => {
@@ -630,18 +619,14 @@ const handleFileUpload = (event) => {
     files.value.push(fileObj)
   })
   
-  // Reset file input
   event.target.value = null
 }
 
 // Delete file
 const deleteFile = (index) => {
-  // If the file to delete is currently selected, close preview
   if (selectedFile.value && selectedFile.value.id === files.value[index].id) {
     selectedFile.value = null
   }
-  
-  // Remove file
   files.value.splice(index, 1)
 }
 
@@ -658,11 +643,8 @@ const closePreview = () => {
 // Use document in chat
 const useDocumentInChat = () => {
   if (!selectedFile.value) return
-  
   userInput.value = `我想问一下这份文件： ${selectedFile.value.name}`
   closePreview()
-  
-  // Focus on input
   nextTick(() => {
     chatInput.value.focus()
   })
@@ -675,9 +657,9 @@ const formatFileSize = (bytes) => {
   else return (bytes / 1048576).toFixed(1) + ' MB'
 }
 
-// Format message with line breaks
+// Format message with Markdown
 const formatMessage = (text) => {
-  return text.replace(/\n/g, '<br>')
+  return marked(text);
 }
 
 // Format timestamp
@@ -688,13 +670,49 @@ const formatTime = (timestamp) => {
   }).format(timestamp)
 }
 
-// Generate simple response (placeholder)
 const generateResponse = (userText) => {
-  const responses = [
-    "选择合适的树种气候和土壤：根据你所在地区的气候和土壤类型选择树种。比如，北方适合耐寒树种，南方可以种热带树种。生长空间：了解树木成年后的大小，确保有足够的空间，避免种得太密。用途：想种果树、观赏树还是遮荫树？根据需求挑选合适的种类。2. 选择种植地点阳光和水分：树木大多需要充足阳光和适量水分，地点要有良好排水。避开障碍：远离电线、管道或建筑物，避免树根和枝条造成影响。生态和谐：选择适合当地环境的树种，避免外来入侵物种。3. 准备土壤测试土壤：检查土壤的酸碱度（pH值）和肥力，大多数树木适合pH 6-7的土壤。改良土壤：如果土壤不好，可以加有机肥或堆肥改善。松土：挖之前松动土壤，让树根更容易生长。4. 挖坑深度：坑的深度和树苗根系长度相当，通常是根球的1-1.5倍。宽度：坑宽是根球的2-3倍，给根系留出扩展空间。保存土壤：挖出的土放旁边，回填时用。5. 种植树苗放置树苗：把树苗放进坑里，树干要直，根系自然展开。根颈（根和茎交界处）应与地面齐平。回填土壤：用挖出的土填回坑，轻轻压实，别太用力以免压坏根。浇水：种好后马上浇透水，让土壤和根系贴合。6. 养护浇水：新树苗要定期浇水，尤其干旱时，保持土壤湿润但不积水。施肥：生长季可以用缓释肥或有机肥促进生长。修剪：剪掉枯枝或病枝，保持树形健康。防虫害：注意病虫害迹象，及时处理。7. 注意事项最佳时间：春季或秋季种植最好，气候温和适合生根。保护树苗：幼树可以用护栏防动物或人为破坏。耐心：树木成长需要时间，细心养护会有回报。"
-  ]
-  
-  return responses[Math.floor(Math.random() * responses.length)]
+  if (userText.includes('种树')) {
+    return `
+### 如何种树：详细步骤指南（含图片和视频）
+
+种树是一个需要规划和耐心的过程，正确的步骤能确保树木健康成长。以下是完整的种植指南，每一步都配有图片和视频。
+
+#### 1. 选择合适的树种
+- 根据气候和土壤选择树种，例如北方种松树，南方种椰子树。
+- **图片**：
+  <img src="/src/assets/zp/xuanzhongzi.png" width="300" height="300" alt="树种选择">
+
+- **视频**：
+  <video controls width="300" height="200">
+    <source src="/src/assets/zp/zhongzi.mp4" type="video/mp4">
+    你的浏览器不支持视频播放。
+  </video>
+
+#### 2. 选择种植地点
+- 选择阳光充足、排水良好的位置。
+- **图片**：
+  <img src="/src/assets/zp/xuandifang.png" width="300" height="300" alt="种植地点">
+
+- **视频**：
+  <video controls width="300" height="200">
+    <source src="/src/assets/zp/dd.mp4" type="video/mp4">
+    你的浏览器不支持视频播放。
+  </video>
+
+#### 3. 种植树苗
+- 将树苗放入坑中，回填土壤并浇水。
+- **图片**：
+  <img src="/src/assets/zp/jiaoshui.png" width="300" height="300" alt="种植树苗">
+
+- **视频**：
+  <video controls width="300" height="200">
+    <source src="https://sfile.chatglm.cn/api/cogvideo/d7456de4-0ed6-11f0-bbd0-528fbc5f5aea_0.mp4" type="video/mp4">
+    你的浏览器不支持视频播放。
+  </video>
+    `;
+  } else {
+    return '对不起，我不明白你的问题。';
+  }
 }
 
 // Watch for changes in messages to scroll to bottom
@@ -706,7 +724,6 @@ watch(messages, () => {
 
 // Lifecycle hooks
 onMounted(() => {
-  // Focus on input when component mounts
   chatInput.value.focus()
 })
 </script>
@@ -1182,7 +1199,7 @@ body {
 
 .message-content {
   background-color: var(--background-white);
-  padding: 1rem;
+  padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   position: relative;

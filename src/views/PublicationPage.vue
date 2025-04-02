@@ -327,7 +327,7 @@
         <div class="container">
           <div class="footer-content">
             <div class="footer-section">
-              <h3>生物百科</h3>
+              <h3>生息云纪</h3>
               <p>地球生物多样性综合指南</p>
             </div>
             <div class="footer-section">
@@ -639,7 +639,7 @@
           category: 'report',
           summary: '本报告详细记录了2023年亚马逊雨林生物多样性调查的结果，包括新发现的物种和濒危物种的最新状况。',
           tags: ['亚马逊', '生物多样性', '热带雨林', '保护'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/yms.png?height=700&width=700',
           views: 3245,
           likes: 287,
           comments: 42,
@@ -653,7 +653,7 @@
           category: 'research',
           summary: '这项研究探讨了全球气候变化如何影响海洋生态系统，特别关注珊瑚礁和海洋哺乳动物的生存状况。',
           tags: ['气候变化', '海洋生态', '珊瑚礁', '全球变暖'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/qhbh.png?height=500&width=700',
           views: 2876,
           likes: 342,
           comments: 56,
@@ -667,7 +667,7 @@
           category: 'article',
           summary: '这篇科普文章介绍了土壤微生物的重要性，它们如何支持植物生长，维持生态系统健康，以及在环境修复中的应用。',
           tags: ['微生物', '土壤生态', '环境修复', '科普'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/wsw.png?height=500&width=700',
           views: 4532,
           likes: 521,
           comments: 78,
@@ -681,7 +681,7 @@
           category: 'book',
           summary: '这是《生物多样性与人类未来》一书的第三章摘录，详细讨论了森林生态系统的结构、功能及其对人类社会的重要性。',
           tags: ['森林', '生态系统', '生物多样性', '可持续发展'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/slstxt.png?height=500&width=700',
           views: 1876,
           likes: 203,
           comments: 31,
@@ -695,7 +695,7 @@
           category: 'research',
           summary: '本研究揭示了青藏高原植物如何在极端高海拔环境中生存的分子适应机制，为理解植物进化和气候变化适应提供了新见解。',
           tags: ['青藏高原', '植物适应', '分子生物学', '极端环境'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/qzgy.png?height=500&width=700',
           views: 2134,
           likes: 178,
           comments: 25,
@@ -709,7 +709,7 @@
           category: 'report',
           summary: '这份报告分析了过去30年全球两栖动物数量减少的趋势，探讨了栖息地丧失、气候变化和疾病等主要威胁因素。',
           tags: ['两栖动物', '物种减少', '保护生物学', '全球趋势'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/lqdw.png?height=500&width=700',
           views: 3021,
           likes: 267,
           comments: 39,
@@ -723,7 +723,7 @@
           category: 'article',
           summary: '这篇科普文章探讨了昆虫作为地球上最成功的生命形式，它们的多样性、适应性以及对生态系统和人类社会的重要贡献。',
           tags: ['昆虫', '生物多样性', '生态系统', '科普'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/kc.png?height=500&width=700',
           views: 5678,
           likes: 432,
           comments: 67,
@@ -737,7 +737,7 @@
           category: 'book',
           summary: '这是《海洋奇迹》一书的第五章摘录，介绍了深海生物如何适应高压、低温和黑暗环境的奇特进化适应机制。',
           tags: ['深海生物', '进化适应', '海洋生态', '极端环境'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/sh.png?height=500&width=700',
           views: 2345,
           likes: 198,
           comments: 29,
@@ -751,7 +751,7 @@
           category: 'research',
           summary: '本研究探讨了在城市化进程中保护和促进生物多样性的有效策略，包括城市绿地规划、生态廊道建设和公民科学参与。',
           tags: ['城市生态', '生物多样性', '保护策略', '可持续城市'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/cssw.png?height=500&width=700',
           views: 1987,
           likes: 156,
           comments: 23,
@@ -765,7 +765,7 @@
           category: 'report',
           summary: '这份报告分析了全球蜜蜂数量减少的趋势及其对粮食安全的潜在影响，强调了保护授粉者对维持农业生产的重要性。',
           tags: ['蜜蜂', '授粉', '粮食安全', '农业生态'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/mf.png?height=500&width=700',
           views: 4123,
           likes: 387,
           comments: 59,
@@ -779,7 +779,7 @@
           category: 'research',
           summary: '这项研究讨论了基因编辑技术如何应用于濒危物种保护，以及相关的伦理考量和潜在风险。',
           tags: ['基因编辑', '濒危物种', '保护生物学', '生物伦理'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/jybjjs.png?height=500&width=700',
           views: 2765,
           likes: 231,
           comments: 47,
@@ -793,7 +793,7 @@
           category: 'article',
           summary: '这篇科普文章揭示了植物通过地下菌根网络进行交流和资源共享的惊人能力，改变了我们对植物社会性的理解。',
           tags: ['植物通讯', '菌根网络', '生态互动', '森林生态'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/zwjl.png?height=500&width=700',
           views: 3876,
           likes: 342,
           comments: 51,
@@ -807,7 +807,7 @@
           category: 'book',
           summary: '这是《生物进化的故事》一书的第二章摘录，详细介绍了达尔文的进化论如何彻底改变了我们对生命起源和发展的理解。',
           tags: ['进化论', '达尔文', '科学史', '自然选择'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/dew.png?height=500&width=700',
           views: 2543,
           likes: 213,
           comments: 38,
@@ -821,7 +821,7 @@
           category: 'report',
           summary: '这份报告综合了最新研究，详细分析了塑料污染对海洋生态系统和海洋生物的多层面影响，并提出了减少塑料污染的建议。',
           tags: ['塑料污染', '海洋生态', '环境保护', '可持续发展'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/qqsl.png?height=500&width=700',
           views: 4532,
           likes: 423,
           comments: 76,
@@ -835,7 +835,7 @@
           category: 'research',
           summary: '本研究探讨了热带雨林药用植物的多样性、药用潜力以及面临的保护挑战，强调了生物多样性保护对药物发现的重要性。',
           tags: ['药用植物', '热带雨林', '生物多样性', '传统医学'],
-          coverImage: '/placeholder.svg?height=500&width=700',
+          coverImage: '/src/assets/public/rdyl.png?height=500&width=700',
           views: 3210,
           likes: 276,
           comments: 42,
@@ -916,9 +916,9 @@
   };
   
   const navigateToPublication = (publicationId) => {
-    console.log(`Navigate to publication: ${publicationId}`);
-    // In a real app, this would navigate to the publication detail page
-    // router.push(`/publications/${publicationId}`);
+    if (publicationId == 'pub-001') {
+      router.push(`/public/detail`);
+    }
   };
   
   const selectCategory = (categoryId) => {
@@ -1318,7 +1318,7 @@
   
   .featured-image {
     position: relative;
-    height: 250px;
+    height: 100%;
   }
   
   .featured-image img {

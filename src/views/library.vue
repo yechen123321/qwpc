@@ -226,7 +226,7 @@
     <footer class="main-footer">
       <div class="footer-content">
         <div class="footer-section">
-          <h3>生物百科</h3>
+          <h3>生息云纪</h3>
           <p>地球生物多样性综合指南</p>
         </div>
         <div class="footer-section">
@@ -395,49 +395,49 @@ const habitats = [
     id: 1,
     name: "热带雨林",
     speciesCount: "10+ million",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/where/rdyl.png?height=300&width=400",
   },
   {
     id: 2,
     name: "温带森林",
     speciesCount: "1+ million",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/where/wdsl.png?height=300&width=400",
   },
   {
     id: 3,
     name: "草原",
     speciesCount: "1,200+",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/where/cy.png?height=300&width=400",
   },
   {
     id: 4,
     name: "沙漠",
     speciesCount: "1,700+",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/where/sm.png?height=300&width=400",
   },
   {
     id: 5,
     name: "苔原",
     speciesCount: "1,700+",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/where/ty.png?height=300&width=400",
   },
   {
     id: 6,
     name: "海洋生态系统",
     speciesCount: "1,700+",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/where/hy.png?height=300&width=400",
   },
   {
     id: 7,
     name: "淡水生态系统",
     speciesCount: "1,700+",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/where/ds.png?height=300&width=400",
   },
   {
     id: 8,
     name: "极地生态系统",
     speciesCount: "1,700+",
-    image: "../assets/2.svg?height=300&width=400",
+    image: "src/assets/where/jd.png?height=300&width=400",
   },
 ];
 </script>

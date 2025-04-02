@@ -1,8 +1,8 @@
 <template>
   <div class="categories-page">
     <!-- Navigation Header -->
-    <header class="main-header">
-      <!-- <div class="logo">
+    <!-- <header class="main-header">
+      <div class="logo">
         <a href="/">
           <img style="width: 180px" src="../assets/logo.png" alt="" />
         </a>
@@ -12,8 +12,8 @@
         <a href="/library" class="nav-link active">百科</a>
         <a href="#" class="nav-link">发现</a>
         <a href="#" class="nav-link">助手</a>
-      </nav> -->
-    </header>
+      </nav>
+    </header> -->
 
     <!-- Hero Section -->
     <section class="categories-hero">
@@ -237,7 +237,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>生物百科</h3>
+            <h3>生息云纪</h3>
             <p>地球生物多样性综合指南</p>
           </div>
           <div class="footer-section">
@@ -308,7 +308,7 @@ onMounted(() => {
         scientificClassification: "哺乳纲",
         description:
           "恒温脊椎动物，特征包括体表被毛、雌性具有产奶的乳腺，以及三块听小骨。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/brdw.png?height=400&width=600",
         speciesCount: 6495,
         domain: "真核生物域",
         subcategories: [
@@ -325,7 +325,7 @@ onMounted(() => {
         scientificClassification: "鸟纲",
         description:
           "恒温脊椎动物，特征包括羽毛、无牙喙状嘴、高代谢率、四腔心脏和轻量化骨骼结构。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/nl.png?height=400&width=600",
         speciesCount: 10234,
         domain: "真核生物域",
         subcategories: [
@@ -341,7 +341,7 @@ onMounted(() => {
         scientificClassification: "爬行纲",
         description:
           "变温脊椎动物，特征包括干燥鳞状皮肤、肺呼吸和在陆地产卵。包含蛇类、蜥蜴、龟鳖类和鳄类等。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/pxdw.png?height=400&width=600",
         speciesCount: 11341,
         domain: "真核生物域",
         subcategories: [
@@ -357,7 +357,7 @@ onMounted(() => {
         scientificClassification: "两栖纲",
         description:
           "变温脊椎动物，通常幼体在水中用鳃呼吸，成体发育出肺和四肢适应陆地生活。包含蛙类、蝾螈和蚓螈等。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/lqdw.png?height=400&width=600",
         speciesCount: 8372,
         domain: "真核生物域",
         subcategories: [
@@ -372,7 +372,7 @@ onMounted(() => {
         scientificClassification: "鱼类总纲",
         description:
           "水生脊椎动物，用鳃呼吸并通过鳍运动。包含硬骨鱼、软骨鱼和无颌鱼等。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/yl.png?height=400&width=600",
         speciesCount: 34300,
         domain: "真核生物域",
         subcategories: [
@@ -388,7 +388,7 @@ onMounted(() => {
         scientificClassification: "昆虫纲",
         description:
           "地球上最多样化的动物类群，特征包括三部分身体结构、六足、复眼和触角。包含甲虫、蝴蝶、蜜蜂等。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/kc.png?height=400&width=600",
         speciesCount: 1000000,
         domain: "真核生物域",
         subcategories: [
@@ -405,7 +405,7 @@ onMounted(() => {
         scientificClassification: "蛛形纲",
         description:
           "具有八足、无触角无翅膀的节肢动物，包含蜘蛛、蝎子、蜱螨等。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/zxg.png?height=400&width=600",
         speciesCount: 100000,
         domain: "真核生物域",
         subcategories: [
@@ -420,7 +420,7 @@ onMounted(() => {
         scientificClassification: "软体动物门",
         description:
           "具有柔软身体的無脊椎動物，多数有硬壳。包含螺类、双壳类和头足类等。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/rtdw.png?height=400&width=600",
         speciesCount: 85000,
         domain: "真核生物域",
         subcategories: [
@@ -435,7 +435,7 @@ onMounted(() => {
         scientificClassification: "被子植物门",
         description:
           "能够开花结果的植物，是陆地植物中最多样化的类群，包含乔木、灌木、草本植物和主要农作物。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/bzzw.png?height=400&width=600",
         speciesCount: 300000,
         domain: "真核生物域",
         subcategories: [
@@ -451,7 +451,7 @@ onMounted(() => {
         name: "针叶植物",
         scientificClassification: "裸子植物门",
         description: "具有球果的种子植物，包含松树、云杉、冷杉等常绿乔木。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/zyzw.png?height=400&width=600",
         speciesCount: 630,
         domain: "真核生物域",
         subcategories: [
@@ -466,7 +466,7 @@ onMounted(() => {
         scientificClassification: "真菌界",
         description:
           "包含酵母、霉菌和蘑菇的真核生物，在分解和营养循环中起关键作用。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/zj.png?height=400&width=600",
         speciesCount: 120000,
         domain: "真核生物域",
         subcategories: [
@@ -482,7 +482,7 @@ onMounted(() => {
         scientificClassification: "细菌域",
         description:
           "无细胞核的单细胞微生物，存在于几乎所有环境中，在固氮、分解等生态过程中起关键作用。",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "src/assets/cate/xj.png?height=400&width=600",
         speciesCount: 30000,
         domain: "细菌域",
         subcategories: [
@@ -499,37 +499,37 @@ onMounted(() => {
       {
         id: "primates",
         name: "灵长类动物",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "src/assets/cate/lzl.png?height=300&width=400",
         speciesCount: 521,
       },
       {
         id: "sharks",
         name: "鲨鱼和鳐鱼",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "src/assets/cate/sy.png?height=300&width=400",
         speciesCount: 1250,
       },
       {
         id: "butterflies",
         name: "蝴蝶和飞蛾",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "src/assets/cate/hd.png?height=300&width=400",
         speciesCount: 180000,
       },
       {
         id: "orchids",
         name: "兰花",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "src/assets/cate/lh.png?height=300&width=400",
         speciesCount: 28000,
       },
       {
         id: "mushrooms",
         name: " 蘑菇",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "src/assets/cate/mg.png?height=300&width=400",
         speciesCount: 14000,
       },
       {
         id: "corals",
         name: "珊瑚",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "src/assets/cate/sh.png?height=300&width=400",
         speciesCount: 2500,
       },
     ];
@@ -620,7 +620,12 @@ const getDomainClass = (domain) => {
 };
 
 const navigateToCategory = (categoryId) => {
-  console.log("Navigate to category:", categoryId);
+  if (categoryId === "mammals") {
+    router.push({ name: "more" });
+  } else {
+    router.push({ name: "category", params: { categoryId: categoryId } });
+  }
+  // console.log("Navigate to category:", categoryId);
   // In a real app, this would navigate to the category page
 };
 

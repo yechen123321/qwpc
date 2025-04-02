@@ -89,6 +89,11 @@ const router = createRouter({
       component: () => import('@/components/SpeciesDetail.vue')
     },
     {
+      path: '/specie/:id',
+      name: 'SpeciesDetails',
+      component: () => import('@/components/SpeciesDetails.vue')
+    },
+    {
       path: '/categories',
       name: 'categories',
       component: () => import('@/views/CategoriesPage.vue')

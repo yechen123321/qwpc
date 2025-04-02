@@ -10,7 +10,7 @@
       <nav class="main-nav">
         <a href="/" class="nav-link">首页</a>
           <a href="/library" class="nav-link active">百科</a>
-          <a href="#" class="nav-link">发现</a>
+          <a href="/public" class="nav-link">发现</a>
           <a href="/chat" class="nav-link">助手</a>
       </nav>
     </header>
@@ -37,7 +37,7 @@
     <section
       class="subcategory-hero"
       :style="{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(${subcategory.backgroundImage})`,
+        backgroundImage: `url(${subcategory.backgroundImage})`,
       }"
     >
       <div class="container">
@@ -249,7 +249,7 @@
         <div class="section-header">
           <h2>{{ subcategory.name }}物种</h2>
           <p>
-            共 {{ filteredSpecies.length }} 种 (总计 {{ allSpecies.length }} 种)
+            共 521 种 (总计 521 种)
           </p>
         </div>
 
@@ -609,7 +609,7 @@ const subcategory = ref({
   name: "灵长类",
   description:
     "灵长类是一个多样化的哺乳动物类群，包括猴子、猿和人类。它们以高度发达的大脑、灵活的手指和拇指对握能力、前向的眼睛和复杂的社会行为为特征。",
-  backgroundImage: "/placeholder.svg?height=800&width=1200",
+  backgroundImage: "/src/assets/more/title.png?height=800&width=1200",
   speciesCount: 521,
   regions: ["非洲", "亚洲", "中南美洲", "马达加斯加"],
   characteristics: [
@@ -653,25 +653,25 @@ const relatedSubcategories = ref([
   {
     id: "carnivores",
     name: "食肉目",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/src/assets/more/srm.png?height=300&width=400",
     speciesCount: 280,
   },
   {
     id: "cetaceans",
     name: "鲸目",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/src/assets/more/jm.png?height=300&width=400",
     speciesCount: 89,
   },
   {
     id: "rodents",
     name: "啮齿目",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/src/assets/more/ncm.png?height=300&width=400",
     speciesCount: 2277,
   },
   {
     id: "marsupials",
     name: "有袋目",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/src/assets/more/ydm.png?height=300&width=400",
     speciesCount: 331,
   },
 ]);
@@ -925,7 +925,7 @@ const fetchSpeciesData = async () => {
         commonName: "西部低地大猩猩",
         scientificName: "Gorilla gorilla",
         conservationStatus: "CR",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/xbdxx.png?height=500&width=700",
         weight: "135-220 kg",
         length: "1.4-1.8 m",
         lifespan: "35-40 年",
@@ -938,7 +938,7 @@ const fetchSpeciesData = async () => {
         commonName: "黑猩猩",
         scientificName: "Pan troglodytes",
         conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/hxx.png?height=500&width=700",
         weight: "40-70 kg",
         length: "1.0-1.7 m",
         lifespan: "40-50 年",
@@ -951,7 +951,7 @@ const fetchSpeciesData = async () => {
         commonName: "婆罗洲猩猩",
         scientificName: "Pongo pygmaeus",
         conservationStatus: "CR",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/blzxx.png?height=500&width=700",
         weight: "30-90 kg",
         length: "1.2-1.4 m",
         lifespan: "35-45 年",
@@ -964,7 +964,7 @@ const fetchSpeciesData = async () => {
         commonName: "恒河猴",
         scientificName: "Macaca mulatta",
         conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/henh.png?height=500&width=700",
         weight: "5-12 kg",
         length: "47-64 cm",
         lifespan: "20-30 年",
@@ -977,7 +977,7 @@ const fetchSpeciesData = async () => {
         commonName: "橄榄狒狒",
         scientificName: "Papio anubis",
         conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/glff.png??height=500&width=700",
         weight: "14-45 kg",
         length: "60-86 cm",
         lifespan: "30-45 年",
@@ -990,7 +990,7 @@ const fetchSpeciesData = async () => {
         commonName: "环尾狐猴",
         scientificName: "Lemur catta",
         conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/hwhh.png?height=500&width=700",
         weight: "2.2-3.5 kg",
         length: "39-46 cm",
         lifespan: "16-19 年",
@@ -1003,7 +1003,7 @@ const fetchSpeciesData = async () => {
         commonName: "白掌长臂猿",
         scientificName: "Hylobates lar",
         conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/bzcby.png?height=500&width=700",
         weight: "4.5-7.5 kg",
         length: "45-60 cm",
         lifespan: "25-30 年",
@@ -1016,7 +1016,7 @@ const fetchSpeciesData = async () => {
         commonName: "长鼻猴",
         scientificName: "Nasalis larvatus",
         conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/cbh.png?height=500&width=700",
         weight: "16-22 kg",
         length: "61-76 cm",
         lifespan: "20-25 年",
@@ -1029,7 +1029,7 @@ const fetchSpeciesData = async () => {
         commonName: "黑吼猴",
         scientificName: "Alouatta palliata",
         conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/hhh.png?height=500&width=700",
         weight: "4.5-9.8 kg",
         length: "55-67 cm",
         lifespan: "15-20 年",
@@ -1042,7 +1042,7 @@ const fetchSpeciesData = async () => {
         commonName: "叶猴",
         scientificName: "Trachypithecus obscurus",
         conservationStatus: "NT",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/yh.png?height=500&width=700",
         weight: "5-9 kg",
         length: "42-61 cm",
         lifespan: "20-25 年",
@@ -1055,7 +1055,7 @@ const fetchSpeciesData = async () => {
         commonName: "白耳狨",
         scientificName: "Callithrix jacchus",
         conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/ber.png?height=500&width=700",
         weight: "0.3-0.4 kg",
         length: "18-30 cm",
         lifespan: "10-15 年",
@@ -1068,7 +1068,7 @@ const fetchSpeciesData = async () => {
         commonName: "山魈",
         scientificName: "Mandrillus sphinx",
         conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/sx.png?height=500&width=700",
         weight: "12-54 kg",
         length: "61-76 cm",
         lifespan: "20-30 年",
@@ -1081,7 +1081,7 @@ const fetchSpeciesData = async () => {
         commonName: "松鼠猴",
         scientificName: "Saimiri sciureus",
         conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/ssh.png?height=500&width=700",
         weight: "0.7-1.1 kg",
         length: "25-35 cm",
         lifespan: "15-20 年",
@@ -1094,7 +1094,7 @@ const fetchSpeciesData = async () => {
         commonName: "指猴",
         scientificName: "Daubentonia madagascariensis",
         conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/zh.png?height=500&width=700",
         weight: "2.5-3.5 kg",
         length: "36-44 cm",
         lifespan: "18-23 年",
@@ -1107,7 +1107,7 @@ const fetchSpeciesData = async () => {
         commonName: "蜘蛛猴",
         scientificName: "Ateles geoffroyi",
         conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/zzh.png?height=500&width=700",
         weight: "6-9 kg",
         length: "30-63 cm",
         lifespan: "20-27 年",
@@ -1120,7 +1120,7 @@ const fetchSpeciesData = async () => {
         commonName: "眼镜猴",
         scientificName: "Tarsius tarsier",
         conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/yjh.png?height=500&width=700",
         weight: "0.1-0.15 kg",
         length: "10-15 cm",
         lifespan: "12-20 年",
@@ -1133,7 +1133,7 @@ const fetchSpeciesData = async () => {
         commonName: "戴安娜猴",
         scientificName: "Cercopithecus diana",
         conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/danh.png?height=500&width=700",
         weight: "4-7 kg",
         length: "40-55 cm",
         lifespan: "20-25 年",
@@ -1146,559 +1146,13 @@ const fetchSpeciesData = async () => {
         commonName: "人类",
         scientificName: "Homo sapiens",
         conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
+        image: "/src/assets/more/rl.png?height=500&width=700",
         weight: "50-90 kg",
         length: "1.5-1.8 m",
         lifespan: "70-85 年",
         shortDescription:
           "人类是唯一现存的人属物种，以高度发达的大脑、直立行走和复杂语言能力为特征。人类已经适应并定居在地球上几乎所有的环境中。",
         habitats: ["城市", "农村", "几乎所有陆地生态系统"],
-      },
-      {
-        id: "nycticebus-coucang",
-        commonName: "慢猴",
-        scientificName: "Nycticebus coucang",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.6-2 kg",
-        length: "27-38 cm",
-        lifespan: "15-25 年",
-        shortDescription:
-          "慢猴是夜行性灵长类动物，以其缓慢、谨慎的运动而得名。它们生活在东南亚的森林中，有毒腺体在肘部，是唯一有毒的灵长类动物。",
-        habitats: ["热带雨林", "常绿林", "竹林"],
-      },
-      // Additional species to reach 50
-      {
-        id: "pongo-abelii",
-        commonName: "苏门答腊猩猩",
-        scientificName: "Pongo abelii",
-        conservationStatus: "CR",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "30-90 kg",
-        length: "1.2-1.4 m",
-        lifespan: "35-45 年",
-        shortDescription:
-          "苏门答腊猩猩是亚洲的大型类人猿，生活在苏门答腊的热带雨林中。它们以水果为主食，面临严重的栖息地丧失威胁。",
-        habitats: ["热带雨林", "泥炭沼泽林", "低地森林"],
-      },
-      {
-        id: "gorilla-beringei",
-        commonName: "山地大猩猩",
-        scientificName: "Gorilla beringei",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "135-220 kg",
-        length: "1.4-1.8 m",
-        lifespan: "35-40 年",
-        shortDescription:
-          "山地大猩猩生活在非洲中部的高山森林中，以植物为食，形成由一个雄性领导的家族群体。",
-        habitats: ["山地森林", "竹林", "高地森林"],
-      },
-      {
-        id: "pan-paniscus",
-        commonName: "倭黑猩猩",
-        scientificName: "Pan paniscus",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "30-60 kg",
-        length: "0.7-1.0 m",
-        lifespan: "40-50 年",
-        shortDescription:
-          "倭黑猩猩生活在刚果盆地，以其和平的社会结构和频繁的社会互动而闻名。",
-        habitats: ["热带雨林", "沼泽森林"],
-      },
-      {
-        id: "macaca-fascicularis",
-        commonName: "长尾猕猴",
-        scientificName: "Macaca fascicularis",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "3-9 kg",
-        length: "40-65 cm",
-        lifespan: "20-30 年",
-        shortDescription:
-          "长尾猕猴广泛分布于东南亚，适应性强，常出现在森林和人类居住区附近。",
-        habitats: ["热带雨林", "红树林", "城市环境"],
-      },
-      {
-        id: "papio-hamadryas",
-        commonName: "圣狒狒",
-        scientificName: "Papio hamadryas",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "10-30 kg",
-        length: "50-80 cm",
-        lifespan: "20-30 年",
-        shortDescription:
-          "圣狒狒生活在非洲东北部和阿拉伯半岛，以其复杂的社会结构和雄性主导的群体而闻名。",
-        habitats: ["沙漠", "草原", "岩石地带"],
-      },
-      {
-        id: "lemur-fulvus",
-        commonName: "棕狐猴",
-        scientificName: "Lemur fulvus",
-        conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "2-3 kg",
-        length: "40-50 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "棕狐猴是马达加斯加的特有物种，生活在森林中，以水果和树叶为食。",
-        habitats: ["热带雨林", "落叶林"],
-      },
-      {
-        id: "hylobates-moloch",
-        commonName: "银长臂猿",
-        scientificName: "Hylobates moloch",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "5-7 kg",
-        length: "45-60 cm",
-        lifespan: "25-30 年",
-        shortDescription:
-          "银长臂猿生活在爪哇岛的森林中，以其银灰色的毛发和美妙的歌声而闻名。",
-        habitats: ["热带雨林", "山地森林"],
-      },
-      {
-        id: "presbytis-thomasi",
-        commonName: "托马斯叶猴",
-        scientificName: "Presbytis thomasi",
-        conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "5-8 kg",
-        length: "40-60 cm",
-        lifespan: "20-25 年",
-        shortDescription:
-          "托马斯叶猴是苏门答腊的特有物种，以其灰色毛发和独特的社会行为而闻名。",
-        habitats: ["热带雨林", "低地森林"],
-      },
-      {
-        id: "alouatta-seniculus",
-        commonName: "红吼猴",
-        scientificName: "Alouatta seniculus",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "4-9 kg",
-        length: "50-70 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "红吼猴以其红色毛发和响亮的叫声而闻名，生活在南美洲的热带雨林中。",
-        habitats: ["热带雨林", "河岸森林"],
-      },
-      {
-        id: "trachypithecus-cristatus",
-        commonName: "银叶猴",
-        scientificName: "Trachypithecus cristatus",
-        conservationStatus: "NT",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "5-7 kg",
-        length: "40-60 cm",
-        lifespan: "20-25 年",
-        shortDescription:
-          "银叶猴以其银灰色毛发而闻名，生活在东南亚的森林中，主要以叶子为食。",
-        habitats: ["热带雨林", "红树林"],
-      },
-      {
-        id: "callithrix-pygmaea",
-        commonName: "侏狨",
-        scientificName: "Callithrix pygmaea",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.1-0.15 kg",
-        length: "12-15 cm",
-        lifespan: "10-15 年",
-        shortDescription:
-          "侏狨是世界上最小的猴子之一，生活在南美洲的热带雨林中，以树液和昆虫为食。",
-        habitats: ["热带雨林", "次生林"],
-      },
-      {
-        id: "mandrillus-leucophaeus",
-        commonName: "白脸山魈",
-        scientificName: "Mandrillus leucophaeus",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "10-35 kg",
-        length: "55-70 cm",
-        lifespan: "20-30 年",
-        shortDescription:
-          "白脸山魈以其独特面部颜色而闻名，生活在非洲中部的热带雨林中。",
-        habitats: ["热带雨林", "低地森林"],
-      },
-      {
-        id: "saimiri-boliviensis",
-        commonName: "玻利维亚松鼠猴",
-        scientificName: "Saimiri boliviensis",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.6-1.2 kg",
-        length: "25-35 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "玻利维亚松鼠猴生活在南美洲的热带雨林中，以其小型体型和敏捷性而闻名。",
-        habitats: ["热带雨林", "河岸森林"],
-      },
-      {
-        id: "eulemur-rufifrons",
-        commonName: "红额狐猴",
-        scientificName: "Eulemur rufifrons",
-        conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "2-3 kg",
-        length: "40-50 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "红额狐猴是马达加斯加的特有物种，以其红色额头而闻名，生活在森林中。",
-        habitats: ["热带雨林", "落叶林"],
-      },
-      {
-        id: "ateles-chamek",
-        commonName: "黑脸蜘蛛猴",
-        scientificName: "Ateles chamek",
-        conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "6-9 kg",
-        length: "30-63 cm",
-        lifespan: "20-27 年",
-        shortDescription:
-          "黑脸蜘蛛猴生活在南美洲的热带雨林中，以其黑色面部和长尾巴而闻名。",
-        habitats: ["热带雨林", "云雾林"],
-      },
-      {
-        id: "tarsius-syrichta",
-        commonName: "菲律宾眼镜猴",
-        scientificName: "Tarsius syrichta",
-        conservationStatus: "NT",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.1-0.15 kg",
-        length: "10-15 cm",
-        lifespan: "12-20 年",
-        shortDescription:
-          "菲律宾眼镜猴是小型夜行性灵长类动物，以其巨大的眼睛而闻名，生活在菲律宾的森林中。",
-        habitats: ["热带雨林", "次生林"],
-      },
-      {
-        id: "cercopithecus-mitis",
-        commonName: "蓝猴",
-        scientificName: "Cercopithecus mitis",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "4-6 kg",
-        length: "50-65 cm",
-        lifespan: "20-25 年",
-        shortDescription:
-          "蓝猴以其蓝色毛发而闻名，生活在非洲东部的森林中，主要以水果为食。",
-        habitats: ["热带雨林", "山地森林"],
-      },
-      {
-        id: "nycticebus-pygmaeus",
-        commonName: "侏儒慢猴",
-        scientificName: "Nycticebus pygmaeus",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.3-0.5 kg",
-        length: "20-25 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "侏儒慢猴是小型夜行性灵长类动物，生活在东南亚的森林中，以其小型体型和毒性而闻名。",
-        habitats: ["热带雨林", "竹林"],
-      },
-      {
-        id: "propithecus-verreauxi",
-        commonName: "维氏冕狐猴",
-        scientificName: "Propithecus verreauxi",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "3-4 kg",
-        length: "45-55 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "维氏冕狐猴是马达加斯加的特有物种，以其白色毛发和跳跃能力而闻名。",
-        habitats: ["落叶林", "灌木林"],
-      },
-      {
-        id: "colobus-guereza",
-        commonName: "黑白疣猴",
-        scientificName: "Colobus guereza",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "5-15 kg",
-        length: "50-70 cm",
-        lifespan: "20-25 年",
-        shortDescription:
-          "黑白疣猴以其黑白相间的毛发而闻名，生活在非洲东部的森林中，主要以叶子为食。",
-        habitats: ["热带雨林", "山地森林"],
-      },
-      {
-        id: "aotus-trivirgatus",
-        commonName: "三线夜猴",
-        scientificName: "Aotus trivirgatus",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.8-1.2 kg",
-        length: "24-37 cm",
-        lifespan: "12-20 年",
-        shortDescription:
-          "三线夜猴是夜行性灵长类动物，生活在南美洲的热带雨林中，以其夜间活动而闻名。",
-        habitats: ["热带雨林", "次生林"],
-      },
-      {
-        id: "cebus-capucinus",
-        commonName: "白喉卷尾猴",
-        scientificName: "Cebus capucinus",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "2-4 kg",
-        length: "35-55 cm",
-        lifespan: "15-25 年",
-        shortDescription:
-          "白喉卷尾猴生活在中美洲的森林中，以其白色面部和灵活性而闻名。",
-        habitats: ["热带雨林", "落叶林"],
-      },
-      {
-        id: "saguinus-oedipus",
-        commonName: "棉顶狨",
-        scientificName: "Saguinus oedipus",
-        conservationStatus: "CR",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.4-0.5 kg",
-        length: "20-25 cm",
-        lifespan: "10-15 年",
-        shortDescription:
-          "棉顶狨以其白色头顶而闻名，生活在哥伦比亚的热带雨林中，面临严重的栖息地丧失威胁。",
-        habitats: ["热带雨林", "次生林"],
-      },
-      {
-        id: "chlorocebus-pygerythrus",
-        commonName: "绿猴",
-        scientificName: "Chlorocebus pygerythrus",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "3-6 kg",
-        length: "40-60 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "绿猴以其绿色毛发而闻名，生活在非洲南部的草原和森林中。",
-        habitats: ["草原", "稀树草原", "森林边缘"],
-      },
-      {
-        id: "hapalemur-griseus",
-        commonName: "灰竹狐猴",
-        scientificName: "Hapalemur griseus",
-        conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.7-1.2 kg",
-        length: "30-40 cm",
-        lifespan: "10-15 年",
-        shortDescription:
-          "灰竹狐猴是马达加斯加的特有物种，以其竹子饮食而闻名。",
-        habitats: ["竹林", "热带雨林"],
-      },
-      {
-        id: "nomascus-concolor",
-        commonName: "黑冠长臂猿",
-        scientificName: "Nomascus concolor",
-        conservationStatus: "CR",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "7-10 kg",
-        length: "45-60 cm",
-        lifespan: "25-30 年",
-        shortDescription:
-          "黑冠长臂猿生活在东南亚的森林中，以其黑色毛发和美妙的歌声而闻名。",
-        habitats: ["热带雨林", "山地森林"],
-      },
-      {
-        id: "piliocolobus-badius",
-        commonName: "红疣猴",
-        scientificName: "Piliocolobus badius",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "6-12 kg",
-        length: "45-67 cm",
-        lifespan: "20-25 年",
-        shortDescription: "红疣猴以其红色毛发而闻名，生活在西非的热带雨林中。",
-        habitats: ["热带雨林", "沼泽森林"],
-      },
-      {
-        id: "lagothrix-lagotricha",
-        commonName: "绒毛猴",
-        scientificName: "Lagothrix lagotricha",
-        conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "5-10 kg",
-        length: "40-60 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "绒毛猴以其厚实的毛发而闻名，生活在南美洲的热带雨林中。",
-        habitats: ["热带雨林", "云雾林"],
-      },
-      {
-        id: "leontopithecus-rosalia",
-        commonName: "金狮狨",
-        scientificName: "Leontopithecus rosalia",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.5-0.7 kg",
-        length: "25-35 cm",
-        lifespan: "10-15 年",
-        shortDescription:
-          "金狮狨以其金色毛发而闻名，生活在巴西的大西洋森林中，面临严重的栖息地丧失威胁。",
-        habitats: ["热带雨林", "次生林"],
-      },
-      {
-        id: "erythrocebus-patas",
-        commonName: "赤猴",
-        scientificName: "Erythrocebus patas",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "7-13 kg",
-        length: "60-90 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "赤猴以其红色毛发和快速奔跑能力而闻名，生活在非洲的草原中。",
-        habitats: ["草原", "稀树草原"],
-      },
-      {
-        id: "indri-indri",
-        commonName: "大狐猴",
-        scientificName: "Indri indri",
-        conservationStatus: "CR",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "6-9 kg",
-        length: "60-90 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "大狐猴是马达加斯加最大的狐猴，以其响亮的歌声而闻名。",
-        habitats: ["热带雨林", "山地森林"],
-      },
-      {
-        id: "symphalangus-syndactylus",
-        commonName: "合趾长臂猿",
-        scientificName: "Symphalangus syndactylus",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "10-12 kg",
-        length: "70-90 cm",
-        lifespan: "25-30 年",
-        shortDescription:
-          "合趾长臂猿是东南亚的大型长臂猿，以其深色毛发和合趾特征而闻名。",
-        habitats: ["热带雨林", "低地森林"],
-      },
-      {
-        id: "procolobus-verus",
-        commonName: "橄榄疣猴",
-        scientificName: "Procolobus verus",
-        conservationStatus: "NT",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "4-6 kg",
-        length: "45-55 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "橄榄疣猴以其橄榄色毛发而闻名，生活在西非的热带雨林中。",
-        habitats: ["热带雨林", "沼泽森林"],
-      },
-      {
-        id: "chiropotes-satanas",
-        commonName: "黑胡子僧面猴",
-        scientificName: "Chiropotes satanas",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "2-4 kg",
-        length: "35-50 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "黑胡子僧面猴以其黑色胡须而闻名，生活在南美洲的热带雨林中。",
-        habitats: ["热带雨林", "河岸森林"],
-      },
-      {
-        id: "callicebus-torquatus",
-        commonName: "领僧面猴",
-        scientificName: "Callicebus torquatus",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "1-2 kg",
-        length: "30-40 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "领僧面猴以其白色领子而闻名，生活在南美洲的热带雨林中。",
-        habitats: ["热带雨林", "次生林"],
-      },
-      {
-        id: "microcebus-rufus",
-        commonName: "棕鼠狐猴",
-        scientificName: "Microcebus rufus",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.04-0.06 kg",
-        length: "12-15 cm",
-        lifespan: "5-10 年",
-        shortDescription:
-          "棕鼠狐猴是世界上最小的灵长类动物之一，生活在马达加斯加的森林中。",
-        habitats: ["热带雨林", "落叶林"],
-      },
-      {
-        id: "hoolock-hoolock",
-        commonName: "西白眉长臂猿",
-        scientificName: "Hoolock hoolock",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "6-9 kg",
-        length: "60-90 cm",
-        lifespan: "25-30 年",
-        shortDescription:
-          "西白眉长臂猿以其白色眉毛而闻名，生活在南亚的森林中。",
-        habitats: ["热带雨林", "落叶林"],
-      },
-      {
-        id: "theropithecus-gelada",
-        commonName: "胶ada狒狒",
-        scientificName: "Theropithecus gelada",
-        conservationStatus: "LC",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "10-20 kg",
-        length: "50-75 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "胶ada狒狒以其红色胸部“心形”标记而闻名，生活在埃塞俄比亚的高原地区。",
-        habitats: ["高地草原", "岩石地带"],
-      },
-      {
-        id: "cacajao-calvus",
-        commonName: "红秃猴",
-        scientificName: "Cacajao calvus",
-        conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "2-4 kg",
-        length: "35-50 cm",
-        lifespan: "15-20 年",
-        shortDescription:
-          "红秃猴以其红色秃头而闻名，生活在南美洲的热带雨林中。",
-        habitats: ["热带雨林", "河岸森林"],
-      },
-      {
-        id: "avahi-laniger",
-        commonName: "毛耳狐猴",
-        scientificName: "Avahi laniger",
-        conservationStatus: "VU",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "0.6-1.2 kg",
-        length: "25-35 cm",
-        lifespan: "10-15 年",
-        shortDescription:
-          "毛耳狐猴是马达加斯加的特有物种，以其毛茸茸的耳朵而闻名。",
-        habitats: ["热带雨林", "竹林"],
-      },
-      {
-        id: "rhinopithecus-roxellana",
-        commonName: "川金丝猴",
-        scientificName: "Rhinopithecus roxellana",
-        conservationStatus: "EN",
-        image: "/placeholder.svg?height=500&width=700",
-        weight: "10-20 kg",
-        length: "50-70 cm",
-        lifespan: "20-25 年",
-        shortDescription:
-          "川金丝猴以其金色毛发和独特面部而闻名，生活在中国的山地森林中。",
-        habitats: ["山地森林", "竹林"],
       },
     ];
 
@@ -1719,7 +1173,10 @@ const navigateToSubcategory = (subcategoryId) => {
 };
 
 const navigateToSpeciesDetail = (speciesId) => {
-  console.log(`Navigate to species detail: ${speciesId}`);
+  // console.log(`Navigate to species detail: ${speciesId}`);
+  if (speciesId === "cercopithecus-diana") {
+    router.push({ name: "SpeciesDetails", params: { id: speciesId } });
+  }
 };
 
 const filterSpecies = () => {
@@ -2953,7 +2410,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  z-index: 100;
+  z-index: 1;
 }
 
 .info-window {
